@@ -31,3 +31,35 @@
 			&:hover
 				background: $darkGray
 				color: $white
+
+.carousel
+	margin: 0 auto
+	max-width: 1400px
+	.carousel-control
+		background: $white
+		border-radius: 0
+		color: $black
+		opacity: 0
+		top: 50%
+		transition: opacity 0.7s
+		-moz-transition: opacity 0.7s /* Firefox 4 */
+		-webkit-transition: opacity 0.7s /* Safari and Chrome */
+		-o-transition: opacity 0.7s /* Opera */
+	&:hover
+		.carousel-control
+			opacity: 1
+
+.home-tiles-bg
+	background: $white
+	border: 20px solid $white
+	margin: 0 auto
+	max-width: 980px
+	position: relative
+	img
+		margin-bottom: 20px
+
+
+
+
+
+

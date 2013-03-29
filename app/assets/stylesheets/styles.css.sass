@@ -1,0 +1,33 @@
+@import "variables"
+@import "fontface"
+
+.header
+	background: white
+	border-top: 4px solid $darkGray
+	.logo
+		height: 81px
+		margin: 0 auto
+		width: 195px
+		&:hover
+			opacity: .6
+	.nav-list
+		background: $white
+		list-style: none
+		padding: 28px 0 72px 0
+		li
+			float: left
+			font-family: "brandonreg",sans-serif
+			font-style: normal
+			font-weight: 400
+			font-size: 15px
+			letter-spacing: 0.15em
+			margin-right: 38px
+			padding: 13px
+			text-transform: uppercase
+			width: 76px
+		a
+			color: $darkGray
+			text-decoration: none	
+			&:hover
+				background: $darkGray
+				color: $white

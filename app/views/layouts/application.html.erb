@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MicamoveRails</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div class="header">	
+		<div class="container-fluid">
+			<div class="row-fluid">
+				<div class="span3">
+					<div class="logo">
+						<a href="/"><img src="assets/logo.png"></img></a>
+					</div>
+				</div>
+				<div class="span9 pull-right">
+					<ul class="nav-list">
+						<li class="nav-item"><a href="/products">Store</a></li>
+						<li class="nav-item"><a href="/team">Team</a></li>
+						<li class="nav-item"><a href="http://tumblr.micamove.com/">Mvmnt</a></li>
+						<li class="nav-item"><a href="#">Visuals</a></li>
+						<li class="nav-item"><a href="#">Support</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+<%= yield %>
+
+</body>
+</html>

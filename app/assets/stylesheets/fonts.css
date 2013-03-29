@@ -1,0 +1,94 @@
+@font-face {
+	font-family: 'Conv_ProximaNova-Reg';
+	src: url('/ProximaNova-Reg.eot');
+	src: local('☺'), url('/ProximaNova-Reg.ttf') format('truetype'), url('/ProximaNova-Reg.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'brandonbold';
+	src: url('/Brandon_bld.eot');
+	src: local('☺'),  url('/Brandon_bld.ttf') format('truetype'), url('/Brandon_bld.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'brandonboldit';
+	src: url('/Brandon_bld_it.eot');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_Brandon_blk';
+	src: url('/Brandon_blk.eot');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Conv_Brandon_blk_it';
+	src: url('/Brandon_blk_it.eot');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_Brandon_light';
+	src: url('/Brandon_light.eot');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_Brandon_light_it';
+	src: url('/Brandon_light_it.eot');
+	src: local('☺'), url('/Brandon_light_it.ttf') format('truetype'), url('/Brandon_light_it.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'brandonmed';
+	src: url('/Brandon_bld.eot');
+	src: local('brandonmed'),  url('/Brandon_bld.ttf') format('truetype'), url('/Brandon_bld.svg') format('svg');
+	font-weight: bold;
+	font-style: bold;
+}
+
+@font-face {
+	font-family: 'Conv_Brandon_med_it';
+	src: url('/Brandon_med_it.eot');
+	src: local('☺'), url('/Brandon_med_it.ttf') format('truetype'), url('/Brandon_med_it.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'Conv_Brandon_reg';
+	src: url('/Brandon_reg.eot');
+	src: local('☺'),  url('/Brandon_reg.ttf') format('truetype'), url('/Brandon_reg.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_Brandon_reg_it';
+	src: url('/Brandon_reg_it.eot');
+	src: local('☺'),  url('/Brandon_reg_it.ttf') format('truetype'), url('/Brandon_reg_it.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_Brandon_thin';
+	src: url('/Brandon_thin.eot');
+	src: local('☺'),  url('/Brandon_thin.ttf') format('truetype'), url('/Brandon_thin.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Conv_Brandon_thin_it';
+	src: url('/Brandon_thin_it.eot');
+	src: local('☺'),  url('/Brandon_thin_it.ttf') format('truetype'), url('/Brandon_thin_it.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

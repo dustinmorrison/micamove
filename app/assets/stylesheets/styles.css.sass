@@ -36,6 +36,21 @@
 	margin-left: -700px
 	width: 1400px
 	position: absolute
+	.carousel-inner
+		background: $white
+		.image1
+			background: url("Drift_Black_Carousel1.jpg")
+			height: 580px
+			width: 1400px
+		.image2
+			background: url("fall_winter.jpg")
+			height: 580px
+			width: 1400px
+		.image3
+			background: url("drift_dark_carousel.jpg")
+			height: 580px
+			width: 1400px
+
 	.carousel-control
 		background: $white
 		border-radius: 0
@@ -67,6 +82,33 @@
 			margin-bottom: 20px
 			width: 300px
 
+@media screen and (max-width: 980px) and (min-width: 768px)
+	.carousel
+		left: 50%
+		margin-left: -490px
+		width: 980px
+		position: absolute
+		.carousel-inner
+			background: $white
+			.image1
+				background: url("tab-carousel.jpg")
+				height: 500px
+				width: 980px
+
+@media screen and (max-width: 480px) 
+	.carousel
+		left: 50%
+		margin-left: -240px
+		width: 480px
+		position: absolute
+		.carousel-inner
+			background: $white
+			.image1
+				background: url("phone-carousel.jpg")
+				height: 320px
+				width: 480px
+	.home-tiles
+		margin: 290px auto 0px auto
 
 
 

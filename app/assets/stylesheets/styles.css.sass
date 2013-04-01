@@ -1,16 +1,17 @@
 @import "variables"
 @import "fontface"
 
+
 .header
 	background: white
 	border-top: 4px solid $darkGray
 	.logo
+		background: url("logo.png")
 		height: 81px
 		width: 195px
 		&:hover
 			opacity: .6
 	.nav-list
-		background: $white
 		list-style: none
 		padding: 28px 0 72px 0
 		li
@@ -24,6 +25,42 @@
 			padding: 13px
 			text-transform: uppercase
 			width: 76px
+		a
+			color: $darkGray
+			text-decoration: none	
+			&:hover
+				background: $darkGray
+				color: $white
+		.nav-menu-icon
+			display: none
+			background: $darkGray
+			float: right
+			height: 30px
+			margin-right: 25px
+			padding: 4px
+			position: relative
+			width: 42px
+			.nav-icon-line
+				background: $white
+				height: 3px
+				margin: 5px auto
+				width: 23px
+
+	.mobile-nav-list
+		display: none
+		text-align: center
+		.mobile-nav-item
+			border-bottom: 1px solid #eee
+			display: block
+			font-family: "brandonreg",sans-serif
+			font-style: normal
+			font-weight: 400
+			font-size: 15px
+			letter-spacing: 0.15em
+			padding: 20px 0
+			text-transform: uppercase
+			&:first-child
+				border-top: 1px solid #eee
 		a
 			color: $darkGray
 			text-decoration: none	
@@ -83,6 +120,15 @@
 			width: 300px
 
 @media screen and (max-width: 980px) and (min-width: 768px)
+	.header
+		.nav-list
+			text-align: right
+			.nav-menu-icon
+				display: block
+
+		.mobile-nav-list
+			display: none
+
 	.carousel
 		left: 50%
 		margin-left: -490px
@@ -95,7 +141,28 @@
 				height: 500px
 				width: 980px
 
-@media screen and (max-width: 480px) 
+
+@media screen and (max-width: 767px) and (min-width: 480px)
+	.header
+		.nav-list
+			text-align: right
+			.nav-menu-icon
+				display: block
+
+		.mobile-nav-list
+			display: none
+
+
+@media screen and (max-width: 479px) 
+	.header
+		.nav-list
+			text-align: right
+			.nav-menu-icon
+				display: block
+
+		.mobile-nav-list
+			display: none
+
 	.carousel
 		left: 50%
 		margin-left: -240px

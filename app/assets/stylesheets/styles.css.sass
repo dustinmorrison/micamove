@@ -71,6 +71,7 @@
 	left: 50%
 	margin-left: -700px
 	width: 1400px
+	overflow: hidden
 	position: absolute
 	.carousel-inner
 		background: $white
@@ -111,11 +112,13 @@
 		background: $white
 		border: 20px solid $white
 		margin: 0 auto
-		max-width: 980px
+		max-width: 940px
 		position: relative
-		img
-			margin-bottom: 20px
+		.home-tile-image
+			margin-bottom: 15px
 			width: 300px
+			&:hover
+				background: $darkGray
 
 @media screen and (max-width: 979px) and (min-width: 768px)
 	.header

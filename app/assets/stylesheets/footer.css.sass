@@ -1,0 +1,44 @@
+@import "variables"
+@import "fontface"
+
+
+.desktop-footer
+	background: white
+	margin: 20px auto 0 auto
+	max-width: 1400px
+	.footer-inner
+		background: $white
+		margin: 0 auto
+		padding: 20px 0
+		text-align: center
+		.footer-item
+		a
+			color: $lightGray
+			font-family: "brandonreg",sans-serif
+			font-style: normal
+			font-weight: 400
+			font-size: 12px
+			letter-spacing: 0.15em
+			margin: 15px 20px
+			text-decoration: none	
+			text-transform: uppercase
+			&:hover
+				color: $darkGray
+
+
+@media screen and (max-width: 979px) and (min-width: 768px)
+
+
+@media screen and (max-width: 767px) and (min-width: 480px)
+	.desktop-footer
+		.footer-inner
+			.footer-item
+				display: block
+				width: 100%
+
+@media screen and (max-width: 479px) 
+	.desktop-footer
+		.footer-inner
+			.footer-item
+				display: block
+				width: 100%

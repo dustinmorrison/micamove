@@ -33,7 +33,7 @@ body {
   line-height: 1.6em;
 }
 
-a {
+/*a {
   color: #A2C;
   text-decoration: none;
   font-weight: bold;
@@ -45,7 +45,7 @@ a:hover {
 
 a:active {
   background: hsla( 0, 100%, 100%, 0.5 );
-}
+}*/
 
 h1, h2 {
   font-weight: 100;

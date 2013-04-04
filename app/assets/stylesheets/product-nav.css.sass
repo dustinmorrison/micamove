@@ -1,0 +1,37 @@
+@import "variables"
+@import "fontface"
+
+#products
+	background: $white
+	border: 1px solid $border
+	margin: 20px 0
+	.row-fluid
+		max-width: 940px
+	.product-nav
+		border-top: 1px solid $border
+		margin: 40px auto 0 auto
+		padding: 10px 0
+		.product-nav-item
+			color: $darkGray
+			font-family: "brandonrmed",sans-serif
+			font-style: normal
+			font-weight: 400
+			font-size: 11px
+			letter-spacing: 0.15em
+			text-transform: uppercase
+			padding-top: 6px
+			text-align: center
+			&:first-child
+				border-right: 1px solid $border
+				text-align: left
+			&:last-child
+				border-left: 1px solid $border
+				text-align: right
+		i
+			margin-right: 6px
+		a
+			color: $lightGray
+			text-decoration: none
+			&:hover
+				color: $darkGray
+

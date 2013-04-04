@@ -108,17 +108,19 @@
 .home-tiles
 	background: $white
 	margin: 480px auto 0px auto
+	border: 1px solid $border
 	.home-tiles-inner
 		background: $white
 		border: 20px solid $white
 		margin: 0 auto
 		max-width: 940px
 		position: relative
-		.home-tile-image
-			margin-bottom: 15px
-			width: 300px
+		a
+			.home-tile-image
+				margin-bottom: 15px
+				width: 300px
 			&:hover
-				background: $darkGray
+				background: black
 
 @media screen and (max-width: 979px) and (min-width: 768px)
 	.header

@@ -223,10 +223,10 @@ dd {
   margin-left: 1.0em;
 }
 
-button {
+/*button {
   -webkit-appearance: push-button;
 }
-
+*/
 #site-footer {
   clear: both;
   margin: 20px 0px;

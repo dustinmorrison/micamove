@@ -80,4 +80,22 @@ class ProductsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  def watches
+    @watches = Product.where :category => "Watches"
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @products }
+    end
+  end
+
+  def clothing
+    @clothing = Product.where :category => "Clothing"
+
+    # respond_to do |format|
+    #   format.html # index.html.erb
+    #   format.json { render json: @products }
+    # end
+  end
 end

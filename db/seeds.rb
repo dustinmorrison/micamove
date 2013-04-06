@@ -129,6 +129,45 @@ products = [
     :image2 => "/assets/products/watches/baron-rosegold/baron-rosegold-profile.jpg", 
     :image3 => "/assets/products/watches/baron-rosegold/baron-rosegold-belly.jpg"
   },
+
+  { :name => "The Tree", 
+    :color => "White", 
+    :description => "", 
+    :category => "Clothing", 
+    :shoplink => "", 
+    :price => "22", 
+    :image1 => "/assets/products/clothing/tree/tree-front.jpg", 
+    :image2 => "/assets/products/clothing/tree/tree-back.jpg", 
+  },
+
+  { :name => "The Official", 
+    :color => "Navy", 
+    :description => "", 
+    :category => "Clothing", 
+    :shoplink => "", 
+    :price => "22", 
+    :image1 => "/assets/products/clothing/official/official-front.jpg", 
+    :image2 => "/assets/products/clothing/official/official-back.jpg", 
+  },
+
+  { :name => "The Blitzen", 
+    :color => "Gray", 
+    :description => "", 
+    :category => "Clothing", 
+    :shoplink => "", 
+    :price => "22", 
+    :image1 => "/assets/products/clothing/blitzen/blitzen-front.jpg", 
+  },
+
+  { :name => "The Albuquerque", 
+    :color => "Black", 
+    :description => "", 
+    :category => "Clothing", 
+    :shoplink => "", 
+    :price => "22", 
+    :image1 => "/assets/products/clothing/albuquerque/albuquerque-front.jpg", 
+    :image2 => "/assets/products/clothing/albuquerque/albuquerque-back.jpg", 
+  },
 ]
 
 Product.create products

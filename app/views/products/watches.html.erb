@@ -7,7 +7,7 @@
     <div class="row-fluid">
       <div class="span12">
         <ul class="product-list">
-          <% @products.each do |product| %>
+          <% @watches.each do |product| %>
           <li class="product-listing">
             <div><%= link_to image_tag(product.image1), product %></div>
             <div><%= link_to product.name, product %> / <%= link_to product.color, product %></div>

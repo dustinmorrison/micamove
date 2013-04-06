@@ -138,6 +138,7 @@ products = [
     :price => "22", 
     :image1 => "/assets/products/clothing/tree/tree-front.jpg", 
     :image2 => "/assets/products/clothing/tree/tree-back.jpg", 
+    :image3 => "/assets/products/clothing/tree/tree-front.jpg", 
   },
 
   { :name => "The Official", 
@@ -148,6 +149,7 @@ products = [
     :price => "22", 
     :image1 => "/assets/products/clothing/official/official-front.jpg", 
     :image2 => "/assets/products/clothing/official/official-back.jpg", 
+    :image3 => "/assets/products/clothing/official/official-front.jpg", 
   },
 
   { :name => "The Blitzen", 
@@ -157,6 +159,8 @@ products = [
     :shoplink => "", 
     :price => "22", 
     :image1 => "/assets/products/clothing/blitzen/blitzen-front.jpg", 
+    :image2 => "/assets/products/clothing/blitzen/blitzen-front.jpg", 
+    :image3 => "/assets/products/clothing/blitzen/blitzen-front.jpg", 
   },
 
   { :name => "The Albuquerque", 
@@ -167,6 +171,7 @@ products = [
     :price => "22", 
     :image1 => "/assets/products/clothing/albuquerque/albuquerque-front.jpg", 
     :image2 => "/assets/products/clothing/albuquerque/albuquerque-back.jpg", 
+    :image3 => "/assets/products/clothing/albuquerque/albuquerque-front.jpg", 
   },
 ]
 

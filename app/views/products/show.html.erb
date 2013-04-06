@@ -1,4 +1,4 @@
-<p id="notice"><%= notice %></p>
+<!-- <p id="notice"><%= notice %></p>
 
 <p>
   <b>Category:</b>
@@ -45,4 +45,80 @@
   <%= @product.image3 %>
 </p>
 <%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
+<%= link_to 'Back', products_path %> -->
+
+
+<div id="products">
+  <div class="container=fluid">
+
+    <%= render(:partial => "product-nav") %>
+
+    <div class="row-fluid product-details">
+      <div class="span6">
+        <div id="myCarousel" class="carousel slide">
+          <!-- Carousel items -->
+          <div class="carousel-inner">
+            <div class="active item">
+              <%= image_tag @product.image1 %>
+            </div>
+            <div class="item">
+              <%= image_tag @product.image2 %>
+            </div>
+            <div class="item">
+              <%= image_tag @product.image3 %>
+            </div>
+          </div>
+          <!-- Carousel nav -->
+          <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+          <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+        </div>
+      </div>
+      <div class="span6">
+        <div class="detail-heading">
+          <h3><%= @product.name %><span><h6>/ <%= @product.color %></h6></span></h3>
+        </div>
+        <div class="product-buy">
+          <h4 class="detail-price">$<%= @product.price %> USD<span><a href="<%= @product.shoplink %>" class="btn-large btn-primary">Buy Now<a></span></h4>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,6 @@
 /**** Base styles ****/
 
-html, body, div, span, object, iframe,
+/*html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
 small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
@@ -15,7 +15,7 @@ time, mark, audio, video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-}
+}*/
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -47,7 +47,7 @@ a:active {
   background: hsla( 0, 100%, 100%, 0.5 );
 }*/
 
-h1, h2 {
+/*h1, h2 {
   font-weight: 100;
   line-height: 1.2em;
   margin-bottom: 0.6em;
@@ -71,7 +71,7 @@ h3, p, ul, ol, pre, dl {
 }
 
 em { font-style: italic; }
-strong { font-weight: bold; }
+strong { font-weight: bold; }*/
 
 /**** #site-nav ****/
 

@@ -5,3 +5,25 @@
       <div class="span4"></div>
       <div class="span2 product-nav-item"><i class="icon-shopping-cart"></i> View Cart</div>
     </div>
+
+    <div class="row-fluid product-nav-mobile">
+      <div class="span7 product-nav-item"><a id="productNavOpen" href="#">Mica Store <span class="caret"></span></a></div>
+      <div class="span5 product-nav-item"><i class="icon-shopping-cart"></i> View Cart</div>
+    </div>
+
+    <div class="row-fluid product-mobile-drop" id="openProductNav">
+      <div class="span12">
+      	<div class="product-item-drop"><a href="">Watches</a></div>
+      	<div class="product-item-drop"><a href="">Clothing</a></div>
+      </div>
+    </div>
+
+<script>
+	$(document).ready(function() {
+		$('#productNavOpen').click(function() {
+		  $('#openProductNav').slideToggle('fast', function() {
+		    // Animation complete.
+		  });
+		});
+	});
+</script>

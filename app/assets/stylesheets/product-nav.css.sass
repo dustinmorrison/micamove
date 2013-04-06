@@ -13,7 +13,7 @@
 		padding: 10px 0
 		.product-nav-item
 			color: $darkGray
-			font-family: "brandonrmed",sans-serif
+			font-family: "brandonmed",sans-serif
 			font-style: normal
 			font-weight: 400
 			font-size: 11px
@@ -34,4 +34,82 @@
 			text-decoration: none
 			&:hover
 				color: $darkGray
+	.product-nav-mobile
+		border-bottom: 1px solid $border
+		border-top: 1px solid $border
+		margin: 0 auto
+		padding: 20px 0
+		.product-nav-item
+			color: $darkGray
+			font-family: "brandonmed",sans-serif
+			font-style: normal
+			font-weight: 400
+			font-size: 16px
+			letter-spacing: 0.15em
+			text-transform: uppercase
+			padding-top: 6px
+			&:first-child
+				padding-left: 15px
+			&:last-child
+				border-left: 1px solid $border
+				font-size: 11px
+				padding-right: 15px
+				text-align: right
+			.caret
+				border-top: 7px solid $darkGray
+				border-right: 7px solid transparent
+				border-left: 7px solid transparent
+				margin: 6px 4px
+				&:hover
+					border-top: 7px solid $lightGray
+			a
+				color: $darkGray
+				&:hover
+					color: $lightGray
+					text-decoration: none
+	.product-mobile-drop
+		display: none
+		.product-item-drop
+			border-bottom: 1px solid #eee
+			display: block
+			font-family: "brandonreg",sans-serif
+			font-style: normal
+			font-weight: 400
+			font-size: 12px
+			letter-spacing: 0.15em
+			padding: 15px 12px
+			text-transform: uppercase
+			a
+				color: $darkGray
+				text-decoration: none
+			&:hover
+				background: $darkGray
+				a
+					color: $white
+
+
+
+
+
+@media screen and (min-width: 768px)
+	#products
+		.product-nav-mobile
+			display: none
+
+@media screen and (min-width: 768px) and (max-width: 980px)
+	#products
+		.product-nav
+			.product-nav-item
+				&:first-child
+					padding-left: 15px
+				&:last-child
+					padding-right: 15px
+
+@media screen and (max-width: 767px)
+	#products
+		margin: 0
+		border-top: none
+		.product-nav
+			display: none
+
 

@@ -1,0 +1,104 @@
+@import "variables"
+@import "fontface"
+
+#team
+	margin: 20px 0
+	.team-list
+		background: $white
+		.row-fluid
+			margin: 0 auto
+			max-width: 940px
+			padding: 20px 0
+			.team-image
+				color: $white
+				display: inline-block
+				margin: 0 16px 16px 0
+				text-align: center
+				text-transform: uppercase
+				&:nth-child(3)
+					margin-right: 0
+				&:last-child
+					margin-right: 0
+			.image1
+				background: url('team/alex-andrews.jpg') no-repeat
+				height: 460px
+				width: 300px
+				h1
+					margin-top: 50%
+					opacity: 0
+					transition: opacity 0.5s
+				&:hover
+					h1
+						opacity: 1
+			.image2
+				background: url('team/scott-stevens.jpg') no-repeat
+				height: 240px
+				width: 300px
+				h1
+					margin-top: 50%
+					opacity: 0
+					transition: opacity 0.5s
+				&:hover
+					h1
+						opacity: 1
+			.image3
+				background: url('team/jordan-mendenhall.jpg') no-repeat
+				height: 320px
+				width: 300px
+				h1
+					margin-top: 50%
+					opacity: 0
+					transition: opacity 0.5s
+				&:hover
+					h1
+						opacity: 1
+			.image4
+				background: url('team/sean-black.jpg') no-repeat
+				height: 200px
+				width: 300px
+				h1
+					margin-top: 50%
+					opacity: 0
+					transition: opacity 0.5s
+				&:hover
+					h1
+						opacity: 1
+			.image5
+				background: url('team/cale-zima.jpg') no-repeat
+				height: 420px
+				width: 300px
+				h1
+					margin-top: 50%
+					opacity: 0
+					transition: opacity 0.5s
+				&:hover
+					h1
+						opacity: 1
+			.image6
+				background: url('team/seth-huot.jpg') no-repeat
+				height: 340px
+				width: 300px
+				h1
+					margin-top: 50%
+					opacity: 0
+					transition: opacity 0.5s
+				&:hover
+					h1
+						opacity: 1
+
+
+@media (max-width: 940px) and (min-width: 641px)
+	#team
+		.team-list
+			.row-fluid
+				max-width: 640px
+
+@media (max-width: 640px)
+	#team
+		.team-list
+			.row-fluid
+				max-width: 340px
+				.team-image
+					margin: 0 16px 16px 20px
+
+

@@ -1,0 +1,29 @@
+@import "variables"
+@import "fontface"
+
+#visuals
+	border: 1px solid $border
+	margin: 20px 0
+	.visuals-inner
+		background: $white
+		.row-fluid
+			margin: 0 auto
+			max-width: 940px
+			padding: 20px 0
+			.visual-header
+				.video-player
+					height: auto
+					width: 100%
+			.visual-images
+				.visual-image
+					float: left
+					margin-bottom: 40px
+					margin-right: 20px
+					position: relative
+					&:nth-child(4n)
+						margin-right: 0
+					h5
+						color: $darkGray
+						font-size: 13px
+						text-align: center
+						text-transform: uppercase

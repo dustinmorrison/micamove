@@ -5,6 +5,9 @@ class PagesController < ApplicationController
 	def team
   end
 
+  def visuals
+  end
+
 
 
 end

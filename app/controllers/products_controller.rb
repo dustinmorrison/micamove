@@ -14,6 +14,10 @@ class ProductsController < ApplicationController
   # GET /products/1.json
   def show
     @product = Product.find(params[:id])
+    @plank_images = Product.where :name => "The Plank"
+    @deck_images = Product.where :name => "The Deck"
+    @drift_images = Product.where :name => "The Drift"
+    @baron_images = Product.where :name => "The Baron"
 
     respond_to do |format|
       format.html # show.html.erb
@@ -98,4 +102,5 @@ class ProductsController < ApplicationController
     #   format.json { render json: @products }
     # end
   end
+
 end

@@ -1,53 +1,3 @@
-<!-- <p id="notice"><%= notice %></p>
-
-<p>
-  <b>Category:</b>
-  <%= @product.category %>
-</p>
-
-<p>
-  <b>Description:</b>
-  <%= @product.description %>
-</p>
-
-<p>
-  <b>Name:</b>
-  <%= @product.name %>
-</p>
-
-<p>
-  <b>Color:</b>
-  <%= @product.color %>
-</p>
-
-<p>
-  <b>Price:</b>
-  <%= @product.price %>
-</p>
-
-<p>
-  <b>Shoplink:</b>
-  <%= @product.shoplink %>
-</p>
-
-<p>
-  <b>Image1:</b>
-  <%= @product.image1 %>
-</p>
-
-<p>
-  <b>Image2:</b>
-  <%= @product.image2 %>
-</p>
-
-<p>
-  <b>Image3:</b>
-  <%= @product.image3 %>
-</p>
-<%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %> -->
-
-
 <div id="products">
   <div class="container=fluid">
 
@@ -55,6 +5,7 @@
 
     <div class="row-fluid product-details">
       <div class="span6">
+
         <div id="myCarousel" class="carousel slide">
           <!-- Carousel items -->
           <div class="carousel-inner">
@@ -73,13 +24,49 @@
           <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
         </div>
       </div>
+
       <div class="span6">
         <div class="detail-heading">
           <h3><%= @product.name %><span><h6>/ <%= @product.color %></h6></span></h3>
         </div>
+
         <div class="product-buy">
           <h4 class="detail-price">$<%= @product.price %> USD<span><a href="<%= @product.shoplink %>" class="btn-large btn-primary">Buy Now<a></span></h4>
         </div>
+
+        <% if @product.category == "Watches" %>
+        <div class="color-options">
+          <h6>Color Options</h6>
+          <div class="color-options-images">
+
+          <% if @product.name == "The Plank" %>
+            <% @plank_images.each do |image| %>
+            <%= link_to image_tag(image.image1), image %>
+            <% end %>
+
+          <% elsif @product.name == "The Deck" %>
+            <% @deck_images.each do |image| %>
+            <%= link_to image_tag(image.image1), image %>
+            <% end %>
+
+          <% elsif @product.name == "The Drift" %>
+            <% @drift_images.each do |image| %>
+            <%= link_to image_tag(image.image1), image %>
+            <% end %>
+
+          <% elsif @product.name == "The Baron" %>
+            <% @baron_images.each do |image| %>
+            <%= link_to image_tag(image.image1), image %>
+            <% end %>
+          <% end %>
+          </div>
+        </div>
+
+        <% else %>
+        <div class="color-options">
+          <h6>Choose Size</h6>
+        </div>
+        <% end %>
 
       </div>
 
@@ -88,6 +75,7 @@
   </div>
 
 </div>
+
 
 
 

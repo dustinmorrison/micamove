@@ -1,5 +1,6 @@
 @import "variables"
 @import "fontface"
+@import "mixins"
 
 #visuals
 	border: 1px solid $border
@@ -12,14 +13,21 @@
 			padding: 20px 0
 			.visual-header
 				.video-player
+					display: none
 					height: auto
 					width: 100%
+				.active
+					display: block
 			.visual-images
 				.visual-image
 					float: left
 					margin-bottom: 40px
 					margin-right: 20px
+					opacity: 0.7
 					position: relative
+					@include transition(opacity 1s)
+					&:hover
+						opacity: 1
 					&:nth-child(4n)
 						margin-right: 0
 					h5
@@ -27,3 +35,7 @@
 						font-size: 13px
 						text-align: center
 						text-transform: uppercase
+					.play
+						position: absolute
+						right: 73px
+						top: 89px

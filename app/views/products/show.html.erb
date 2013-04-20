@@ -35,6 +35,7 @@
         </div>
 
         <% if @product.category == "Watches" %>
+
         <div class="color-options">
           <h6>Color Options</h6>
           <div class="color-options-images">
@@ -62,6 +63,37 @@
           </div>
         </div>
 
+        <div class="specs">
+          <h6>Specifications</h6>
+          <ul>
+            <ul>
+              <li><span class="spec-icon-solid pull-left"</span></li>
+              <li><h5>100% Pine With <a href="#" id="solidPop" data-trigger="click" data-toggle="popover" data-placement="top" data-content="MICA's proprietary wood science improves durability, luster and resistance to the elements. Seals and finishes your watch from the inside out." data-original-title="SolidCore™">SolidCore™</a> Treatment</h5></li>
+            </ul>
+            <ul>
+              <li><span class="spec-icon-size pull-left"</span></li>
+              <li><h5>Large Size (44mm)</h5></li>
+            </ul>
+            <ul>
+              <li><span class="spec-icon-movement pull-left"</span></li>
+              <li><h5>3 Hand Japanese Quartz</h5></li>
+            </ul>
+            <ul>
+              <li><span class="spec-icon-crystal pull-left"</span></li>
+              <li><h5>Hardened Mineral Crystal Glass</h5></li>
+            </ul>
+            <ul>
+              <li><span class="spec-icon-atm pull-left"</span></li>
+              <li><h5>5 ATM (Splash Only)</h5></li>
+            </ul>
+            <ul>
+              <li><span class="spec-icon-ss pull-left"</span></li>
+              <li><h5>Stainless Steel Buckle & Crown</h5></li>
+            </ul>
+          </ul>
+
+        </div>
+
         <% else %>
         <div class="color-options">
           <h6>Choose Size</h6>
@@ -75,6 +107,13 @@
   </div>
 
 </div>
+
+<script>
+$(document).ready(function() {
+  $('#solidPop').popover('hide')
+});
+
+</script>
 
 
 

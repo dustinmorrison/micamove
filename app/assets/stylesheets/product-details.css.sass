@@ -5,6 +5,10 @@
 	.row-fluid
 		margin: 0 auto
 	.product-details
+		h6
+			color: $lightGray
+			display: inline-block
+			text-transform: uppercase
 		.detail-heading
 			border-bottom: 1px solid $border
 			margin-top: 45px
@@ -12,10 +16,7 @@
 				color: $darkGray
 				text-transform: uppercase
 			h6
-				color: $lightGray
-				display: inline-block
 				margin-left: 40px
-				text-transform: uppercase
 		.product-buy
 			margin-top: 30px
 			span
@@ -23,11 +24,35 @@
 				text-transform: uppercase
 		.color-options
 			margin-top: 25px
-			h6
-				color: $lightGray
-				display: inline-block
-				text-transform: uppercase
 			.color-options-images
 				img
 					height: 65px
 					width: 60px
+		.specs
+			margin: 30px 0 80px 0
+		ul	
+			list-style-type: none
+			margin-left: 0
+			padding-left: 0
+			li
+				color: $lightGray
+				margin-bottom: 16px
+				a
+					color: $darkGray
+			span
+				background-image: url("products/watches/spec-icons/spec_sprite.png")
+				height: 28px
+				margin-right: 12px
+				width: 28px
+			.spec-icon-solid
+				background-position: 0 174px
+			.spec-icon-size
+				background-position: 0 145px
+			.spec-icon-movement
+				background-position: 0 116px
+			.spec-icon-crystal
+				background-position: 0 87px
+			.spec-icon-atm
+				background-position: 0 58px
+			.spec-icon-ss
+				background-position: 0 30px

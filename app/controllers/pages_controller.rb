@@ -8,6 +8,9 @@ class PagesController < ApplicationController
   def visuals
   end
 
+  def support
+  end
+
 
 
 end

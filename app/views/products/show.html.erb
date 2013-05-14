@@ -97,6 +97,15 @@
         <% else %>
         <div class="color-options">
           <h6>Choose Size</h6>
+          <ul class='sizes'>
+            <li><input type="checkbox"><label class="checkbox-size"></label></li>
+            <li><label class="checkbox"><input type="checkbox"> Check me out</label></li>
+            <li><label class="checkbox"><input type="checkbox"> Check me out</label></li>
+            <li><label class="checkbox"><input type="checkbox"> Check me out</label></li>
+          </ul>
+
+
+          </ul>
         </div>
         <% end %>
 
@@ -111,11 +120,13 @@
 <script>
 $(document).ready(function() {
   $('#solidPop').popover('hide')
+
+  $('#solidPop').click(function() {
+    event.preventDefault();
+  });
 });
 
 </script>
-
-
 
 
 

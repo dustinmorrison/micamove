@@ -7,5 +7,6 @@ MicamoveRails::Application.routes.draw do
 
   get "/team" => "pages#team"
   get "/visuals" => "pages#visuals"
+  get "/support" => "pages#support"
   root to: 'pages#home'
 end

@@ -1,0 +1,53 @@
+@import "variables"
+@import "fontface"
+@import "mixins"
+
+#support
+	background: $white
+	border: 1px solid $border
+	margin: 20px auto
+	max-width: 1200px
+	padding: 40px
+	.row-fluid
+		max-width: 940px
+		margin: 0 auto
+		.support-nav
+			border-top: 1px solid $border
+			border-bottom: 1px solid $border
+
+			ul
+				list-style: none
+				margin: 0 auto	
+				padding: 0	
+				width: 80%
+				li
+					display: inline-block
+					color: $darkGray
+					font-family: "brandonmed",sans-serif
+					font-style: normal
+					font-weight: 400
+					font-size: 12px
+					letter-spacing: 0.15em
+					margin: 18px 26px
+					text-transform: uppercase
+					text-align: center
+					&:first-child
+						border-left: 1px solid $border
+						padding-left: 20px
+					&:last-child
+						border-right: 1px solid $border
+						padding-right: 20px
+					a
+						color: $lightGray
+						text-decoration: none
+						&:hover
+							color: $darkGray
+
+		.support-header
+			text-align: left
+			h3
+				border-bottom: 1px solid $border
+				padding: 2px 0 10px 0	
+				text-transform: uppercase
+
+	

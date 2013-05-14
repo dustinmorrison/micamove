@@ -19,15 +19,37 @@
 <div class="container-fluid home-tiles">	
 	<div class="row-fluid">	
 		<div class="span12">
-			<div class="home-tiles-inner masonry">
-				<a href="#">
-					<img class="home-tile-image" src="/assets/home-tile-1.jpg">
-				</a>
-				<img class="home-tile-image" src="/assets/home-tile-2.jpg"></img>
-				<img class="home-tile-image" src="/assets/home-tile-3.jpg"></img>
-				<img class="home-tile-image" src="/assets/home-tile-6.jpg"></img>
-				<img class="home-tile-image" src="/assets/home-tile-4.jpg"></img>
-				<img class="home-tile-image" src="/assets/home-tile-5.jpg"></img>
+			<div class="home-tiles-inner ">
+				<div class="masonry">
+
+					<a class="home-tile-image" href="#">
+						<img src="/assets/home-tile-1.jpg">
+					</a>
+
+					<a class="home-tile-image" href="#">
+						<img src="/assets/home-tile-2.jpg">
+						<div class="hover-outer">
+							<h3>Mason Dyer</h3>
+						</div>
+					</a>
+
+					<a href="#">
+						<img class="home-tile-image" src="/assets/home-tile-3.jpg">
+					<a/>
+
+					<a href="#">
+						<img class="home-tile-image" src="/assets/home-tile-6.jpg">
+					</a>
+
+					<a href="#">
+						<img class="home-tile-image" src="/assets/home-tile-4.jpg">
+					</a>
+
+					<a href="#">
+						<img class="home-tile-image" src="/assets/home-tile-5.jpg">
+					</a>
+				</div>
+
 			</div>
 		</div>
 	</div>
@@ -42,7 +64,7 @@
 	    itemSelector : '.home-tile-image',
 	    columnWidth : 300, 
 	    gutterWidth : 20, 
-	    isFitWidth: true
+	    isFitWidth: true,
 	  });
 	});
 

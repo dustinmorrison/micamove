@@ -21,7 +21,7 @@
           </div>
           <!-- Carousel nav -->
           <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-          <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+          <a class="carousel-control Nowt" href="#myCarousel" data-slide="next">&rsaquo;</a>
         </div>
       </div>
 
@@ -30,11 +30,11 @@
           <h3><%= @product.name %><span><h6>/ <%= @product.color %></h6></span></h3>
         </div>
 
+        <% if @product.category == "Watches" %>
+
         <div class="product-buy">
           <h4 class="detail-price">$<%= @product.price %> USD<span><a href="<%= @product.shoplink %>" class="btn-large btn-primary">Buy Now<a></span></h4>
         </div>
-
-        <% if @product.category == "Watches" %>
 
         <div class="color-options">
           <h6>Color Options</h6>
@@ -95,13 +95,50 @@
         </div>
 
         <% else %>
+
+        <div class="product-buy">
+          <h4 class="detail-price">$<%= @product.price %> USD
+            <span>
+              <% if @product.name == "The Official" %>
+              <a href="#" class="btn-large btn-primary no-link">Buy Now<a>
+              <a href="http://stackoverflow.com/questions/4565075/jquery-if-element-has-class-do-this-help-please" class="btn-large btn-primary small-link">Buy Now<a>
+              <a href="https://mica.infusionsoft.com/app/manageCart/showManageOrder" class="btn-large btn-primary medium-link">Buy Now<a>
+              <a href="<%= @product.shoplink %>" class="btn-large btn-primary large-link">Buy Now<a>
+              <a href="<%= @product.shoplink %>" class="btn-large btn-primary xl-link">Buy Now<a>
+
+              <% elsif @product.name == "The Tree" %>
+              <a href="#" class="btn-large btn-primary no-link">Buy Now<a>
+              <a href="http://stackoverflow.com/questions/4565075/jquery-if-element-has-class-do-this-help-please" class="btn-large btn-primary small-link">Buy Now<a>
+              <a href="https://mica.infusionsoft.com/app/manageCart/showManageOrder" class="btn-large btn-primary medium-link">Buy Now<a>
+              <a href="<%= @product.shoplink %>" class="btn-large btn-primary large-link">Buy Now<a>
+              <a href="<%= @product.shoplink %>" class="btn-large btn-primary xl-link">Buy Now<a>
+
+              <% elsif @product.name == "The Blitzen" %>
+              <a href="#" class="btn-large btn-primary no-link">Buy Now<a>
+              <a href="http://stackoverflow.com/questions/4565075/jquery-if-element-has-class-do-this-help-please" class="btn-large btn-primary small-link">Buy Now<a>
+              <a href="https://mica.infusionsoft.com/app/manageCart/showManageOrder" class="btn-large btn-primary medium-link">Buy Now<a>
+              <a href="<%= @product.shoplink %>" class="btn-large btn-primary large-link">Buy Now<a>
+              <a href="<%= @product.shoplink %>" class="btn-large btn-primary xl-link">Buy Now<a>
+
+              <% elsif @product.name == "The Albuquerque" %>
+              <a href="#" class="btn-large btn-primary no-link">Buy Now<a>
+              <a href="http://stackoverflow.com/questions/4565075/jquery-if-element-has-class-do-this-help-please" class="btn-large btn-primary small-link">Buy Now<a>
+              <a href="https://mica.infusionsoft.com/app/manageCart/showManageOrder" class="btn-large btn-primary medium-link">Buy Now<a>
+              <a href="<%= @product.shoplink %>" class="btn-large btn-primary large-link">Buy Now<a>
+              <a href="<%= @product.shoplink %>" class="btn-large btn-primary xl-link">Buy Now<a>
+              <% end %>
+            </span>
+          </h4>
+        </div>
+
         <div class="color-options">
-          <h6>Choose Size</h6>
-          <ul class='sizes'>
-            <li><input type="checkbox"><label class="checkbox-size"></label></li>
-            <li><label class="checkbox"><input type="checkbox"> Check me out</label></li>
-            <li><label class="checkbox"><input type="checkbox"> Check me out</label></li>
-            <li><label class="checkbox"><input type="checkbox"> Check me out</label></li>
+          <h6>Choose Size*</h6>           
+          <ul class="sizes">
+            <li class="size small"><a href="#">S</a></li>
+            <li class="size medium"><a href="#">M</a></li>
+            <li class="size large"><a href="#">L</a></li>
+            <li class="size xl"><a href="#">XL</a></li>
+
           </ul>
 
 
@@ -124,14 +161,72 @@ $(document).ready(function() {
   $('#solidPop').click(function() {
     event.preventDefault();
   });
+
+  $(".small").click(function() {
+    event.preventDefault();
+    $(".medium").removeClass("active-size")
+    $(".large").removeClass("active-size")
+    $(".xl").removeClass("active-size")
+    $(this).addClass("active-size")
+    $(".small-link").show()
+    $(".no-link").hide()
+    $(".medium-link").hide()
+    $(".large-link").hide()
+    $(".xl-link").hide()
+  });
+
+  $(".medium").click(function() {
+    event.preventDefault();
+    $(".small").removeClass("active-size")
+    $(".large").removeClass("active-size")
+    $(".xl").removeClass("active-size")
+    $(this).addClass("active-size")
+    $(".medium-link").show()
+    $(".small-link").hide()
+    $(".large-link").hide()
+    $(".xl-link").hide()
+    $(".no-link").hide()
+  });
+
+  $(".large").click(function() {
+    event.preventDefault();
+    $(".small").removeClass("active-size")
+    $(".medium").removeClass("active-size")
+    $(".xl").removeClass("active-size")
+    $(this).addClass("active-size")
+    $(".large-link").show()
+    $(".small-link").hide()
+    $(".medium-link").hide()
+    $(".xl-link").hide()
+    $(".no-link").hide()
+  });
+
+  $(".xl").click(function() {
+    event.preventDefault();
+    $(".small").removeClass("active-size")
+    $(".medium").removeClass("active-size")
+    $(".large").removeClass("active-size")
+    $(this).addClass("active-size")
+    $(".xl-link").show()
+    $(".small-link").hide()
+    $(".medium-link").hide()
+    $(".large-link").hide()
+    $(".no-link").hide()
+  });
+
+
 });
 
 </script>
 
 
-
-
-
+<!-- 
+$(document).ready(function() {
+    $('#pdf').change(function() {
+      var newurl = $('#pdf').val();
+      $('a.target').attr('href', newurl);
+    });
+}); -->
 
 
 

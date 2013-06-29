@@ -8,9 +8,17 @@
 	margin: 20px auto
 	max-width: 1200px
 	padding: 40px
+
+	a
+		color: $darkGray
+
+	h6
+		color: $lightGray
 	.row-fluid
 		max-width: 940px
 		margin: 0 auto
+		.span6
+			min-width: 340px
 		.support-nav
 			border-top: 1px solid $border
 			border-bottom: 1px solid $border
@@ -43,21 +51,31 @@
 						&:hover
 							color: $darkGray
 
-		.support-header
-			text-align: left
-			h3
-				border-bottom: 1px solid $border
-				padding: 2px 0 10px 0	
-				text-transform: uppercase
+	.support-header
+		text-align: left
+		h3
+			padding: 2px 0 10px 0	
+			text-transform: uppercase
 
+	.support-content
+		padding: 20px 0
 
-	.links
-		list-style: none
-		text-transform: uppercase
+		.sub
+			color: $lightGray
+			margin: 25px 0
+
+		.links
+			font-weight: bold
+			list-style: none
+			text-transform: uppercase
+			margin-left: 0
+			padding-left: 0
+
+			li
+				margin: 18px 0
+
 		span
-			font-weight: bold	
+			display: block
+			font-size: 16px
+			text-transform: uppercase
 
-.contact-field
-	input.text
-		border: 1px solid $border
-		background: black

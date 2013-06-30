@@ -1,5 +1,6 @@
 @import "variables"
 @import "fontface"
+@import "mixins"
 
 #team
 	margin: 20px 0
@@ -23,11 +24,12 @@
 				background: url('team/alex-andrews.jpg') no-repeat
 				height: 460px
 				width: 300px
+				@include transition(background, 0.3s, ease-in)
 				h2
 					letter-spacing: 0.15em
 					margin-top: 50%
 					opacity: 0
-					transition: opacity 0.5s
+					@include transition(opacity, 0.3s, ease-in)
 				&:hover
 					background: url('team/alex-andrews-hover.jpg')
 					h2
@@ -36,11 +38,12 @@
 				background: url('team/scott-stevens.jpg') no-repeat
 				height: 240px
 				width: 300px
+				@include transition(background, 0.3s, ease-in)
 				h2
 					letter-spacing: 0.15em
 					margin-top: 25%
 					opacity: 0
-					transition: opacity 0.5s
+					@include transition(opacity, 0.3s, ease-in)
 				&:hover
 					background: url('team/scott-stevens-hover.jpg')
 					h2
@@ -49,11 +52,12 @@
 				background: url('team/jordan-mendenhall.jpg') no-repeat
 				height: 320px
 				width: 300px
+				@include transition(background, 0.3s, ease-in)
 				h2
 					letter-spacing: 0.15em
 					margin-top: 40%
 					opacity: 0
-					transition: opacity 0.5s
+					@include transition(opacity, 0.3s, ease-in)
 				&:hover
 					background: url('team/jordan-mendenhall-hover.jpg')
 					h2
@@ -62,11 +66,12 @@
 				background: url('team/sean-black.jpg') no-repeat
 				height: 200px
 				width: 300px
+				@include transition(background, 0.3s, ease-in)
 				h2
 					letter-spacing: 0.15em
 					margin-top: 24%
 					opacity: 0
-					transition: opacity 0.5s
+					@include transition(opacity, 0.3s, ease-in)
 				&:hover
 					background: url('team/sean-black-hover.jpg')
 					h2
@@ -75,11 +80,12 @@
 				background: url('team/cale-zima.jpg') no-repeat
 				height: 420px
 				width: 300px
+				@include transition(background, 0.3s, ease-in)
 				h2
 					letter-spacing: 0.15em
 					margin-top: 55%
 					opacity: 0
-					transition: opacity 0.5s
+					@include transition(opacity, 0.3s, ease-in)
 				&:hover
 					background: url('team/cale-zima-hover.jpg')
 					h2
@@ -88,11 +94,12 @@
 				background: url('team/seth-huot.jpg') no-repeat
 				height: 340px
 				width: 300px
+				@include transition(background, 0.3s, ease-in)
 				h2
 					letter-spacing: 0.15em
 					margin-top: 40%
 					opacity: 0
-					transition: opacity 0.5s
+					@include transition(opacity, 0.3s, ease-in)
 				&:hover
 					background: url('team/seth-huot-hover.jpg')
 					h2

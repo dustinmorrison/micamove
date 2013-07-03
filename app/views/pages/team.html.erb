@@ -1,5 +1,5 @@
-<div id="team">
-	<div class="container-fluid team-list">	
+<div id="tiled-images">
+	<div class="container-fluid images-container">	
 		<div class="row-fluid">	
 			<div class="span12">
 				<div class="masonry-container">
@@ -16,16 +16,16 @@
 </div>
 
 	<script>
+	$(document).ready(function() {
 
-	var $container = $('.masonry-container');
-	$container.imagesLoaded(function(){
-	  $container.masonry({
-	    itemSelector : '.team-image',
-	    columnWidth : 300, 
-	    gutterWidth : 20, 
-	  });
+		var $container = $('.masonry-container');
+		$container.imagesLoaded(function(){
+		  $container.masonry({
+		    itemSelector : '.team-image',
+		    columnWidth : 300, 
+		    gutterWidth : 20, 
+		  });
+		});
+
 	});
-
-
-
 	</script>

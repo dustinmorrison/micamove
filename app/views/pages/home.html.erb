@@ -16,40 +16,18 @@
 	</div>
 </div>
 
-<div class="container-fluid home-tiles">	
-	<div class="row-fluid">	
-		<div class="span12">
-			<div class="home-tiles-inner ">
-				<div class="masonry">
-
-					<a class="home-tile-image" href="#">
-						<img src="/assets/home-tile-1.jpg">
-					</a>
-
-					<a class="home-tile-image" href="#">
-						<img src="/assets/home-tile-2.jpg">
-						<div class="hover-outer">
-							<h3>Mason Dyer</h3>
-						</div>
-					</a>
-
-					<a href="#">
-						<img class="home-tile-image" src="/assets/home-tile-3.jpg">
-					<a/>
-
-					<a href="#">
-						<img class="home-tile-image" src="/assets/home-tile-6.jpg">
-					</a>
-
-					<a href="#">
-						<img class="home-tile-image" src="/assets/home-tile-4.jpg">
-					</a>
-
-					<a href="#">
-						<img class="home-tile-image" src="/assets/home-tile-5.jpg">
-					</a>
+<div id="tiled-images" class="home-tiles">
+	<div class="container-fluid images-container">	
+		<div class="row-fluid">	
+			<div class="span12">
+				<div class="masonry-container">
+					<div class="home-image home-image1"><h2>Alex<br>Andrews</h2></div>
+					<div class="home-image home-image3"><h2>Scott<br>Stevens</h2></div>
+					<div class="home-image home-image5"><h2>Jordon<br>Mendenhall</h2></div>
+					<div class="home-image home-image6"><h2>Cale<br>Zima</h2></div>
+					<div class="home-image home-image2"><h2>Seth<br>Huot</h2></div>
+					<div class="home-image home-image4"><h2>Sean<br>Black</h2></div>
 				</div>
-
 			</div>
 		</div>
 	</div>
@@ -57,15 +35,18 @@
 
 
 	<script>
+	$(document).ready(function() {
 
-	var $container = $('.masonry');
-	$container.imagesLoaded(function(){
-	  $container.masonry({
-	    itemSelector : '.home-tile-image',
-	    columnWidth : 300, 
-	    gutterWidth : 20, 
-	    isFitWidth: true,
-	  });
+		$(".images-container").css("margin-top", "450px");
+
+		var $container = $('.masonry-container');
+		$container.imagesLoaded(function(){
+		  $container.masonry({
+		    itemSelector : '.home-image',
+		    columnWidth : 300, 
+		    gutterWidth : 20, 
+		  });
+		});
+
 	});
-
 	</script>

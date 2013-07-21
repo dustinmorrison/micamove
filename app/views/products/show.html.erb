@@ -6,23 +6,16 @@
     <div class="row-fluid product-details">
       <div class="span6">
 
-        <div id="myCarousel" class="carousel slide">
-          <!-- Carousel items -->
-          <div class="carousel-inner">
-            <div class="active item">
-              <%= image_tag @product.image1 %>
-            </div>
-            <div class="item">
-              <%= image_tag @product.image2 %>
-            </div>
-            <div class="item">
-              <%= image_tag @product.image3 %>
-            </div>
-          </div>
-          <!-- Carousel nav -->
-          <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-          <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+        <div class="main-image">
+          <%= image_tag @product.image1 %>
         </div>
+
+        <div class="sub-images">
+          <img src="<%= @product.image1 %>" class="sub-image"></img>
+          <img src="<%= @product.image2 %>" class="sub-image"></img>
+          <img src="<%= @product.image3 %>"class="sub-image"></img>
+        </div>
+
       </div>
 
       <div class="span6">
@@ -63,8 +56,10 @@
           </div>
         </div>
 
+        <hr>
+
         <div class="specs">
-          <h6>Specifications</h6>
+          <h6>Product Details</h6>
           <ul>
             <ul>
               <li><span class="spec-icon-solid pull-left"</span></li>
@@ -92,6 +87,32 @@
             </ul>
           </ul>
 
+        </div>
+
+        <hr>
+
+        <div class="social">
+          <h6>Share</h6>
+          <ul>
+            <ul>
+              <a href="#">
+                <li><span class="social-icon-facebook pull-left"</span></li>
+                <li><h5>Facebook</h5></li>
+              </a>
+            </ul>
+            <ul>
+              <a href="#">
+                <li><span class="social-icon-twitter pull-left"</span></li>
+                <li><h5>Twitter</h5></li>
+              </a>
+            </ul>
+            <ul>
+              <a href="">
+                <li><span class="social-icon-pinterest pull-left"</span></li>
+                <li><h5>Pinterest</h5></li>
+              </a>
+            </ul>
+          </ul>
         </div>
 
         <% else %>
@@ -138,10 +159,32 @@
             <li class="size medium"><a href="#">M</a></li>
             <li class="size large"><a href="#">L</a></li>
             <li class="size xl"><a href="#">XL</a></li>
-
           </ul>
+        </div>
 
+        <hr>
 
+        <div class="social">
+          <h6>Share</h6>
+          <ul>
+            <ul>
+              <a href="#">
+                <li><span class="social-icon-facebook pull-left"</span></li>
+                <li><h5>Facebook</h5></li>
+              </a>
+            </ul>
+            <ul>
+              <a href="#">
+                <li><span class="social-icon-twitter pull-left"</span></li>
+                <li><h5>Twitter</h5></li>
+              </a>
+            </ul>
+            <ul>
+              <a href="">
+                <li><span class="social-icon-pinterest pull-left"</span></li>
+                <li><h5>Pinterest</h5></li>
+              </a>
+            </ul>
           </ul>
         </div>
         <% end %>

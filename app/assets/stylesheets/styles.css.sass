@@ -2,6 +2,7 @@
 @import "fontface"
 
 
+
 .header
 	background: white
 	border-bottom: 1px solid $border
@@ -76,47 +77,9 @@
 				background: $darkGray
 				color: $white
 
-.carousel-home
-	left: 50%
-	margin-left: -700px
-	width: 1400px
-	overflow: hidden
-	position: absolute
-	.carousel-inner
-		background: $white
-		.image1
-			background: url("Drift_Black_Carousel1.jpg")
-			height: 580px
-			width: 1400px
-		.image2
-			background: url("fall_winter.jpg")
-			height: 580px
-			width: 1400px
-		.image3
-			background: url("drift_dark_carousel.jpg")
-			height: 580px
-			width: 1400px
-	.carousel-control
-		background: $white
-		border-radius: 0
-		color: $black
-		opacity: 0
-		top: 79%
-		transition: opacity 0.7s
-		-moz-transition: opacity 0.7s /* Firefox 4 */
-		-webkit-transition: opacity 0.7s /* Safari and Chrome */
-		-o-transition: opacity 0.7s /* Opera */
-	.right
-		right: 43%
-	.left
-		left: 43%
-	&:hover
-		.carousel-control
-			opacity: 1
 
 .home-tiles
 	background: $white
-	margin: 480px auto 0px auto
 	border: 1px solid $border
 	.home-tiles-inner
 		background: $white
@@ -150,19 +113,6 @@
 		.mobile-nav-list
 			display: none
 
-	.carousel-home
-		left: 50%
-		margin-left: -490px
-		width: 980px
-		position: absolute
-		.carousel-inner
-			background: $white
-			.image1
-				background: url("tab-carousel.jpg")
-				height: 500px
-				width: 980px
-
-
 @media screen and (max-width: 767px) and (min-width: 480px)
 	.header
 		.logo
@@ -188,19 +138,6 @@
 		.mobile-nav-list
 			display: none
 
-	.carousel-home
-		left: 50%
-		margin-left: -240px
-		width: 480px
-		position: absolute
-		.carousel-inner
-			background: $white
-			.image1
-				background: url("phone-carousel.jpg")
-				height: 320px
-				width: 480px
-	.home-tiles
-		margin: 290px auto 0px auto
 
 
 

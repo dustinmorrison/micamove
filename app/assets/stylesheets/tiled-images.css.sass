@@ -2,7 +2,7 @@
 @import "fontface"
 @import "mixins"
 
-#tiled-images.home-tiles
+#tiled-images
 	.images-container
 		background: $white
 		.row-fluid
@@ -11,8 +11,11 @@
 			.masonry-container
 				background: $white
 				border-top: 20px solid $white
+				margin: 0 auto
 				.home-image
-					margin: 0 0 20px 0
+					display: inline-block
+					text-align: center
+					margin: 0 auto 20px auto
 					.co-op-image-hover
 						display: none
 					.featured-product-hover

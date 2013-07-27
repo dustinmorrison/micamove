@@ -10,7 +10,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<div class="header hidden-tablet hidden-phone">	
+	<div class="header-desktop hidden-tablet hidden-phone">	
 		<div class="container">
 			<div class="row">
 				<div class="span3">
@@ -19,7 +19,7 @@
 					</div>
 				</div>
 				<div class="span9 pull-right">
-					<ul class="nav-list">
+					<ul class="nav-links">
 						<li class="nav-item store-nav"><a href="/products">Store</a></li>
 						<li class="nav-item team-nav"><a href="/team">Co/Op</a></li>
 						<li class="nav-item"><a href="http://tumblr.micamove.com/">Mvmnt</a></li>
@@ -31,28 +31,26 @@
 		</div>
 	</div>
 
-	<div class="header hidden-desktop visable-phone">	
+	<div class="header-mobile hidden-desktop visable-phone">	
 		<div class="container-fluid">
-			<div class="row-fluid">
+			<div class="row-fluid mobile-nav-row">
 				<div class="span3">
 					<div class="logo">
 						<a href="/"><img src="assets/logo.png"></img></a>
 					</div>
 				</div>
 				<div class="span9 pull-right">
-					<ul class="nav-list hidden-desktop">
-						<a href="#">
-							<li class="nav-menu-icon" id="mobileNavLink">
-								<div class="nav-icon-line"></div>
-								<div class="nav-icon-line"></div>
-								<div class="nav-icon-line"></div>
-							</li>
-						</a>
-					</ul>
+					<a href="#">
+						<div class="nav-menu-icon" id="mobileNavLink">
+							<div class="nav-icon-line"></div>
+							<div class="nav-icon-line"></div>
+							<div class="nav-icon-line"></div>
+						</div>
+					</a>
 				</div>
 			</div>
 			<div class="row-fluid">
-				<div class="span12 mobile-nav-list" id="openNavMenu">
+				<div class="span12 mobile-nav-links" id="openNavMenu">
 					<a href="/products" class="mobile-nav-item">Store</a>
 					<a href="/team" class="mobile-nav-item">Team</a>
 					<a href="http://tumblr.micamove.com" class="mobile-nav-item">Mvmnt</a>

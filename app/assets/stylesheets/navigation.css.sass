@@ -1,0 +1,139 @@
+@import "variables"
+@import "fontface"
+
+
+
+.header-desktop
+	background: white
+	border-bottom: 1px solid $border
+	border-top: 4px solid $darkGray
+	padding: 21px 0
+	.logo
+		height: auto
+		width: auto
+		&:hover
+			opacity: .6
+	.nav-links
+		list-style: none
+		li
+			float: left
+			font-family: "brandonreg",sans-serif
+			font-style: normal
+			font-weight: 400
+			font-size: 15px
+			letter-spacing: 0.15em
+			margin-left: 38px
+			padding: 13px
+			text-transform: uppercase
+			width: 70px
+			&:first-child
+				margin-left: 0
+		a
+			color: $darkGray
+			padding: 10px 20px
+			text-decoration: none	
+			&:hover
+				background: $darkGray
+				color: $white
+		.active-nav-item
+			text-transform: uppercase
+			width: 70px
+			a
+				color: $white
+				background: $darkGray
+				padding: 10px 20px
+
+.header-mobile
+	background: white
+	border-bottom: 1px solid $border
+	border-top: 4px solid $darkGray
+	.logo
+		height: auto
+		width: auto
+		&:hover
+			opacity: .6
+	.mobile-nav-row
+		margin: 21px 0
+		.span9
+			.nav-menu-icon
+				background: $darkGray
+				float: right
+				height: 28px
+				margin: 2px 15px 0 0 
+				padding: 5px 2px 3px 2px
+				position: relative
+				width: 42px
+				.nav-icon-line
+					background: $white
+					height: 3px
+					margin: 4px auto
+					width: 23px
+	.mobile-nav-links
+		display: none
+		text-align: center
+		.mobile-nav-item
+			border-bottom: 1px solid #eee
+			display: block
+			font-family: "brandonreg",sans-serif
+			font-style: normal
+			font-weight: 400
+			font-size: 15px
+			letter-spacing: 0.15em
+			padding: 20px 0
+			text-transform: uppercase
+			&:first-child
+				border-top: 1px solid #eee
+		a
+			color: $darkGray
+			text-decoration: none	
+			&:hover
+				background: $darkGray
+				color: $white
+
+
+
+@media screen and (max-width: 767px)
+	.header
+		border-bottom: none
+
+@media screen and (max-width: 979px) and (min-width: 768px)
+	.header
+		.logo
+			margin-left: 15px
+		.nav-list
+			text-align: right
+			.nav-menu-icon
+				display: block
+		.mobile-nav-list
+			display: none
+
+@media screen and (max-width: 767px) and (min-width: 480px)
+	.header
+		.logo
+			margin-left: 15px
+		.nav-list
+			text-align: right
+			.nav-menu-icon
+				display: block
+
+		.mobile-nav-list
+			display: none
+
+
+@media screen and (max-width: 479px) 
+	.header
+		.logo
+			margin-left: 15px
+		.nav-list
+			text-align: right
+			.nav-menu-icon
+				display: block
+
+		.mobile-nav-list
+			display: none
+
+
+
+
+
+

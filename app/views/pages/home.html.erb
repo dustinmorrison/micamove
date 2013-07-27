@@ -1,24 +1,24 @@
 <div class="container-fluid">	
 	<div class="row-fluid">	
 		<div class="span12">
-			<div id="myCarousel" class="carousel-home slide">
-				  <!-- Carousel items -->
-				  <div class="carousel-inner">
-				    <div class="active item">
-				    	<img src="assets/home-carousel/drift_amanda.jpg"/>
-				    </div>
-				    <div class="item">
-				    	<img src="assets/home-carousel/fall_winter.jpg"></img>
-				    </div>
-				    <div class="item">
-				    	<img src="assets/home-carousel/alex_andrews.jpg"></img>
-				    </div>
-				  </div>
-				  <!-- Carousel nav -->
-				  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-				  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
-				</div>
+			<div id="myCarousel" class="carousel-home carousel slide">
+			  <!-- Carousel items -->
+			  <div class="carousel-inner">
+			    <div class="active item">
+			    	<img src="assets/home-carousel/drift_amanda.jpg"/>
+			    </div>
+			    <div class="item">
+			    	<img src="assets/home-carousel/fall_winter.jpg"/>
+			    </div>
+			    <div class="item">
+			    	<img src="assets/home-carousel/alex_andrews.jpg"/>
+			    </div>
+			  </div>
+			  <!-- Carousel nav -->
+			  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+			  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
 			</div>
+		</div>
 	</div>
 </div>
 
@@ -27,12 +27,40 @@
 		<div class="row-fluid">	
 			<div class="span12">
 				<div class="masonry-container">
-					<div class="home-image home-image1"><h2>Alex<br>Andrews</h2></div>
-					<div class="home-image home-image3"><h2>Scott<br>Stevens</h2></div>
-					<div class="home-image home-image5"><h2>Jordon<br>Mendenhall</h2></div>
-					<div class="home-image home-image6"><h2>Cale<br>Zima</h2></div>
-					<div class="home-image home-image2"><h2>Seth<br>Huot</h2></div>
-					<div class="home-image home-image4"><h2>Sean<br>Black</h2></div>
+					<div class="home-image">
+						<a href="/team">
+							<img class="co-op-image" src="assets/home-tile-images/co-op.jpg"/>
+							<img class="co-op-image-hover" src="assets/home-tile-images/co-op-hover.jpg"/>
+						</a>
+					</div>
+					<div class="home-image">
+						<a href="/products">
+							<img class="shop-now" src="assets/home-tile-images/shop-now.jpg"/>
+							<img class="shop-now-hover" src="assets/home-tile-images/shop-now-hover.jpg"/>
+						</a>
+					</div>
+					<div class="home-image">
+						<a href="/visuals">
+							<img class="image-3" src="assets/home-tile-images/visuals.jpg"/>
+						</a>
+					</div>
+					<div class="home-image">
+						<a href="#">
+							<img class="image-4" src="assets/home-tile-images/form.png"/>
+						</a>
+					</div>
+					<div class="home-image">
+						<a href="/products/186">
+							<img class="featured-product" src="assets/home-tile-images/featured-product.jpg"/>
+							<img class="featured-product-hover" src="assets/home-tile-images/featured-product-hover.jpg"/>
+						</a>
+					</div>
+					<div class="home-image">
+						<a href="http://tumblr.micamove.com/">
+							<img class="blog" src="assets/home-tile-images/blog.jpg"/>
+							<img class="blog-hover" src="assets/home-tile-images/blog-hover.jpg"/>
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -43,12 +71,64 @@
 	<script>
 	$(document).ready(function() {
 
+
+		// hover states for tiled images
+		$('.co-op-image').hover(function() {
+			$(this).hide(0);
+			$(".co-op-image-hover").show(0);
+		});
+		$('.co-op-image-hover').mouseleave(function() {
+			$(this).hide();
+			$(".co-op-image").show();
+		});
+
+		$('.featured-product').mouseover(function() {
+			$(this).hide();
+			$(".featured-product-hover").show();
+		});
+		$('.featured-product-hover').mouseleave(function() {
+			$(this).hide();
+			$(".featured-product").show();
+		});
+
+		$('.blog').mouseover(function() {
+			$(this).hide();
+			$(".blog-hover").show();
+		});
+		$('.blog-hover').mouseleave(function() {
+			$(this).hide();
+			$(".blog").show();
+		});
+
+		$('.featured-product').mouseover(function() {
+			$(this).hide();
+			$(".featured-product-hover").show();
+		});
+		$('.featured-product-hover').mouseleave(function() {
+			$(this).hide();
+			$(".featured-product").show();
+		});
+
+		$('.shop-now').mouseover(function() {
+			$(this).hide();
+			$(".shop-now-hover").show();
+		});
+		$('.shop-now-hover').mouseleave(function() {
+			$(this).hide();
+			$(".shop-now").show();
+		});
+
+		$(".masonry-container").css("margin", "0px auto");
+
+
+
 		var $container = $('.masonry-container');
 		$container.imagesLoaded(function(){
 		  $container.masonry({
 		    itemSelector : '.home-image',
 		    columnWidth : 300, 
 		    gutterWidth : 20, 
+		    isFitWidth : true
 		  });
 		});
 

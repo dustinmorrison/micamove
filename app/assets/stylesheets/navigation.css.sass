@@ -15,17 +15,19 @@
 			opacity: .6
 	.nav-links
 		list-style: none
+		float: right
+		margin-top: 12px
 		.nav-item
 			float: left
 			font-family: "brandonreg",sans-serif
 			font-style: normal
 			font-weight: 400
 			font-size: 14px
-			letter-spacing: 0.15em
-			margin-left: 38px
-			padding: 13px
+			letter-spacing: 1px
+			margin-left: 20px
+			// padding: 13px
 			text-transform: uppercase
-			width: 50px
+			// width: 50px
 			&:first-child
 				margin-left: 0
 		a
@@ -37,12 +39,16 @@
 				color: $white
 		.active-nav-item
 			text-transform: uppercase
-			width: 50px
+			// width: 50px
 			a
 				color: $white
 				background: $darkGray
 				padding: 10px 20px
-
+		.vr
+			border-right: 1px solid $border
+			height: 20px
+			float: left
+			width: 15px
 .header-mobile
 	background: white
 	border-bottom: 1px solid $border

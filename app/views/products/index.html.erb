@@ -10,7 +10,7 @@
           <% @products.each do |product| %>
           <li class="product-listing">
             <div><%= link_to image_tag(product.image1), product %></div>
-            <div><%= link_to product.name, product %> / <%= link_to product.color, product %></div>
+            <div class="listing-details"><%= link_to product.name, product %> / <%= link_to product.color, product %></div>
             <div>$<%= link_to (product.price), product %></div>
           </li>
           <% end %>

@@ -3,14 +3,16 @@
 
     <%= render(:partial => "product-nav") %>
     <%= render(:partial => "nav-carousel") %>
+  </div>
 
+  <div class="container-fluid product-list">
     <div class="row-fluid">
       <div class="span12">
-        <ul class="product-list">
+        <ul>
           <% @clothing.each do |product| %>
           <li class="product-listing">
             <div><%= link_to image_tag(product.image1), product %></div>
-            <div><%= link_to product.name, product %> / <%= link_to product.color, product %></div>
+            <div class="listing-details"><%= link_to product.name, product %> / <%= link_to product.color, product %></div>
             <div>$<%= link_to (product.price), product %></div>
           </li>
           <% end %>
@@ -24,4 +26,14 @@
   $(document).ready(function() {
     $('.store-nav').addClass('active-nav-item');
   });
+
+  var $container = $('.product-list');
+    $container.imagesLoaded(function(){
+      $container.masonry({
+        itemSelector : '.product-listing',
+        columnWidth : 220, 
+        gutterWidth : 20, 
+        isFitWidth : true
+      });
+    });
 </script>

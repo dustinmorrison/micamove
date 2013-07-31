@@ -5,8 +5,9 @@
 	.row-fluid
 		margin: 0 auto
 	.product-details
-		h6
-			color: $lightGray
+		border-top: 1px solid $border
+		h4
+			color: $darkGray
 			display: inline-block
 			text-transform: uppercase
 		.main-image
@@ -27,8 +28,10 @@
 			h3
 				color: $darkGray
 				text-transform: uppercase
-			h6
-				margin-left: 40px
+			span
+				color: $lightGray
+				font-size: 14px
+				margin-left: 20px
 		.product-buy
 			margin-top: 30px
 			span
@@ -48,18 +51,23 @@
 			margin-top: 30px
 			.sizes
 				margin-left: 0
+			a
+				color: $lightGray
+				text-transform: uppercase
 			.color-options-images
 				img
-					height: 65px
+					height: 60px
 					width: 60px
 		.specs
+			font-family: "proximanova", sans-serif
 			margin-bottom: 40px
 			ul	
 				list-style-type: none
 				margin-left: 0
 				padding-left: 0
 				li
-					color: $lightGray
+					color: $darkGray
+					font-size: 14px
 					margin-bottom: 16px
 					a
 						color: $darkGray
@@ -87,7 +95,8 @@
 				margin-left: 0
 				padding-left: 0
 				li
-					color: $lightGray
+					color: $darkGray
+					font-size: 14px
 					margin-bottom: 16px
 					a
 						color: $darkGray

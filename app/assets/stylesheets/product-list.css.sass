@@ -2,20 +2,19 @@
 @import "fontface"
 
 #products
-	.row-fluid
-		margin: 0 auto 30px auto
-		.product-list
-			padding: 0	
-			margin: 0 0 30px 0
+	.product-list
+		padding: 0	
+		margin: 30px auto 30px auto
+		.row-fluid
+			margin: 0 auto 30px auto
+			max-width: 940px
 			.product-listing
 				color: $darkGray
 				display: block
 				float: left
-				margin: 20px 20px 20px 0
+				margin-bottom: 15px
 				text-align: center
-				img
-					height: auto
-					width: 220px
+				width: 220px
 				a
 					color: $darkGray
 					font-family: "brandonmed",sans-serif
@@ -29,8 +28,6 @@
 					&:hover
 						color: $darkGray
 						text-decoration: none
-				&:nth-child(4n)
-					margin-right: 0
 				&:hover
 					opacity: 0.7
 				.listing-details
@@ -40,47 +37,8 @@
 @media screen and (max-width: 767px)
 
 @media screen and (max-width: 940px) and (min-width: 702px)
-	#products
-		.row-fluid
-			.product-list
-				.product-listing
-					&:nth-child(3n)
-						margin-right: 0
-					&:nth-child(4n)
-						margin-right: 20px
 
 @media screen and (max-width: 701px) and (min-width: 480px)
-	#products
-		.row-fluid
-			.product-list
-				.product-listing
-					margin: 20px 20px 20px 0
-					&:nth-child(2n)
-						margin-right: 0
-					&:nth-child(3n)
-						margin-right: 20px
-					&:nth-child(4n)
-						margin-right: 20px
 
 @media screen and (max-width: 479px) 
 
-	#products
-		.row-fluid
-			margin: 0 auto 30px auto
-			.product-list
-				padding: 0	
-				margin: 0 0 30px 0
-				.product-listing
-					color: $darkGray
-					display: block
-					margin: 20px 10px 20px 0
-					text-align: center
-					&:nth-child(2n)
-						margin-right: 0
-					&:nth-child(3n)
-						margin-right: 10px
-					img
-						height: auto
-						width: 150px
-					a
-						font-size: 10px

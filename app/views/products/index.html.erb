@@ -8,13 +8,15 @@
   <div class="container-fluid product-list">
     <div class="row-fluid">
       <div class="span12">
-        <% @products.each do |product| %>
-        <div class="product-listing">
-          <div><%= link_to image_tag(product.image1), product %></div>
-          <div class="listing-details"><%= link_to product.name, product %> / <%= link_to product.color, product %></div>
-          <div>$<%= link_to (product.price), product %></div>
+        <div class="product-container">
+          <% @products.each do |product| %>
+          <div class="product-listing">
+            <div><%= link_to image_tag(product.image1), product %></div>
+            <div class="listing-details"><%= link_to product.name, product %> / <%= link_to product.color, product %></div>
+            <div>$<%= link_to (product.price), product %></div>
+          </div>
+          <% end %>
         </div>
-        <% end %>
       </div>
     </div>
   </div>
@@ -26,13 +28,13 @@
 
     $('.product-list').fadeIn(1000);
 
-    var $container = $('.product-list');
+    var $container = $('.product-container');
       $container.imagesLoaded(function(){
         $container.masonry({
           itemSelector : '.product-listing',
           columnWidth : 220, 
           gutterWidth : 20, 
-          isFitWidth : true, 
+          isFitWidth: true
         });
       });
   });

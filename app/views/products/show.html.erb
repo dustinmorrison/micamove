@@ -7,18 +7,20 @@
       <div class="span6">
 
         <div class="main-image">
-          <%= image_tag @product.image1 %>
+          <%= image_tag @product.image1, :class => "main-1" %>
+          <%= image_tag @product.image2, :class => "main-2" %>
+          <%= image_tag @product.image3, :class => "main-3" %>
         </div>
 
         <div class="sub-images">
-          <img src="<%= @product.image1 %>" class="sub-image"></img>
-          <img src="<%= @product.image2 %>" class="sub-image"></img>
-          <img src="<%= @product.image3 %>"class="sub-image"></img>
+          <a href="#"><img src="<%= @product.image1 %>" class="sub-image pull-left sub-1"></img></a>
+          <a href="#"><img src="<%= @product.image2 %>" class="sub-image sub-2"></img></a>
+          <a href="#"><img src="<%= @product.image3 %>" class="sub-image pull-right sub-3"></img></a>
         </div>
 
       </div>
 
-      <div class="span6">
+      <div class="span6 product-info">
         <div class="detail-heading">
           <h3><%= @product.name %><span><%= @product.color %></span></h3>
         </div>
@@ -167,13 +169,13 @@
           <h6>Share</h6>
           <ul>
             <ul>
-              <a href="#">
+              <a href="http://www.facebook.com/sharer.php?u=http://micamove.com">
                 <li><span class="social-icon-facebook pull-left"</span></li>
                 <li><p>Facebook</p></li>
               </a>
             </ul>
             <ul>
-              <a href="#">
+              <a href="http://twitter.com/share?text=An%20Awesome%20Link&url=http://micamove.com">
                 <li><span class="social-icon-twitter pull-left"</span></li>
                 <li><p>Twitter</p></li>
               </a>
@@ -257,6 +259,30 @@ $(document).ready(function() {
   });
 
   $('.store-nav').addClass('active-nav-item');
+
+  $('.main-2').hide();
+  $('.main-3').hide();
+
+  $('.sub-1').click(function(){
+    event.preventDefault();
+    $('.main-1').show();
+    $('.main-2').hide();
+    $('.main-3').hide();
+  });
+
+  $('.sub-2').click(function(){
+    event.preventDefault();
+    $('.main-2').show();
+    $('.main-1').hide();
+    $('.main-3').hide();
+  });
+
+  $('.sub-3').click(function(){
+    event.preventDefault();
+    $('.main-3').show();
+    $('.main-2').hide();
+    $('.main-1').hide();
+  });
 
 
 });

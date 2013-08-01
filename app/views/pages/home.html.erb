@@ -84,11 +84,13 @@
 	<script>
 	$(document).ready(function() {
 
+		$('.home-tiles').fadeIn(1000);
+
 
 		// hover states for tiled images
 		$('.co-op-image').hover(function() {
 			$(this).hide(0);
-			$(".co-op-image-hover").show(0);
+			$(".co-op-image-hover").fadeIn(1000);
 		});
 		$('.co-op-image-hover').mouseleave(function() {
 			$(this).hide();

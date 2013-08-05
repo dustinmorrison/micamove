@@ -176,3 +176,99 @@ products = [
 ]
 
 Product.create products
+
+TeamMember.destroy_all
+
+TeamMembers= [
+
+  { :industry => "skate", 
+    :name => "Seth Huot", 
+    :bio => "Stumptown gluten-free leggings master cleanse hashtag McSweeney's tumblr. Craft beer squid Brooklyn, small batch mumblecore Vice try-hard McSweeney's Etsy salvia mlkshk Williamsburg Truffaut ugh. Tattooed cray pickled narwhal leggings 90's. Lomo street art deep v beard, selfies Wes Anderson bespoke leggings. Cray beard swag, sartorial 3 wolf moon fanny pack kitsch 8-bit keytar lo-fi tousled biodiesel. Mustache wolf before they sold out cardigan thundercats pour-over. Kitsch scenester flannel tumblr, letterpress single-origin coffee dreamcatcher hashtag authentic shabby chic ugh gentrify aesthetic chillwave american apparel.",  
+    :facebook => "www.facebook.com", 
+    :twitter => "http://twitter.com", 
+    :instagram => "http://instagram.com", 
+    :masthead_image => "/assets/team/seth-huot/seth-masthead.jpg", 
+    :tile_image => "/assets/team/seth-huot/seth-huot.jpg", 
+    :video_embed => "http://player.vimeo.com/video/62905662?title=0&amp;byline=0&amp;portrait=0&amp;color=c9ff23",
+  },
+
+  { :industry => "skate", 
+    :name => "Alex Andrews", 
+    :bio => "Stumptown gluten-free leggings master cleanse hashtag McSweeney's tumblr. Craft beer squid Brooklyn, small batch mumblecore Vice try-hard McSweeney's Etsy salvia mlkshk Williamsburg Truffaut ugh. Tattooed cray pickled narwhal leggings 90's. Lomo street art deep v beard, selfies Wes Anderson bespoke leggings. Cray beard swag, sartorial 3 wolf moon fanny pack kitsch 8-bit keytar lo-fi tousled biodiesel. Mustache wolf before they sold out cardigan thundercats pour-over. Kitsch scenester flannel tumblr, letterpress single-origin coffee dreamcatcher hashtag authentic shabby chic ugh gentrify aesthetic chillwave american apparel.",  
+    :facebook => "www.facebook.com", 
+    :twitter => "http://twitter.com", 
+    :instagram => "http://instagram.com", 
+    :masthead_image => "/assets/team/alex-andrews/alex-masthead.jpg", 
+    :tile_image => "/assets/team/alex-andrews/alex-andrews.jpg", 
+    :video_embed => "http://player.vimeo.com/video/62905662?title=0&amp;byline=0&amp;portrait=0&amp;color=c9ff23",
+  },
+
+  { :industry => "skate", 
+    :name => "Charles Bergquist", 
+    :bio => "Stumptown gluten-free leggings master cleanse hashtag McSweeney's tumblr. Craft beer squid Brooklyn, small batch mumblecore Vice try-hard McSweeney's Etsy salvia mlkshk Williamsburg Truffaut ugh. Tattooed cray pickled narwhal leggings 90's. Lomo street art deep v beard, selfies Wes Anderson bespoke leggings. Cray beard swag, sartorial 3 wolf moon fanny pack kitsch 8-bit keytar lo-fi tousled biodiesel. Mustache wolf before they sold out cardigan thundercats pour-over. Kitsch scenester flannel tumblr, letterpress single-origin coffee dreamcatcher hashtag authentic shabby chic ugh gentrify aesthetic chillwave american apparel.",  
+    :facebook => "www.facebook.com", 
+    :twitter => "http://twitter.com", 
+    :instagram => "http://instagram.com", 
+    :masthead_image => "/assets/team/charles-bergquist/charles-masthead.jpg", 
+    :tile_image => "/assets/team/charles-bergquist/charles-bergquist.jpg", 
+    :video_embed => "http://player.vimeo.com/video/62905662?title=0&amp;byline=0&amp;portrait=0&amp;color=c9ff23",
+  },
+
+  { :industry => "skate", 
+    :name => "Scott Stevens", 
+    :bio => "Stumptown gluten-free leggings master cleanse hashtag McSweeney's tumblr. Craft beer squid Brooklyn, small batch mumblecore Vice try-hard McSweeney's Etsy salvia mlkshk Williamsburg Truffaut ugh. Tattooed cray pickled narwhal leggings 90's. Lomo street art deep v beard, selfies Wes Anderson bespoke leggings. Cray beard swag, sartorial 3 wolf moon fanny pack kitsch 8-bit keytar lo-fi tousled biodiesel. Mustache wolf before they sold out cardigan thundercats pour-over. Kitsch scenester flannel tumblr, letterpress single-origin coffee dreamcatcher hashtag authentic shabby chic ugh gentrify aesthetic chillwave american apparel.",  
+    :facebook => "www.facebook.com", 
+    :twitter => "http://twitter.com", 
+    :instagram => "http://instagram.com", 
+    :masthead_image => "/assets/team/scott-stevens/scott-masthead.jpg", 
+    :tile_image => "/assets/team/scott-stevens/scott-stevens.jpg", 
+    :video_embed => "http://player.vimeo.com/video/62905662?title=0&amp;byline=0&amp;portrait=0&amp;color=c9ff23",
+  },
+
+  { :industry => "skate", 
+    :name => "Mason Dyer", 
+    :bio => "Stumptown gluten-free leggings master cleanse hashtag McSweeney's tumblr. Craft beer squid Brooklyn, small batch mumblecore Vice try-hard McSweeney's Etsy salvia mlkshk Williamsburg Truffaut ugh. Tattooed cray pickled narwhal leggings 90's. Lomo street art deep v beard, selfies Wes Anderson bespoke leggings. Cray beard swag, sartorial 3 wolf moon fanny pack kitsch 8-bit keytar lo-fi tousled biodiesel. Mustache wolf before they sold out cardigan thundercats pour-over. Kitsch scenester flannel tumblr, letterpress single-origin coffee dreamcatcher hashtag authentic shabby chic ugh gentrify aesthetic chillwave american apparel.",  
+    :facebook => "www.facebook.com", 
+    :twitter => "http://twitter.com", 
+    :instagram => "http://instagram.com", 
+    :masthead_image => "/assets/team/mason-dyer/mason-masthead.jpg", 
+    :tile_image => "/assets/team/mason-dyer/mason-dyer.jpg", 
+    :video_embed => "http://player.vimeo.com/video/62905662?title=0&amp;byline=0&amp;portrait=0&amp;color=c9ff23",
+  },
+
+  { :industry => "skate", 
+    :name => "Sean Black", 
+    :bio => "Stumptown gluten-free leggings master cleanse hashtag McSweeney's tumblr. Craft beer squid Brooklyn, small batch mumblecore Vice try-hard McSweeney's Etsy salvia mlkshk Williamsburg Truffaut ugh. Tattooed cray pickled narwhal leggings 90's. Lomo street art deep v beard, selfies Wes Anderson bespoke leggings. Cray beard swag, sartorial 3 wolf moon fanny pack kitsch 8-bit keytar lo-fi tousled biodiesel. Mustache wolf before they sold out cardigan thundercats pour-over. Kitsch scenester flannel tumblr, letterpress single-origin coffee dreamcatcher hashtag authentic shabby chic ugh gentrify aesthetic chillwave american apparel.",  
+    :facebook => "www.facebook.com", 
+    :twitter => "http://twitter.com", 
+    :instagram => "http://instagram.com", 
+    :masthead_image => "/assets/team/sean-black/sean-masthead.jpg", 
+    :tile_image => "/assets/team/sean-black/sean-black.jpg", 
+    :video_embed => "http://player.vimeo.com/video/62905662?title=0&amp;byline=0&amp;portrait=0&amp;color=c9ff23",
+  },
+
+  { :industry => "skate", 
+    :name => "Cale Zima", 
+    :bio => "Stumptown gluten-free leggings master cleanse hashtag McSweeney's tumblr. Craft beer squid Brooklyn, small batch mumblecore Vice try-hard McSweeney's Etsy salvia mlkshk Williamsburg Truffaut ugh. Tattooed cray pickled narwhal leggings 90's. Lomo street art deep v beard, selfies Wes Anderson bespoke leggings. Cray beard swag, sartorial 3 wolf moon fanny pack kitsch 8-bit keytar lo-fi tousled biodiesel. Mustache wolf before they sold out cardigan thundercats pour-over. Kitsch scenester flannel tumblr, letterpress single-origin coffee dreamcatcher hashtag authentic shabby chic ugh gentrify aesthetic chillwave american apparel.",  
+    :facebook => "www.facebook.com", 
+    :twitter => "http://twitter.com", 
+    :instagram => "http://instagram.com", 
+    :masthead_image => "/assets/team/cale-zima/cale-masthead.jpg", 
+    :tile_image => "/assets/team/cale-zima/cale-zima.jpg", 
+    :video_embed => "http://player.vimeo.com/video/62905662?title=0&amp;byline=0&amp;portrait=0&amp;color=c9ff23",
+  },
+
+  { :industry => "skate", 
+    :name => "Jordan Mendenhall", 
+    :bio => "Stumptown gluten-free leggings master cleanse hashtag McSweeney's tumblr. Craft beer squid Brooklyn, small batch mumblecore Vice try-hard McSweeney's Etsy salvia mlkshk Williamsburg Truffaut ugh. Tattooed cray pickled narwhal leggings 90's. Lomo street art deep v beard, selfies Wes Anderson bespoke leggings. Cray beard swag, sartorial 3 wolf moon fanny pack kitsch 8-bit keytar lo-fi tousled biodiesel. Mustache wolf before they sold out cardigan thundercats pour-over. Kitsch scenester flannel tumblr, letterpress single-origin coffee dreamcatcher hashtag authentic shabby chic ugh gentrify aesthetic chillwave american apparel.",  
+    :facebook => "www.facebook.com", 
+    :twitter => "http://twitter.com", 
+    :instagram => "http://instagram.com", 
+    :masthead_image => "/assets/team/jordan-mendenhall/jordan-masthead.jpg", 
+    :tile_image => "/assets/team/jordan-mendenhall/jordan-mendenhall.jpg", 
+    :video_embed => "http://player.vimeo.com/video/62905662?title=0&amp;byline=0&amp;portrait=0&amp;color=c9ff23",
+  },
+
+]
+
+TeamMember.create TeamMembers

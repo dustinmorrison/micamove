@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Industry:</b>
+  <%= @team_member.industry %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @team_member.name %>
+</p>
+
+<p>
+  <b>Bio:</b>
+  <%= @team_member.bio %>
+</p>
+
+<p>
+  <b>Instagram:</b>
+  <%= @team_member.instagram %>
+</p>
+
+<p>
+  <b>Facebook:</b>
+  <%= @team_member.facebook %>
+</p>
+
+<p>
+  <b>Twitter:</b>
+  <%= @team_member.twitter %>
+</p>
+
+<p>
+  <b>Masthead image:</b>
+  <%= @team_member.masthead_image %>
+</p>
+
+<p>
+  <b>Video embed:</b>
+  <%= @team_member.video_embed %>
+</p>
+
+<p>
+  <b>Tile image:</b>
+  <%= @team_member.tile_image %>
+</p>
+
+
+<%= link_to 'Edit', edit_team_member_path(@team_member) %> |
+<%= link_to 'Back', team_members_path %>

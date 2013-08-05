@@ -1,0 +1,53 @@
+<%= form_for(@team_member) do |f| %>
+  <% if @team_member.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@team_member.errors.count, "error") %> prohibited this team_member from being saved:</h2>
+
+      <ul>
+      <% @team_member.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :industry %><br />
+    <%= f.text_field :industry %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :bio %><br />
+    <%= f.text_area :bio %>
+  </div>
+  <div class="field">
+    <%= f.label :instagram %><br />
+    <%= f.text_field :instagram %>
+  </div>
+  <div class="field">
+    <%= f.label :facebook %><br />
+    <%= f.text_field :facebook %>
+  </div>
+  <div class="field">
+    <%= f.label :twitter %><br />
+    <%= f.text_field :twitter %>
+  </div>
+  <div class="field">
+    <%= f.label :masthead_image %><br />
+    <%= f.text_field :masthead_image %>
+  </div>
+  <div class="field">
+    <%= f.label :video_embed %><br />
+    <%= f.text_area :video_embed %>
+  </div>
+  <div class="field">
+    <%= f.label :tile_image %><br />
+    <%= f.text_field :tile_image %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

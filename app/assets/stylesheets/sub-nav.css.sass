@@ -1,32 +1,37 @@
 @import "variables"
 @import "fontface"
 
-#products
-	background: $white
-	border: 1px solid $border
-	margin: 20px 0
+.sub-nav-container
 	.row-fluid
 		max-width: 940px
-	.product-nav
-		margin: 20px auto 10px auto
-		padding: 10px 0
-		.product-nav-item
+	.sub-nav
+		border-bottom: 1px solid $border
+		margin: 30px auto 20px auto
+		padding: 0 0 30px 0
+		.page-title
+			border-right: 1px solid $border
+			font-size: 24px
+			padding-right: 30px
+			text-align: left
 			color: $darkGray
 			font-family: "brandonmed",sans-serif
+			float: left
 			font-style: normal
-			font-weight: 400
+			letter-spacing: 0.15em
+			text-transform: uppercase
+		.sub-nav-item
+			color: $darkGray
+			font-family: "brandonmed",sans-serif
+			float: left
 			font-size: 11px
 			letter-spacing: 0.15em
-			max-height: 20px
-			min-height: 0
+			margin-left: 40px
 			text-transform: uppercase
 			text-align: center
-			&:first-child
-				border-right: 1px solid $border
-				text-align: left
-			&:last-child
-				border-left: 1px solid $border
-				text-align: right
+		.cart-link
+			float: right
+			border-left: 1px solid $border
+			padding-left: 20px
 		i
 			margin-right: 6px
 		a
@@ -34,27 +39,21 @@
 			text-decoration: none
 			&:hover
 				color: $black
-	.product-nav-mobile
+	.sub-nav-mobile
 		border-bottom: 1px solid $border
-		border-top: 1px solid $border
 		margin: 0 auto
 		padding: 20px 0
-		.product-nav-item
+		.sub-nav-item
 			color: $darkGray
 			font-family: "brandonmed",sans-serif
 			font-style: normal
 			font-weight: 400
-			font-size: 16px
+			font-size: 24px
 			letter-spacing: 0.15em
 			text-transform: uppercase
 			padding-top: 6px
 			&:first-child
 				padding-left: 15px
-			&:last-child
-				border-left: 1px solid $border
-				font-size: 11px
-				padding-right: 15px
-				text-align: right
 			.caret
 				border-top: 7px solid $darkGray
 				border-right: 7px solid transparent
@@ -64,13 +63,17 @@
 					border-top: 7px solid $lightGray
 			a
 				color: $darkGray
-				font-size: 24px
+				font-size: 18px
 				&:hover
 					color: $lightGray
 					text-decoration: none
-	.product-mobile-drop
+		.cart-link
+			float: right
+			padding-right: 15px
+			text-align: right
+	.sub-mobile-drop
 		display: none
-		.product-item-drop
+		.sub-item-drop
 			border-bottom: 1px solid #eee
 			display: block
 			font-family: "brandonreg",sans-serif
@@ -90,27 +93,26 @@
 
 
 @media screen and (min-width: 768px)
-	#products
-		.product-nav-mobile
+	.sub-nav-container
+		.sub-nav-mobile
 			display: none
 
 @media screen and (min-width: 768px) and (max-width: 980px)
-	#products
-		.product-nav
-			.product-nav-item
+	.sub-nav-container
+		.sub-nav
+			.page-title
+				padding-left: 15px
+			.sub-nav-item
 				&:first-child
 					padding-left: 15px
 				&:last-child
 					padding-right: 15px
 
 @media screen and (max-width: 767px)
-	#products
+	.sub-nav-container
 		margin: 0
 		border-top: none
-		.product-nav
+		.sub-nav
 			display: none
-		.product-nav-mobile
-			.product-nav-item:last-child
-				border-left: none
 
 

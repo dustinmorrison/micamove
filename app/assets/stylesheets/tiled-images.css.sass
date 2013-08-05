@@ -2,10 +2,10 @@
 @import "fontface"
 @import "mixins"
 
-.home-tiles
+.tiled-images
 	display: none
 
-#tiled-images
+#home-tiles
 	.images-container
 		border: 1px solid $border
 		background: $white
@@ -29,3 +29,19 @@
 						display: none
 					.shop-now-hover
 						display: none
+
+#team-tiles
+	background: $white
+	margin: 0 auto
+	.row-fluid
+		margin: 0 auto
+		max-width: 980px
+		.masonry-container
+			background: $white
+			border-top: 20px solid $white
+			border-bottom: 20px solid $white
+			margin: 0 auto
+			.team-tile-image
+				display: inline-block
+				text-align: center
+				margin: 0 auto 20px auto

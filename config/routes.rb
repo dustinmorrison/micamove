@@ -1,4 +1,7 @@
 MicamoveRails::Application.routes.draw do
+  resources :team_members, :path => 'co-op'
+
+
   resources :products
 
   get "/watches" => "products#watches" 

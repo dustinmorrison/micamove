@@ -10,7 +10,7 @@
         <div class="masonry-container">
           <% @team_members.each do |team_member| %>
           <div class="team-tile-image">
-            <div class="main-image"><%= link_to image_tag(team_member.tile_image), team_member %></div>
+            <div><%= link_to image_tag(team_member.tile_image), team_member %></div>
 <!--             <div class="hover-image"><%= link_to image_tag(team_member.tile_hover), team_member %></div> -->
           </div>
           <% end %>

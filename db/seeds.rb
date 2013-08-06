@@ -189,6 +189,7 @@ TeamMembers= [
     :instagram => "http://instagram.com", 
     :masthead_image => "/assets/team/seth-huot/seth-masthead.jpg", 
     :tile_image => "/assets/team/seth-huot/seth-huot.jpg", 
+    :tile_hover => "/assets/team/seth-huot/seth-huot-hover.jpg", 
     :video_embed => "http://player.vimeo.com/video/62905662?title=0&amp;byline=0&amp;portrait=0&amp;color=c9ff23",
   },
 
@@ -200,6 +201,7 @@ TeamMembers= [
     :instagram => "http://instagram.com", 
     :masthead_image => "/assets/team/alex-andrews/alex-masthead.jpg", 
     :tile_image => "/assets/team/alex-andrews/alex-andrews.jpg", 
+    :tile_hover => "/assets/team/alex-andrews/alex-andrews-hover.jpg", 
     :video_embed => "http://player.vimeo.com/video/62905662?title=0&amp;byline=0&amp;portrait=0&amp;color=c9ff23",
   },
 
@@ -211,6 +213,7 @@ TeamMembers= [
     :instagram => "http://instagram.com", 
     :masthead_image => "/assets/team/charles-bergquist/charles-masthead.jpg", 
     :tile_image => "/assets/team/charles-bergquist/charles-bergquist.jpg", 
+    :tile_hover => "/assets/team/charles-bergquist/charles-bergquist-hover.jpg", 
     :video_embed => "http://player.vimeo.com/video/62905662?title=0&amp;byline=0&amp;portrait=0&amp;color=c9ff23",
   },
 
@@ -222,6 +225,7 @@ TeamMembers= [
     :instagram => "http://instagram.com", 
     :masthead_image => "/assets/team/scott-stevens/scott-masthead.jpg", 
     :tile_image => "/assets/team/scott-stevens/scott-stevens.jpg", 
+    :tile_hover => "/assets/team/scott-stevens/scott-stevens-hover.jpg", 
     :video_embed => "http://player.vimeo.com/video/62905662?title=0&amp;byline=0&amp;portrait=0&amp;color=c9ff23",
   },
 
@@ -233,6 +237,7 @@ TeamMembers= [
     :instagram => "http://instagram.com", 
     :masthead_image => "/assets/team/mason-dyer/mason-masthead.jpg", 
     :tile_image => "/assets/team/mason-dyer/mason-dyer.jpg", 
+    :tile_hover => "/assets/team/mason-dyer/mason-dyer-hover.jpg", 
     :video_embed => "http://player.vimeo.com/video/62905662?title=0&amp;byline=0&amp;portrait=0&amp;color=c9ff23",
   },
 
@@ -244,6 +249,7 @@ TeamMembers= [
     :instagram => "http://instagram.com", 
     :masthead_image => "/assets/team/sean-black/sean-masthead.jpg", 
     :tile_image => "/assets/team/sean-black/sean-black.jpg", 
+    :tile_hover => "/assets/team/sean-black/sean-black-hover.jpg", 
     :video_embed => "http://player.vimeo.com/video/62905662?title=0&amp;byline=0&amp;portrait=0&amp;color=c9ff23",
   },
 
@@ -255,6 +261,7 @@ TeamMembers= [
     :instagram => "http://instagram.com", 
     :masthead_image => "/assets/team/cale-zima/cale-masthead.jpg", 
     :tile_image => "/assets/team/cale-zima/cale-zima.jpg", 
+    :tile_hover => "/assets/team/cale-zima/cale-zima-hover.jpg", 
     :video_embed => "http://player.vimeo.com/video/62905662?title=0&amp;byline=0&amp;portrait=0&amp;color=c9ff23",
   },
 
@@ -266,6 +273,7 @@ TeamMembers= [
     :instagram => "http://instagram.com", 
     :masthead_image => "/assets/team/jordan-mendenhall/jordan-masthead.jpg", 
     :tile_image => "/assets/team/jordan-mendenhall/jordan-mendenhall.jpg", 
+    :tile_hover => "/assets/team/jordan-mendenhall/jordan-mendenhall-hover.jpg", 
     :video_embed => "http://player.vimeo.com/video/62905662?title=0&amp;byline=0&amp;portrait=0&amp;color=c9ff23",
   },
 

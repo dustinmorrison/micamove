@@ -10,7 +10,8 @@
         <div class="masonry-container">
           <% @team_members.each do |team_member| %>
           <div class="team-tile-image">
-            <div><%= link_to image_tag(team_member.tile_image), team_member %></div>
+            <div class="main-image"><%= link_to image_tag(team_member.tile_image), team_member %></div>
+<!--             <div class="hover-image"><%= link_to image_tag(team_member.tile_hover), team_member %></div> -->
           </div>
           <% end %>
         </div>
@@ -19,50 +20,21 @@
   </div>
 </div>
 
-<!-- <h1>Listing team_members</h1>
-
-<table>
-  <tr>
-    <th>Industry</th>
-    <th>Name</th>
-    <th>Bio</th>
-    <th>Instagram</th>
-    <th>Facebook</th>
-    <th>Twitter</th>
-    <th>Masthead image</th>
-    <th>Video embed</th>
-    <th>Tile image</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @team_members.each do |team_member| %>
-  <tr>
-    <td><%= team_member.industry %></td>
-    <td><%= team_member.name %></td>
-    <td><%= team_member.bio %></td>
-    <td><%= team_member.instagram %></td>
-    <td><%= team_member.facebook %></td>
-    <td><%= team_member.twitter %></td>
-    <td><%= team_member.masthead_image %></td>
-    <td><%= team_member.video_embed %></td>
-    <td><%= team_member.tile_image %></td>
-    <td><%= link_to 'Show', team_member %></td>
-    <td><%= link_to 'Edit', edit_team_member_path(team_member) %></td>
-    <td><%= link_to 'Destroy', team_member, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
-
-<%= link_to 'New Team member', new_team_member_path %> -->
-
 <script>
   $(document).ready(function() {
 
     $('.tiled-images').fadeIn(1000);
+
+    $('.hover-image').hide();
+
+    // $('.main-image').hover(function() {
+    //   $(this).hide();
+    //   $(".hover-image").show();
+    // });
+    // $('.hover-image').mouseleave(function() {
+    //   $(this).hide();
+    //   $(".main-image").show();
+    // });
 
     var $container = $('.masonry-container');
     $container.imagesLoaded(function(){

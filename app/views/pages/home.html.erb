@@ -41,7 +41,7 @@
 			<div class="span12">
 				<div class="masonry-container">
 					<div class="home-image">
-						<a href="/team">
+						<a href="/team_members">
 							<img class="co-op-image" src="assets/home-tile-images/co-op.jpg"/>
 							<img class="co-op-image-hover" src="assets/home-tile-images/co-op-hover.jpg"/>
 						</a>
@@ -90,7 +90,7 @@
 		// hover states for tiled images
 		$('.co-op-image').hover(function() {
 			$(this).hide(0);
-			$(".co-op-image-hover").fadeIn(1000);
+			$(".co-op-image-hover").show();
 		});
 		$('.co-op-image-hover').mouseleave(function() {
 			$(this).hide();

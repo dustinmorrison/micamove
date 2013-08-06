@@ -1,0 +1,33 @@
+@import "variables"
+@import "fontface"
+
+.team-masthead
+	max-width: 940px
+	margin-bottom: 40px
+
+.team-bio
+	border-bottom: 1px solid $border
+	border-top: 1px solid $border
+	margin-bottom: 30px
+	padding: 20px 0 
+
+.video
+	margin-bottom: 40px
+	h3
+		margin: 0 0 20px 0 
+		text-transform: uppercase
+	iframe
+		width: 100%
+
+
+@media screen and (max-width: 940px) and (min-width: 769px)
+
+@media screen and (max-width: 768px) and (min-width: 480px)
+	.video
+		iframe
+			height: 432px
+
+@media screen and (max-width: 479px) 
+	.video
+		iframe
+			height: 230px

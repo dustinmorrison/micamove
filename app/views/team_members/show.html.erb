@@ -1,50 +1,40 @@
-<p id="notice"><%= notice %></p>
+<div id="content-container">
 
-<p>
-  <b>Industry:</b>
-  <%= @team_member.industry %>
-</p>
+  <div class="container-fluid sub-nav-container">
+    <%= render(:partial => "team-member-nav") %>
+  </div>
 
-<p>
-  <b>Name:</b>
-  <%= @team_member.name %>
-</p>
+  <div class="container-fluid team-masthead">
+      <div class="row-fluid">
+        <div class="span12">
+          <img src="<%= @team_member.masthead_image %>">
+        </div>
+      </div>
+  </div>
 
-<p>
-  <b>Bio:</b>
-  <%= @team_member.bio %>
-</p>
+  <div class="container-fluid team-bio" style="max-width: 940px">
+    <div class="row-fluid">
+      <div class="span12">
+        <p><%= @team_member.bio %></p>
+      </div>
+    </div>
+  </div>
 
-<p>
-  <b>Instagram:</b>
-  <%= @team_member.instagram %>
-</p>
-
-<p>
-  <b>Facebook:</b>
-  <%= @team_member.facebook %>
-</p>
-
-<p>
-  <b>Twitter:</b>
-  <%= @team_member.twitter %>
-</p>
-
-<p>
-  <b>Masthead image:</b>
-  <%= @team_member.masthead_image %>
-</p>
-
-<p>
-  <b>Video embed:</b>
-  <%= @team_member.video_embed %>
-</p>
-
-<p>
-  <b>Tile image:</b>
-  <%= @team_member.tile_image %>
-</p>
+  <div class="container-fluid video" style="max-width: 940px">
+    <div class="row-fluid">
+      <div class="span12">
+        <h3>Videos</h3>
+      </div>
+    </div>
+    <div class="row-fluid" style="max-width: 940px">
+      <div class="span12">
+        <iframe src="<%= @team_member.video_embed %>" width="940" height="529" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+      </div>
+    </div>
+  </div>
 
 
-<%= link_to 'Edit', edit_team_member_path(@team_member) %> |
-<%= link_to 'Back', team_members_path %>
+
+</div>
+
+

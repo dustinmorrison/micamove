@@ -3,7 +3,7 @@ class ProductsController < ApplicationController
   # GET /products.json
   def index
     @products = Product.all
-    @deck_link = Product.where :name => "The Deck"
+
 
     respond_to do |format|
       format.html # index.html.erb

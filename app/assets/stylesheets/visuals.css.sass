@@ -10,17 +10,18 @@
 			.video-player
 				display: none
 				height: auto
-				width: 100%
+				iframe
+					width: 100%
 			.active
 				display: block
 		.visual-images
+			margin: 20px auto
 			.visual-image
 				float: left
 				margin-bottom: 40px
-				margin-right: 20px
 				opacity: 0.7
 				position: relative
-				@include transition(opacity, 1s, ease-in)
+				@include transition(opacity, 0.2s, ease)
 				&:hover
 					opacity: 1
 				&:nth-child(4n)
@@ -34,3 +35,23 @@
 					position: absolute
 					right: 73px
 					top: 89px
+
+@media screen and (max-width: 940px) and (min-width: 769px)
+
+@media screen and (max-width: 768px) and (min-width: 480px)
+	.visuals
+		.row-fluid
+			.visual-header
+				.video-player
+					iframe
+						height: 432px
+
+@media screen and (max-width: 479px) 
+	.visuals
+		.row-fluid
+			.visual-header
+				.video-player
+					iframe
+						height: 230px
+
+

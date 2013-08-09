@@ -7,7 +7,7 @@
 		.size
 			background: white
 			padding: 10px
-			border: 1px solid #ccc
+			border: 1px solid $darkGray
 			width: 10px
 			height: 10px
 			cursor: pointer
@@ -16,5 +16,15 @@
 			margin-right: 10px
 			&:hover
 				background: $lighterGray
+			a
+				color: $darkGray
 		.active-size
-			background: $lighterGray
+			background: $darkGray
+			border: 1px solid $darkGray
+			color: $white
+			a
+				color: $white
+			&:hover
+				background: $darkGray
+				border: 1px solid $darkGray
+				color: $white

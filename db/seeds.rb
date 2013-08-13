@@ -17,7 +17,8 @@ products = [
   	:price => "185", 
   	:image1 => "/assets/products/watches/plank-black/plank-black-front.jpg", 
   	:image2 => "/assets/products/watches/plank-black/plank-black-profile.jpg", 
-  	:image3 => "/assets/products/watches/plank-black/plank-black-belly.jpg"
+    :image3 => "/assets/products/watches/plank-black/plank-black-belly.jpg",
+  	:url => "the-plank-black"
   },
 
   { :name => "The Plank", 
@@ -28,7 +29,8 @@ products = [
   	:price => "185", 
   	:image1 => "/assets/products/watches/plank-white/plank-white-front.jpg", 
   	:image2 => "/assets/products/watches/plank-white/plank-white-profile.jpg", 
-  	:image3 => "/assets/products/watches/plank-white/plank-white-belly.jpg"
+  	:image3 => "/assets/products/watches/plank-white/plank-white-belly.jpg",
+    :url => "the-plank-white"
   },
 
   { :name => "The Plank", 
@@ -39,7 +41,8 @@ products = [
     :price => "185", 
     :image1 => "/assets/products/watches/plank-rust/plank-rust-front.jpg", 
     :image2 => "/assets/products/watches/plank-rust/plank-rust-profile.jpg", 
-    :image3 => "/assets/products/watches/plank-rust/plank-rust-belly.jpg"
+    :image3 => "/assets/products/watches/plank-rust/plank-rust-belly.jpg",
+    :url => "the-plank-rust"
   },
 
   { :name => "The Deck", 
@@ -50,7 +53,8 @@ products = [
     :price => "185", 
     :image1 => "/assets/products/watches/deck-black/deck-black-front.jpg", 
     :image2 => "/assets/products/watches/deck-black/deck-black-profile.jpg", 
-    :image3 => "/assets/products/watches/deck-black/deck-black-belly.jpg"
+    :image3 => "/assets/products/watches/deck-black/deck-black-belly.jpg",
+    :url => "the-deck-black"
   },
 
   { :name => "The Deck", 
@@ -61,7 +65,8 @@ products = [
     :price => "185", 
     :image1 => "/assets/products/watches/deck-bronze/deck-bronze-front.jpg", 
     :image2 => "/assets/products/watches/deck-bronze/deck-bronze-profile.jpg", 
-    :image3 => "/assets/products/watches/deck-bronze/deck-bronze-belly.jpg"
+    :image3 => "/assets/products/watches/deck-bronze/deck-bronze-belly.jpg",
+    :url => "the-deck-bronze"
   },
 
   { :name => "The Drift", 
@@ -72,7 +77,8 @@ products = [
     :price => "185", 
     :image1 => "/assets/products/watches/drift-black/drift-black-front.jpg", 
     :image2 => "/assets/products/watches/drift-black/drift-black-profile.jpg", 
-    :image3 => "/assets/products/watches/drift-black/drift-black-belly.jpg"
+    :image3 => "/assets/products/watches/drift-black/drift-black-belly.jpg",
+    :url => "the-drift-black"
   },
 
   { :name => "The Drift", 
@@ -83,7 +89,8 @@ products = [
     :price => "185", 
     :image1 => "/assets/products/watches/drift-silver/drift-silver-front.jpg", 
     :image2 => "/assets/products/watches/drift-silver/drift-silver-profile.jpg", 
-    :image3 => "/assets/products/watches/drift-silver/drift-silver-belly.jpg"
+    :image3 => "/assets/products/watches/drift-silver/drift-silver-belly.jpg",
+    :url => "the-drift-silver"
   },
 
   { :name => "The Drift", 
@@ -94,7 +101,8 @@ products = [
     :price => "185", 
     :image1 => "/assets/products/watches/drift-brown/drift-brown-front.jpg", 
     :image2 => "/assets/products/watches/drift-silver/drift-silver-profile.jpg", 
-    :image3 => "/assets/products/watches/drift-silver/drift-silver-belly.jpg"
+    :image3 => "/assets/products/watches/drift-silver/drift-silver-belly.jpg",
+    :url => "the-drift-brown"
   },
 
   { :name => "The Baron", 
@@ -105,7 +113,8 @@ products = [
     :price => "185", 
     :image1 => "/assets/products/watches/baron-black-teal/baron-black-teal-front.jpg", 
     :image2 => "/assets/products/watches/baron-black-teal/baron-black-teal-profile.jpg", 
-    :image3 => "/assets/products/watches/baron-black-teal/baron-black-teal-belly.jpg"
+    :image3 => "/assets/products/watches/baron-black-teal/baron-black-teal-belly.jpg",
+    :url => "the-baron-black"
   },
 
   { :name => "The Baron", 
@@ -116,7 +125,8 @@ products = [
     :price => "185", 
     :image1 => "/assets/products/watches/baron-silver/baron-silver-front.jpg", 
     :image2 => "/assets/products/watches/baron-silver/baron-silver-profile.jpg", 
-    :image3 => "/assets/products/watches/baron-silver/baron-silver-belly.jpg"
+    :image3 => "/assets/products/watches/baron-silver/baron-silver-belly.jpg",
+    :url => "the-baron-silver"
   },
 
   { :name => "The Baron", 
@@ -127,7 +137,8 @@ products = [
     :price => "185", 
     :image1 => "/assets/products/watches/baron-rosegold/baron-rosegold-front.jpg", 
     :image2 => "/assets/products/watches/baron-rosegold/baron-rosegold-profile.jpg", 
-    :image3 => "/assets/products/watches/baron-rosegold/baron-rosegold-belly.jpg"
+    :image3 => "/assets/products/watches/baron-rosegold/baron-rosegold-belly.jpg",
+    :url => "the-baron-rosegold"
   },
 
   { :name => "The Tree", 
@@ -138,7 +149,8 @@ products = [
     :price => "22", 
     :image1 => "/assets/products/clothing/tree/tree-front.jpg", 
     :image2 => "/assets/products/clothing/tree/tree-back.jpg", 
-    :image3 => "/assets/products/clothing/tree/tree-front.jpg", 
+    :image3 => "/assets/products/clothing/tree/tree-front.jpg",
+    :url => "the-tree-white" 
   },
 
   { :name => "The Official", 
@@ -150,6 +162,7 @@ products = [
     :image1 => "/assets/products/clothing/official/official-front.jpg", 
     :image2 => "/assets/products/clothing/official/official-back.jpg", 
     :image3 => "/assets/products/clothing/official/official-front.jpg", 
+    :url => "the-official-navy"
   },
 
   { :name => "The Blitzen", 
@@ -161,6 +174,7 @@ products = [
     :image1 => "/assets/products/clothing/blitzen/blitzen-front.jpg", 
     :image2 => "/assets/products/clothing/blitzen/blitzen-front.jpg", 
     :image3 => "/assets/products/clothing/blitzen/blitzen-front.jpg", 
+    :url => "the-blitzen-gray"
   },
 
   { :name => "The Albuquerque", 
@@ -172,6 +186,7 @@ products = [
     :image1 => "/assets/products/clothing/albuquerque/albuquerque-front.jpg", 
     :image2 => "/assets/products/clothing/albuquerque/albuquerque-back.jpg", 
     :image3 => "/assets/products/clothing/albuquerque/albuquerque-front.jpg", 
+    :url => "the-albuquerque-black"
   },
 ]
 

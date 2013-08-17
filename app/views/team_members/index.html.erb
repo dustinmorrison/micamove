@@ -10,8 +10,12 @@
         <div class="masonry-container">
           <% @team_members.each do |team_member| %>
           <div class="team-tile-image">
-            <div><%= link_to image_tag(team_member.tile_image), team_member %></div>
-<!--             <div class="hover-image"><%= link_to image_tag(team_member.tile_hover), team_member %></div> -->
+            <%= div_for team_member, :class => "" do %>
+              <%= image_tag(team_member.tile_image) %>
+              <%= image_tag(team_member.tile_hover) %>
+            <% end %>
+            <!-- <div class="main-image"><%=image_tag(team_member.tile_image)%></div>
+            <div class="hover-image"><%= image_tag(team_member.tile_hover) %></div> -->
           </div>
           <% end %>
         </div>
@@ -25,16 +29,88 @@
 
     $('.tiled-images').fadeIn(1000);
 
-    $('.hover-image').hide();
+    // hover states
 
-    // $('.main-image').hover(function() {
-    //   $(this).hide();
-    //   $(".hover-image").show();
-    // });
-    // $('.hover-image').mouseleave(function() {
-    //   $(this).hide();
-    //   $(".main-image").show();
-    // });
+    $('img[alt="Seth-huot-hover"]').hide()
+    $('img[alt="Alex-andrews-hover"]').hide()
+    $('img[alt="Charles-bergquist-hover"]').hide()
+    $('img[alt="Scott-stevens-hover"]').hide()
+    $('img[alt="Mason-dyer-hover"]').hide()
+    $('img[alt="Sean-black-hover"]').hide()
+    $('img[alt="Cale-zima-hover"]').hide()
+    $('img[alt="Jordan-mendenhall-hover"]').hide()
+
+    $('img[alt="Seth-huot"]').mouseover(function () {
+      $(this).hide()
+      $('img[alt="Seth-huot-hover"]').show()
+    });
+    $('img[alt="Seth-huot-hover"]').mouseleave(function () {
+      $(this).hide()
+      $('img[alt="Seth-huot"]').show()
+    });
+
+    $('img[alt="Alex-andrews"]').mouseover(function () {
+      $(this).hide()
+      $('img[alt="Alex-andrews-hover"]').show()
+    });
+    $('img[alt="Alex-andrews-hover"]').mouseleave(function () {
+      $(this).hide()
+      $('img[alt="Alex-andrews"]').show()
+    });
+
+    $('img[alt="Charles-bergquist"]').mouseover(function () {
+      $(this).hide()
+      $('img[alt="Charles-bergquist-hover"]').show()
+    });
+    $('img[alt="Charles-bergquist-hover"]').mouseleave(function () {
+      $(this).hide()
+      $('img[alt="Charles-bergquist"]').show()
+    });
+
+    $('img[alt="Scott-stevens"]').mouseover(function () {
+      $(this).hide()
+      $('img[alt="Scott-stevens-hover"]').show()
+    });
+    $('img[alt="Scott-stevens-hover"]').mouseleave(function () {
+      $(this).hide()
+      $('img[alt="Scott-stevens"]').show()
+    });
+
+    $('img[alt="Mason-dyer"]').mouseover(function () {
+      $(this).hide()
+      $('img[alt="Mason-dyer-hover"]').show()
+    });
+    $('img[alt="Mason-dyer-hover"]').mouseleave(function () {
+      $(this).hide()
+      $('img[alt="Mason-dyer"]').show()
+    });
+
+    $('img[alt="Sean-black"]').mouseover(function () {
+      $(this).hide()
+      $('img[alt="Sean-black-hover"]').show()
+    });
+    $('img[alt="Sean-black-hover"]').mouseleave(function () {
+      $(this).hide()
+      $('img[alt="Sean-black"]').show()
+    });
+
+    $('img[alt="Cale-zima"]').mouseover(function () {
+      $(this).hide()
+      $('img[alt="Cale-zima-hover"]').show()
+    });
+    $('img[alt="Cale-zima-hover"]').mouseleave(function () {
+      $(this).hide()
+      $('img[alt="Cale-zima"]').show()
+    });
+
+    $('img[alt="Jordan-mendenhall"]').mouseover(function () {
+      $(this).hide()
+      $('img[alt="Jordan-mendenhall-hover"]').show()
+    });
+    $('img[alt="Jordan-mendenhall-hover"]').mouseleave(function () {
+      $(this).hide()
+      $('img[alt="Jordan-mendenhall"]').show()
+    });
 
     var $container = $('.masonry-container');
     $container.imagesLoaded(function(){

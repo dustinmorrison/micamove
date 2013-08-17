@@ -30,13 +30,18 @@
 			// width: 50px
 			&:first-child
 				margin-left: 0
-		a
-			color: $darkGray
-			padding: 10px 20px
-			text-decoration: none	
-			&:hover
-				background: $darkGray
-				color: $white
+			a
+				color: $darkGray
+				padding: 10px 20px
+				text-decoration: none	
+				&:hover
+					background: $darkGray
+					color: $white
+		.nav-cart
+			float: right
+			height: 17px
+			margin-left: 30px
+			width: 17px
 		.active-nav-item
 			text-transform: uppercase
 			// width: 50px
@@ -103,6 +108,16 @@
 		border-bottom: none
 
 @media screen and (max-width: 979px) and (min-width: 768px)
+	.header-desktop
+		padding-left: 10px
+		padding-right: 10px
+		.nav-links
+			.nav-item
+				margin-left: 8px
+				a
+					padding: 10px 15px
+			.nav-cart
+				margin: 0 18px
 	.header-mobile
 		.logo
 			margin-left: 15px

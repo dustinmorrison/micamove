@@ -30,6 +30,10 @@
 
     $('.product-list').fadeIn(1000);
 
+    $('.carousel').carousel({
+      interval: 4000
+    })
+
     var $container = $('.product-container');
       $container.imagesLoaded(function(){
         $container.masonry({

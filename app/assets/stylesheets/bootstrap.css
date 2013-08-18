@@ -6035,13 +6035,11 @@ a.badge:focus {
   width: 40px;
   height: 40px;
   margin-top: -20px;
-  font-size: 60px;
+  font-size: 0;
   font-weight: 100;
   line-height: 30px;
   color: #000;
   text-align: center;
-  background: #fff;
-  border: 3px solid #ffffff;
   opacity: 0.5;
   filter: alpha(opacity=50);
   position: absolute;

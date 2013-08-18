@@ -49,7 +49,8 @@
 					</div>
 					<div class="home-image">
 						<a href="/visuals">
-							<img class="image-3" src="assets/home-tile-images/visuals.jpg"/>
+							<img class="visuals" src="assets/home-tile-images/visuals.jpg"/>
+							<img class="visuals-hover" src="assets/home-tile-images/visuals-hover.jpg"/>
 						</a>
 					</div>
 					<div class="home-image">
@@ -126,6 +127,15 @@
 		$('.shop-now-hover').mouseleave(function() {
 			$(this).hide();
 			$(".shop-now").show();
+		});
+
+		$('.visuals').mouseover(function() {
+			$(this).hide();
+			$(".visuals-hover").show();
+		});
+		$('.visuals-hover').mouseleave(function() {
+			$(this).hide();
+			$(".visuals").show();
 		});
 
 		$('.carousel').carousel({

@@ -30,7 +30,7 @@
         <% if @product.category == "Watches" %>
 
         <div class="product-buy">
-          <h4 class="detail-price">$<%= @product.price %> USD<span><a href="<%= @product.shoplink %>" class="btn-large btn-primary">Buy Now<a></span></h4>
+          <h4 class="detail-price">$<%= @product.price %> <span class="usd">USD</span><span class="buy-button"><a href="<%= @product.shoplink %>" class="btn-large btn-primary">Buy Now<a></span></h4>
         </div>
 
         <div class="color-options">

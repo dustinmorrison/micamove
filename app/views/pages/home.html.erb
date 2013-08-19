@@ -54,8 +54,9 @@
 						</a>
 					</div>
 					<div class="home-image">
-						<a href="#">
-							<img class="image-4" src="assets/home-tile-images/stickers.jpg"/>
+						<a href="#stickerModal" data-toggle="modal">
+							<img class="sticker-pack" src="assets/home-tile-images/stickers.jpg"/>
+							<img class="sticker-pack-hover" src="assets/home-tile-images/sticker-packs-hover.jpg"/>
 						</a>
 					</div>
 					<div class="home-image">
@@ -76,8 +77,9 @@
 	</div>
 </div>
 
+<%= render(:partial => "sticker-modal") %>
 
-	<script>
+<script>
 	$(document).ready(function() {
 
 		$('.tiled-images').fadeIn(1000);
@@ -136,6 +138,15 @@
 		$('.visuals-hover').mouseleave(function() {
 			$(this).hide();
 			$(".visuals").show();
+		});
+
+		$('.sticker-pack').mouseover(function() {
+			$(this).hide();
+			$(".sticker-pack-hover").show();
+		});
+		$('.sticker-pack-hover').mouseleave(function() {
+			$(this).hide();
+			$(".sticker-pack").show();
 		});
 
 		$('.carousel').carousel({

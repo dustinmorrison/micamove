@@ -35,3 +35,20 @@
 			@include border-radius(0)
 			&:hover
 				background: $black
+
+@media screen and (max-width: 479px) 
+	#stickerModal
+		margin-left: -150px
+		margin-top: -50px
+		width: 300px
+		.modal-body
+			max-height: 630px
+			label
+				font-size: 12px
+				margin-bottom: 2px
+			input
+				height: 20px
+				margin-bottom: 5px
+				@include border-radius(0)
+			.btn-primary
+				width: 273px

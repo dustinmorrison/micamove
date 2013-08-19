@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130813020747) do
+ActiveRecord::Schema.define(:version => 20130819015857) do
 
   create_table "products", :force => true do |t|
     t.string   "category"
@@ -41,6 +41,15 @@ ActiveRecord::Schema.define(:version => 20130813020747) do
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
     t.string   "tile_hover"
+  end
+
+  create_table "visuals", :force => true do |t|
+    t.string   "embedcode"
+    t.string   "url"
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.string   "thumbnail"
   end
 
 end

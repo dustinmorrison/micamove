@@ -1,0 +1,50 @@
+<div id="content-container">
+
+  <div class="container-fluid sub-nav-container">
+    <%= render(:partial => "visual-show-nav") %>
+  </div>
+
+  <div class="container-fluid visuals">
+
+  	<div class="row-fluid">
+			<div class="span12 visual-header">
+        <div class="video-player active">
+         <iframe src="<%= @visual.embedcode %>" width="940" height="528" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> 
+        </div>
+      </div>
+    </div>
+
+    <div class="row-fluid" id="visualTiles">
+      <div class="span12">
+        <div class="visual-images">
+          <% @visualList.each do |visual| %>
+          <div class="visual-image">
+            <%= link_to image_tag(visual.thumbnail), visual %>
+            <a href="#" class="micaMinute17Click"><img class="play" src="/assets/player-button.png"></img></a>
+            <a href="<%= visual %>"><h5><%= visual.name %></h5></a>
+          </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+
+var $container = $('.visual-images');
+$container.imagesLoaded(function(){
+  $container.masonry({
+    itemSelector : '.visual-image',
+    columnWidth : 220, 
+    gutterWidth : 20, 
+    isFitWidth : true
+  });
+});
+
+$('#visualTiles').fadeIn(1000);
+
+
+
+</script>

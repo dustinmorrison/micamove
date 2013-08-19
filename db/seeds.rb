@@ -295,3 +295,65 @@ TeamMembers= [
 ]
 
 TeamMember.create TeamMembers
+
+Visual.destroy_all
+
+Visuals= [
+ 
+  { :name => "Alex Andrews || Open Mind", 
+    :embedcode => "http://player.vimeo.com/video/62905662?title=0&amp;byline=0&amp;portrait=0&amp;color=c9ff23", 
+    :url => "open-mind",
+    :thumbnail => "/assets/visuals/open-mind.jpg"
+  },
+
+  { :name => "Mica Minute #24", 
+    :embedcode => "http://player.vimeo.com/video/37504015?title=0&amp;byline=0&amp;portrait=0&amp;color=c9ff23", 
+    :url => "mica-minute-24",
+    :thumbnail => "/assets/visuals/mica-minute-24.jpg"
+  },
+
+  { :name => "Mica Minute #23", 
+    :embedcode => "http://player.vimeo.com/video/32461477?title=0&amp;byline=0&amp;portrait=0&amp;color=c9ff23", 
+    :url => "mica-minute-23",
+    :thumbnail => "/assets/visuals/mica-minute-23.jpg"
+  },
+
+  { :name => "Mica Minute #22", 
+    :embedcode => "http://player.vimeo.com/video/31738066?title=0&amp;byline=0&amp;portrait=0&amp;color=c9ff23", 
+    :url => "mica-minute-22",
+    :thumbnail => "/assets/visuals/mica-minute-22.jpg"
+  },
+
+  { :name => "Mica Minute #21", 
+    :embedcode => "http://player.vimeo.com/video/25734258?title=0&amp;byline=0&amp;portrait=0&amp;color=c9ff23", 
+    :url => "mica-minute-21",
+    :thumbnail => "/assets/visuals/mica-minute-21.jpg"
+  },
+
+  { :name => "Mica Minute #20", 
+    :embedcode => "http://player.vimeo.com/video/21764534?title=0&amp;byline=0&amp;portrait=0&amp;color=c9ff23", 
+    :url => "mica-minute-20",
+    :thumbnail => "/assets/visuals/mica-minute-20.jpg"
+  },
+
+  { :name => "Mica Minute #19", 
+    :embedcode => "http://player.vimeo.com/video/20855714?title=0&amp;byline=0&amp;portrait=0&amp;color=c9ff23", 
+    :url => "mica-minute-19",
+    :thumbnail => "/assets/visuals/mica-minute-19.jpg"
+  },
+
+  { :name => "Mica Minute #18", 
+    :embedcode => "http://player.vimeo.com/video/19751272?title=0&amp;byline=0&amp;portrait=0&amp;color=c9ff23", 
+    :url => "mica-minute-18",
+    :thumbnail => "/assets/visuals/mica-minute-18.jpg"
+  },
+
+  { :name => "Mica Minute #17", 
+    :embedcode => "http://player.vimeo.com/video/16940813?title=0&amp;byline=0&amp;portrait=0&amp;color=c9ff23", 
+    :url => "mica-minute-17",
+    :thumbnail => "/assets/visuals/mica-minute-17.jpg"
+  }
+
+
+]
+Visual.create Visuals

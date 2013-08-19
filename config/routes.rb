@@ -1,4 +1,7 @@
 MicamoveRails::Application.routes.draw do
+  resources :visuals
+
+
   resources :team_members
 
 

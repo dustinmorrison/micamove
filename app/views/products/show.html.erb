@@ -15,7 +15,7 @@
         </div>
 
         <div class="sub-images">
-          <a href="#"><img src="<%= @product.image1 %>" class="sub-image pull-left sub-1"></img></a>
+          <a href="#"><img src="<%= @product.image1 %>" class="sub-image sub-image-active pull-left sub-1"></img></a>
           <a href="#"><img src="<%= @product.image2 %>" class="sub-image sub-2"></img></a>
           <a href="#"><img src="<%= @product.image3 %>" class="sub-image pull-right sub-3"></img></a>
         </div>
@@ -267,6 +267,9 @@ $(document).ready(function() {
 
   $('.sub-1').click(function(){
     event.preventDefault();
+    $(this).addClass('sub-image-active')
+    $('.sub-2').removeClass('sub-image-active')
+    $('.sub-3').removeClass('sub-image-active')
     $('.main-1').show();
     $('.main-2').hide();
     $('.main-3').hide();
@@ -274,6 +277,9 @@ $(document).ready(function() {
 
   $('.sub-2').click(function(){
     event.preventDefault();
+    $(this).addClass('sub-image-active')
+    $('.sub-1').removeClass('sub-image-active')
+    $('.sub-3').removeClass('sub-image-active')
     $('.main-2').show();
     $('.main-1').hide();
     $('.main-3').hide();
@@ -281,6 +287,9 @@ $(document).ready(function() {
 
   $('.sub-3').click(function(){
     event.preventDefault();
+    $(this).addClass('sub-image-active')
+    $('.sub-2').removeClass('sub-image-active')
+    $('.sub-1').removeClass('sub-image-active')
     $('.main-3').show();
     $('.main-2').hide();
     $('.main-1').hide();

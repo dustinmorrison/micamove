@@ -13,9 +13,9 @@
       <div class="span6">
 
         <div class="main-image">
-          <%= image_tag @product.image1, :class => "main-1" %>
-          <%= image_tag @product.image2, :class => "main-2" %>
-          <%= image_tag @product.image3, :class => "main-3" %>
+          <%= image_tag @product.image1, :class => "main-1", :alt => @product.name %>
+          <%= image_tag @product.image2, :class => "main-2", :alt => @product.name %>
+          <%= image_tag @product.image3, :class => "main-3", :alt => @product.name %>
         </div>
 
         <div class="sub-images">

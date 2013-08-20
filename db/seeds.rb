@@ -161,7 +161,7 @@ products = [
     :image1 => "/assets/products/clothing/tree/tree-front.jpg", 
     :image2 => "/assets/products/clothing/tree/tree-back.jpg", 
     :image3 => "/assets/products/clothing/tree/tree-front.jpg",
-    :url => "the-tree-white" 
+    :url => "the-tree-mens-white-tshirt" 
   },
 
   { :name => "The Official", 
@@ -173,7 +173,7 @@ products = [
     :image1 => "/assets/products/clothing/official/official-front.jpg", 
     :image2 => "/assets/products/clothing/official/official-back.jpg", 
     :image3 => "/assets/products/clothing/official/official-front.jpg", 
-    :url => "the-official-navy"
+    :url => "the-official-mens-navy-tshirt"
   },
 
   { :name => "The Blitzen", 
@@ -185,7 +185,7 @@ products = [
     :image1 => "/assets/products/clothing/blitzen/blitzen-front.jpg", 
     :image2 => "/assets/products/clothing/blitzen/blitzen-front.jpg", 
     :image3 => "/assets/products/clothing/blitzen/blitzen-front.jpg", 
-    :url => "the-blitzen-gray"
+    :url => "the-blitzen-mens-gray-tshirt"
   },
 
   { :name => "The Albuquerque", 
@@ -197,7 +197,7 @@ products = [
     :image1 => "/assets/products/clothing/albuquerque/albuquerque-front.jpg", 
     :image2 => "/assets/products/clothing/albuquerque/albuquerque-back.jpg", 
     :image3 => "/assets/products/clothing/albuquerque/albuquerque-front.jpg", 
-    :url => "the-albuquerque-black"
+    :url => "the-albuquerque-mens-black-tshirt"
   },
 ]
 

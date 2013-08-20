@@ -105,19 +105,19 @@
           <h4>Share</h4>
           <ul>
             <ul>
-              <a href="<%= @product_path %>">
+              <a target="_blank" href="http://www.facebook.com/sharer.php?u=http://mica-move.herokuapp.com/<%= @product.url %>">
                 <li><span class="social-icon-facebook pull-left"</span></li>
                 <li><p>Facebook</p></li>
               </a>
             </ul>
             <ul>
-              <a href="#">
+              <a target="_blank" href="http://twitter.com/share?text=<%= @product.name %>&url=http://mica-move.herokuapp.com/<%= @product.url %>">
                 <li><span class="social-icon-twitter pull-left"</span></li>
                 <li><p>Twitter</p></li>
               </a>
             </ul>
             <ul>
-              <a href="">
+              <a target="_blank" href="http://pinterest.com/pin/create/button/?url=http://mica-move.herokuapp.com/<%= @product.url %>&media=http://mica-move.herokuapp.com/<%= @product.image1 %>&description=<%= @product.name %>">
                 <li><span class="social-icon-pinterest pull-left"</span></li>
                 <li><p>Pinterest</p></li>
               </a>
@@ -128,35 +128,35 @@
         <% else %>
 
         <div class="product-buy">
-          <h4 class="detail-price">$<%= @product.price %> USD
+          <h4 class="detail-price">$<%= @product.price %> <span class="usd">USD</span>
             <span>
               <% if @product.name == "The Official" %>
-              <a href="#" class="btn-large btn-primary no-link">Buy Now<a>
+              <a href="#" class="btn-large btn-primary buy-button no-link">Buy Now<a>
               <a href="http://stackoverflow.com/questions/4565075/jquery-if-element-has-class-do-this-help-please" class="btn-large btn-primary small-link">Buy Now<a>
-              <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=155" class="btn-large btn-primary medium-link">Buy Now<a>
-              <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=157" class="btn-large btn-primary large-link">Buy Now<a>
-              <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=159" class="btn-large btn-primary xl-link">Buy Now<a>
+              <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=155" class="btn-large btn-primary medium-link buy-button">Buy Now<a>
+              <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=157" class="buy-button btn-large btn-primary large-link">Buy Now<a>
+              <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=159" class="buy-button btn-large btn-primary xl-link">Buy Now<a>
 
               <% elsif @product.name == "The Tree" %>
-              <a href="#" class="btn-large btn-primary no-link">Buy Now<a>
-              <a href="http://stackoverflow.com/questions/4565075/jquery-if-element-has-class-do-this-help-please" class="btn-large btn-primary small-link">Buy Now<a>
-              <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=161" class="btn-large btn-primary medium-link">Buy Now<a>
-              <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=163" class="btn-large btn-primary large-link">Buy Now<a>
-              <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=165" class="btn-large btn-primary xl-link">Buy Now<a>
+              <a href="#" class="btn-large btn-primary no-link buy-button ">Buy Now<a>
+              <a href="http://stackoverflow.com/questions/4565075/jquery-if-element-has-class-do-this-help-please" class="buy-button btn-large btn-primary small-link">Buy Now<a>
+              <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=161" class="buy-button btn-large btn-primary medium-link">Buy Now<a>
+              <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=163" class="buy-button btn-large btn-primary large-link">Buy Now<a>
+              <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=165" class="buy-button btn-large btn-primary xl-link">Buy Now<a>
 
               <% elsif @product.name == "The Blitzen" %>
-              <a href="#" class="btn-large btn-primary no-link">Buy Now<a>
-              <a href="http://stackoverflow.com/questions/4565075/jquery-if-element-has-class-do-this-help-please" class="btn-large btn-primary small-link">Buy Now<a>
-              <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=149" class="btn-large btn-primary medium-link">Buy Now<a>
-              <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=151" class="btn-large btn-primary large-link">Buy Now<a>
-              <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=153" class="btn-large btn-primary xl-link">Buy Now<a>
+              <a href="#" class="btn-large btn-primary no-link buy-button ">Buy Now<a>
+              <a href="http://stackoverflow.com/questions/4565075/jquery-if-element-has-class-do-this-help-please" class="buy-button btn-large btn-primary small-link">Buy Now<a>
+              <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=149" class="buy-button btn-large btn-primary medium-link">Buy Now<a>
+              <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=151" class="buy-button btn-large btn-primary large-link">Buy Now<a>
+              <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=153" class="buy-button btn-large btn-primary xl-link">Buy Now<a>
 
               <% elsif @product.name == "The Albuquerque" %>
-              <a href="#" class="btn-large btn-primary no-link">Buy Now<a>
-              <a href="http://stackoverflow.com/questions/4565075/jquery-if-element-has-class-do-this-help-please" class="btn-large btn-primary small-link">Buy Now<a>
-              <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=143" class="btn-large btn-primary medium-link">Buy Now<a>
-              <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=145" class="btn-large btn-primary large-link">Buy Now<a>
-              <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=147" class="btn-large btn-primary xl-link">Buy Now<a>
+              <a href="#" class="btn-large btn-primary no-link buy-button ">Buy Now<a>
+              <a href="http://stackoverflow.com/questions/4565075/jquery-if-element-has-class-do-this-help-please" class="buy-button btn-large btn-primary small-link">Buy Now<a>
+              <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=143" class="buy-button btn-large btn-primary medium-link">Buy Now<a>
+              <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=145" class="buy-button btn-large btn-primary large-link">Buy Now<a>
+              <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=147" class="buy-button btn-large btn-primary xl-link">Buy Now<a>
               <% end %>
             </span>
           </h4>
@@ -177,19 +177,19 @@
           <h4>Share</h4>
           <ul>
             <ul>
-              <a href="http://www.facebook.com/sharer.php?u=http://micamove.com">
+              <a target="_blank" href="http://www.facebook.com/sharer.php?u=http://mica-move.herokuapp.com/<%= @product.url %>">
                 <li><span class="social-icon-facebook pull-left"</span></li>
                 <li><p>Facebook</p></li>
               </a>
             </ul>
             <ul>
-              <a href="http://twitter.com/share?text=An%20Awesome%20Link&url=http://micamove.com">
+              <a target="_blank" href="http://twitter.com/share?text=<%= @product.name %>&url=http://mica-move.herokuapp.com/<%= @product.url %>">
                 <li><span class="social-icon-twitter pull-left"</span></li>
                 <li><p>Twitter</p></li>
               </a>
             </ul>
             <ul>
-              <a href="">
+              <a target="_blank" href="http://pinterest.com/pin/create/button/?url=http://mica-move.herokuapp.com/<%= @product.url %>&media=http://mica-move.herokuapp.com/<%= @product.image1 %>&description=<%= @product.name %>">
                 <li><span class="social-icon-pinterest pull-left"</span></li>
                 <li><p>Pinterest</p></li>
               </a>

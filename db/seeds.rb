@@ -19,7 +19,7 @@ products = [
   	:image2 => "/assets/products/watches/plank-black/plank-black-profile.jpg", 
     :image3 => "/assets/products/watches/plank-black/plank-black-belly.jpg",
   	:url => "the-plank-black-wood-watch",
-    :size => "Large Size (44mm)"
+    :sizing => "Large Size (44mm)"
   },
 
   { :name => "The Plank", 
@@ -32,7 +32,7 @@ products = [
   	:image2 => "/assets/products/watches/plank-white/plank-white-profile.jpg", 
   	:image3 => "/assets/products/watches/plank-white/plank-white-belly.jpg",
     :url => "the-plank-white-wood-watch",
-    :size => "Large Size (44mm)"
+    :sizing => "Large Size (44mm)"
   },
 
   { :name => "The Plank", 
@@ -45,7 +45,7 @@ products = [
     :image2 => "/assets/products/watches/plank-rust/plank-rust-profile.jpg", 
     :image3 => "/assets/products/watches/plank-rust/plank-rust-belly.jpg",
     :url => "the-plank-rust-wood-watch",
-    :size => "Large Size (44mm)"
+    :sizing => "Large Size (44mm)"
   },
 
   { :name => "The Deck", 
@@ -58,7 +58,7 @@ products = [
     :image2 => "/assets/products/watches/deck-black/deck-black-profile.jpg", 
     :image3 => "/assets/products/watches/deck-black/deck-black-belly.jpg",
     :url => "the-deck-black-wood-watch",
-    :size => "Large Size (40.5mm)" 
+    :sizing => "Large Size (40.5mm)" 
   },
 
   { :name => "The Deck", 
@@ -71,7 +71,7 @@ products = [
     :image2 => "/assets/products/watches/deck-bronze/deck-bronze-profile.jpg", 
     :image3 => "/assets/products/watches/deck-bronze/deck-bronze-belly.jpg",
     :url => "the-deck-bronze-wood-watch",
-    :size => "Large Size (40.5mm)" 
+    :sizing => "Large Size (40.5mm)" 
   },
 
   { :name => "The Drift", 
@@ -84,7 +84,7 @@ products = [
     :image2 => "/assets/products/watches/drift-black/drift-black-profile.jpg", 
     :image3 => "/assets/products/watches/drift-black/drift-black-belly.jpg",
     :url => "the-drift-black-wood-watch",
-    :size => "Standard Size (37.5mm)" 
+    :sizing => "Standard Size (37.5mm)" 
   },
 
   { :name => "The Drift", 
@@ -97,7 +97,7 @@ products = [
     :image2 => "/assets/products/watches/drift-silver/drift-silver-profile.jpg", 
     :image3 => "/assets/products/watches/drift-silver/drift-silver-belly.jpg",
     :url => "the-drift-silver-wood-watch",
-    :size => "Standard Size (37.5mm)" 
+    :sizing => "Standard Size (37.5mm)" 
   },
 
   { :name => "The Drift", 
@@ -110,7 +110,7 @@ products = [
     :image2 => "/assets/products/watches/drift-silver/drift-silver-profile.jpg", 
     :image3 => "/assets/products/watches/drift-silver/drift-silver-belly.jpg",
     :url => "the-drift-brown-wood-watch",
-    :size => "Standard Size (37.5mm)" 
+    :sizing => "Standard Size (37.5mm)" 
   },
 
   { :name => "The Baron", 
@@ -123,7 +123,7 @@ products = [
     :image2 => "/assets/products/watches/baron-black-teal/baron-black-teal-profile.jpg", 
     :image3 => "/assets/products/watches/baron-black-teal/baron-black-teal-belly.jpg",
     :url => "the-baron-black-wood-watch",
-    :size => "Standard Size (38mm)" 
+    :sizing => "Standard Size (38mm)" 
   },
 
   { :name => "The Baron", 
@@ -136,7 +136,7 @@ products = [
     :image2 => "/assets/products/watches/baron-silver/baron-silver-profile.jpg", 
     :image3 => "/assets/products/watches/baron-silver/baron-silver-belly.jpg",
     :url => "the-baron-silver-wood-watch",
-    :size => "Standard Size (38mm)" 
+    :sizing => "Standard Size (38mm)" 
   },
 
   { :name => "The Baron", 
@@ -149,7 +149,7 @@ products = [
     :image2 => "/assets/products/watches/baron-rosegold/baron-rosegold-profile.jpg", 
     :image3 => "/assets/products/watches/baron-rosegold/baron-rosegold-belly.jpg",
     :url => "the-baron-rosegold-wood-watch",
-    :size => "Standard Size (38mm)" 
+    :sizing => "Standard Size (38mm)" 
   },
 
   { :name => "The Tree", 

@@ -14,8 +14,8 @@
           <% @visuals.each do |visual| %>
           <div class="visual-image">
             <%= link_to image_tag(visual.thumbnail), visual %>
-            <a href="#" class="micaMinute17Click"><img class="play" src="/assets/player-button.png"></img></a>
-            <a href="<%= visual %>"><h5><%= visual.name %></h5></a>
+            <%= link_to image_tag("/assets/player-button.png"), visual, :class => 'play' %>
+            <h5><%= link_to visual.name, visual %></h5>
           </div>
           <% end %>
         </div>

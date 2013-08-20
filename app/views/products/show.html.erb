@@ -1,3 +1,9 @@
+<% content_for :title, "#{@product.name} #{@product.color} Black SolidCore™ Wood Watch | Men's Watches" %>
+
+<head>
+  <title><%= @product.name %> <%= @product.color %> Black SolidCore™ Wood Watch | Men's Watches</title>
+</head>
+
 <div id="content-container">
   <div class="container-fluid sub-nav-container">
     <%= render(:partial => "product-nav") %>
@@ -71,7 +77,7 @@
             </ul>
             <ul>
               <li><span class="spec-icon-size pull-left"</span></li>
-              <li><p>Large Size (44mm)</p></li>
+              <li><p><%= @product.size %></p></li>
             </ul>
             <ul>
               <li><span class="spec-icon-movement pull-left"</span></li>

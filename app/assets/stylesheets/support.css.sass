@@ -55,6 +55,13 @@
 	.support-content
 		padding: 20px 0
 
+		.span4
+			a
+				color: $darkGray
+				font-weight: bold
+				&:hover
+					color: $black
+
 		.sub
 			color: $lightGray
 			margin: 25px 0
@@ -70,7 +77,6 @@
 				margin: 18px 0
 
 		span
-			display: block
 			font-size: 16px
 			text-transform: uppercase
 
@@ -93,3 +99,12 @@
 			&:hover
 				color: $white
 				background: $black
+
+@media screen and (max-width: 767px) 
+	.support
+		.support-content
+			text-align: center
+			.span4
+				display: block
+				margin: 0
+				width: 100%

@@ -25,16 +25,18 @@ class TeamMembersController < ApplicationController
   # GET /team_members/new.json
   def new
     @team_member = TeamMember.new
+    redirect_to @team_member
 
-    respond_to do |format|
-      format.html # new.html.erb
-      format.json { render json: @team_member }
-    end
+    # respond_to do |format|
+    #   format.html # new.html.erb
+    #   format.json { render json: @team_member }
+    # end
   end
 
   # GET /team_members/1/edit
   def edit
     @team_member = TeamMember.find(params[:id])
+    redirect_to @team_member
   end
 
   # POST /team_members

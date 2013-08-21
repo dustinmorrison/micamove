@@ -26,16 +26,18 @@ class VisualsController < ApplicationController
   # GET /visuals/new.json
   def new
     @visual = Visual.new
+    redirect_to @visual
 
-    respond_to do |format|
-      format.html # new.html.erb
-      format.json { render json: @visual }
-    end
+    # respond_to do |format|
+    #   format.html # new.html.erb
+    #   format.json { render json: @visual }
+    # end
   end
 
   # GET /visuals/1/edit
   def edit
     @visual = Visual.find(params[:id])
+    redirect_to @visual
   end
 
   # POST /visuals

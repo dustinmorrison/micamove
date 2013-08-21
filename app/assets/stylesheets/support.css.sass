@@ -12,8 +12,6 @@
 	.row-fluid
 		max-width: 940px
 		margin: 0 auto
-		.span6
-			min-width: 300px
 		.support-nav
 			border-top: 1px solid $border
 			border-bottom: 1px solid $border
@@ -53,7 +51,7 @@
 			text-transform: uppercase
 
 	.support-content
-		padding: 20px 0
+		padding: 5px 0
 
 		.span4
 			a
@@ -85,15 +83,33 @@
 			font-family: "brandonmed",sans-serif
 			font-style: normal
 			font-weight: 400
-			text-transform: uppercase
-			width: 96%
-
-		input	
 			height: 50px
+			letter-spacing: 1px
+			padding-left: 15px
+			width: 94%
+			@include border-radius (0)
+		textarea
+			height: 100px
+
+		// .name-wrapper
+		// 	display: inline-block
+
+		// 	.first-name-field
+		// 		float: left
+		// 		margin-right: 25px
+		// 		width: 212px
+
+		// 	.last-name-field
+		// 		float: left
+		// 		width: 206px
+
 
 		.btn-default
 			background: $darkGray
 			border: none
+			height: 60px
+			letter-spacing: 1px
+			margin-top: 5px
 			padding: 4px 7px
 			width: 99%
 			&:hover
@@ -102,9 +118,9 @@
 
 @media screen and (max-width: 767px) 
 	.support
-		.support-content
-			text-align: center
-			.span4
+		.row-fluid
+			margin-left: 0
+			.span6
+				margin-left: 0
 				display: block
-				margin: 0
 				width: 100%

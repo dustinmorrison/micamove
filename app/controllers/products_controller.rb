@@ -30,16 +30,18 @@ class ProductsController < ApplicationController
   # GET /products/new.json
   def new
     @product = Product.new
+    redirect_to @product
 
-    respond_to do |format|
-      format.html # new.html.erb
-      format.json { render json: @product }
-    end
+    # respond_to do |format|
+    #   format.html # new.html.erb
+    #   format.json { render json: @product }
+    # end
   end
 
   # GET /products/1/edit
   def edit
     @product = Product.find(params[:id])
+    redirect_to @product
   end
 
   # POST /products

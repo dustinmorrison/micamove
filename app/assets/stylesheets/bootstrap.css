@@ -742,8 +742,9 @@ h4,
 h5,
 h6 {
   margin: 10px 0;
-  font-family:"brandonreg",sans-serif;
+  font-family:"brandonmed",sans-serif;
   font-style: normal;
+  font-weight: normal;
   line-height: 20px;
   color: inherit;
 }
@@ -3355,6 +3356,7 @@ input[type="button"].btn-block {
 /*  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);*/
   background-color: #3c3c3c;
   *background-color: #3c3c3c;
+  letter-spacing: 1px;
 /*  background-image: -moz-linear-gradient(top, #0088cc, #0044cc);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0044cc));
   background-image: -webkit-linear-gradient(top, #0088cc, #0044cc);

@@ -207,14 +207,14 @@
 <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
 <script type="text/javascript">
-$(document).ready(function() {
+$(document).ready(function(event) {
   $('#solidPop').popover('hide')
 
-  $('#solidPop').click(function() {
+  $('#solidPop').click(function(event) {
     event.preventDefault();
   });
 
-  $(".small").click(function() {
+  $(".small").click(function(event) {
     event.preventDefault();
     $(".medium").removeClass("active-size")
     $(".large").removeClass("active-size")
@@ -227,7 +227,7 @@ $(document).ready(function() {
     $(".xl-link").hide()
   });
 
-  $(".medium").click(function() {
+  $(".medium").click(function(event) {
     event.preventDefault();
     $(".small").removeClass("active-size")
     $(".large").removeClass("active-size")
@@ -240,7 +240,7 @@ $(document).ready(function() {
     $(".no-link").hide()
   });
 
-  $(".large").click(function() {
+  $(".large").click(function(event) {
     event.preventDefault();
     $(".small").removeClass("active-size")
     $(".medium").removeClass("active-size")
@@ -253,7 +253,7 @@ $(document).ready(function() {
     $(".no-link").hide()
   });
 
-  $(".xl").click(function() {
+  $(".xl").click(function(event) {
     event.preventDefault();
     $(".small").removeClass("active-size")
     $(".medium").removeClass("active-size")
@@ -271,21 +271,21 @@ $(document).ready(function() {
   $('.main-2').hide();
   $('.main-3').hide();
 
-  $('.sub-1').click(function(){
+  $('.sub-1').click(function(event){
     event.preventDefault();
     $('.main-1').show();
     $('.main-2').hide();
     $('.main-3').hide();
   });
 
-  $('.sub-2').click(function(){
+  $('.sub-2').click(function(event){
     event.preventDefault();
     $('.main-2').show();
     $('.main-1').hide();
     $('.main-3').hide();
   });
 
-  $('.sub-3').click(function(){
+  $('.sub-3').click(function(event){
     event.preventDefault();
     $('.main-3').show();
     $('.main-2').hide();

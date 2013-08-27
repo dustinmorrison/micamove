@@ -26,9 +26,12 @@
 
 
 <script>
+
+$(document).ready(function() {
+
   $('.visuals-nav').addClass('active-nav-item');
 
-  $('#visuals').fadeIn(1000);
+  $('.visuals').fadeIn(1000);
 
   var $container = $('.visual-images');
   $container.imagesLoaded(function(){
@@ -39,8 +42,6 @@
       isFitWidth : true
     });
   });
-
-
-
+});
 
 </script>

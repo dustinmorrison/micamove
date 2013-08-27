@@ -35,18 +35,24 @@
 
 
 <script>
+$(document).ready(function() {
 
-var $container = $('.visual-images');
-$container.imagesLoaded(function(){
-  $container.masonry({
-    itemSelector : '.visual-image',
-    columnWidth : 220, 
-    gutterWidth : 20, 
-    isFitWidth : true
+  $('.visual-images').fadeIn(1000);
+
+  $('.visuals-nav').addClass('active-nav-item');
+
+  var $container = $('.visual-images');
+  $container.imagesLoaded(function(){
+    $container.masonry({
+      itemSelector : '.visual-image',
+      columnWidth : 220, 
+      gutterWidth : 20, 
+      isFitWidth : true
+    });
   });
-});
 
-$('#visualTiles').fadeIn(1000);
+
+});
 
 
 

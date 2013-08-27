@@ -65,7 +65,7 @@ products = [
     :color => "Bronze", 
     :description => "", 
     :category => "Watches", 
-    :shoplink => "https://mica.infusionsoft.com/app/manageCart/addProduct?productId=119", 
+    :shoplink => "https://mica.infusionsoft.com/app/manageCart/addProduct?productId=125", 
     :price => "165", 
     :image1 => "/assets/products/watches/deck-bronze/deck-bronze-front.jpg", 
     :image2 => "/assets/products/watches/deck-bronze/deck-bronze-profile.jpg", 
@@ -159,7 +159,7 @@ products = [
     :shoplink => "", 
     :price => "25", 
     :image1 => "/assets/products/clothing/tree/tree-front.jpg", 
-    :image2 => "/assets/products/clothing/tree/tree-back.jpg", 
+    :image2 => "/assets/products/clothing/tree/tree-front.jpg", 
     :image3 => "/assets/products/clothing/tree/tree-front.jpg",
     :url => "the-tree-mens-white-tshirt" 
   },

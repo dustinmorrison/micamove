@@ -106,4 +106,8 @@ class ProductsController < ApplicationController
     # end
   end
 
+  def theTree
+    redirect_to Product.where :name => 'The Tree', :status => 301
+  end
+
 end

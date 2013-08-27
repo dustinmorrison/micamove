@@ -19,4 +19,22 @@ MicamoveRails::Application.routes.draw do
   get "/purchase-thank-you" => "pages#purchasethanks"
   get "/contact-us-thank-you" => "pages#contactthanks"
   root to: 'pages#home'
+
+  get "/index" => "pages#index"
+  get "/store" => "pages#store"
+  get "/team" => "pages#team"
+  get "/clothes" => "pages#clothing"
+  get "/wood-watch" => "pages#woodWatches"
+  get "/wood-watches-mens" => "pages#woodWatchesMen"
+  get "/mens-watches" => "pages#mensWatches"
+  get "/the-baron-rose-wooden-watch" => "pages#baronRoseWatch"
+  # get "/products/the-official" => "pages#theTree"
+  # get "/products/the-blitzen" => "pages#theBlitzen"
+  # get "/products/the-albuquerque" => "pages#theAlbuquerque"
+  get "/the-baron-black-teal-wood-watch" => "pages#baronBlackWatch"
+  get "/the-baron-silver-wooden-watch" => "pages#baronSilverWatch"
+  get "/the-drift-brown-gold-wood-watch" => "pages#driftbrownWatch"
+  get "/return-policy" => "pages#returnPolicy"
+  get "/warranty" => "pages#warranty"
+  get "/dealer-locator" => "pages#dealerLocator"
 end

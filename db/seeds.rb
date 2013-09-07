@@ -306,6 +306,7 @@ products = [
   },
 
   { :name => "The Tree", 
+    :collection => "Tees",
     :color => "White", 
     :description => "", 
     :category => "Clothing", 
@@ -318,6 +319,7 @@ products = [
   },
 
   { :name => "The Official", 
+    :collection => "Tees",
     :color => "Navy", 
     :description => "", 
     :category => "Clothing", 
@@ -330,6 +332,7 @@ products = [
   },
 
   { :name => "The Blitzen", 
+    :collection => "Tees",
     :color => "Gray", 
     :description => "", 
     :category => "Clothing", 
@@ -342,6 +345,7 @@ products = [
   },
 
   { :name => "The Albuquerque", 
+    :collection => "Tees",
     :color => "Black", 
     :description => "", 
     :category => "Clothing", 

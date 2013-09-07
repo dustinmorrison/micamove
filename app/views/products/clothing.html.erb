@@ -17,8 +17,11 @@
           <% @clothing.each do |product| %>
           <div class="product-listing">
             <div><%= link_to image_tag(product.image1), product %></div>
-            <div class="listing-details"><%= link_to product.name, product %> / <%= link_to product.color, product %></div>
-            <div>$<%= link_to (product.price), product %></div>
+            <div class="listing-details">
+              <div class="list-item-details"><%= link_to product.name, product %></div>
+              <div class="list-item-details"><%= link_to product.collection, product %> / <%= link_to product.color, product %></div>
+              <div class="list-item-details">$<%= link_to (product.price), product %></div>
+            </div>
           </div>
           <% end %>
         </div>

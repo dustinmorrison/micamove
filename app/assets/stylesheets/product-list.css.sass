@@ -7,29 +7,33 @@
 	max-width: 940px
 	.product-container
 		margin: 0 auto
+		img
+			margin-bottom: 10px
 		.product-listing
 			margin-bottom: 15px
 			float: left
 			margin-right: 20px
 			text-align: center
 			width: 220px
-			a
-				color: $darkGray
-				font-family: "brandonmed",sans-serif
-				font-style: normal
-				font-weight: 400
-				font-size: 13px
-				letter-spacing: 1px
-				margin-top: 12px
-				padding: 20px 0
-				text-transform: uppercase
-				&:hover
+			.list-item-details
+				line-height: 18px
+				a
 					color: $darkGray
-					text-decoration: none
-			&:hover
-				opacity: 0.7
-			.listing-details
-				margin-top: 10px
+					font-family: "brandonmed",sans-serif
+					font-style: normal
+					font-weight: 400
+					font-size: 13px
+					letter-spacing: 1px
+					margin-top: 12px
+					padding: 20px 0
+					text-transform: uppercase
+					&:hover
+						color: $darkGray
+						text-decoration: none
+				&:hover
+					opacity: 0.7
+				.listing-details
+					margin-top: 10px
 
 
 @media screen and (max-width: 767px)

@@ -106,6 +106,15 @@ class ProductsController < ApplicationController
     # end
   end
 
+  def sable
+    @watches = Product.where :collection => "Sable"
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @products }
+    end
+  end
+
   def theTree
     redirect_to Product.where :name => 'The Tree', :status => 301
   end

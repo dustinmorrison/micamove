@@ -486,6 +486,12 @@ TeamMember.create TeamMembers
 Visual.destroy_all
 
 Visuals= [
+
+  { :name => "Loose End | Ben Fisher", 
+    :embedcode => "http://player.vimeo.com/video/72527198?title=0&amp;byline=0&amp;portrait=0&amp;color=bdb89b", 
+    :url => "loose-end-ben-fisher",
+    :thumbnail => "/assets/visuals/loose-ends.jpg"
+  },
  
   { :name => "Alex Andrews || Open Mind", 
     :embedcode => "http://player.vimeo.com/video/62905662?title=0&amp;byline=0&amp;portrait=0&amp;color=bdb89b", 

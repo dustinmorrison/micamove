@@ -57,7 +57,7 @@ products = [
   	:title => "The Plank Maple White SolidCore Wood Watch | Men's Watches",
     :description => "The Plank Wooden Watch, Blonde SolidCore Wood, White Carbon Mesh Dial, 3 Hand Japan Movement, Black Stainless Steel Clasp, 44mm, $185 USD Buy Now",  
   	:category => "Watches", 
-  	:shoplink => "https://mica.infusionsoft.com/app/manageCart/addProduct?productId=117", 
+  	:shoplink => "https://mica.infusionsoft.com/app/manageCart/addProduct?productId=191", 
   	:price => "185", 
   	:image1 => "/assets/products/watches/maple/plank-white/plank-maple-white-wooden-watch-crown.jpg", 
   	:image2 => "/assets/products/watches/maple/plank-white/plank-blonde-white-wooden-watch-crown-profile.jpg", 
@@ -165,7 +165,7 @@ products = [
     :image1 => "/assets/products/watches/sable/drift-black/drift-sable-black-wooden-watch-crown.jpg", 
     :image2 => "/assets/products/watches/sable/drift-black/drift-sable-black-profile.jpg", 
     :image3 => "/assets/products/watches/sable/drift-black/drift-sable-black-belly.jpg",
-    :url => "the-drift-sable-black-wood-watch-40mm",
+    :url => "the-drift-sable-black-wood-watch-37mm",
     :sizing => "Standard Size (37.5mm)" 
   },
 
@@ -180,7 +180,7 @@ products = [
     :image1 => "/assets/products/watches/sable/drift-gold/drift-sable-gold-wooden-watch-crown.jpg", 
     :image2 => "/assets/products/watches/sable/drift-gold/drift-sable-gold-profile.jpg", 
     :image3 => "/assets/products/watches/sable/drift-gold/drift-sable-gold-belly.jpg",
-    :url => "the-drift-sable-gold-wood-watch-40mm",
+    :url => "the-drift-sable-gold-wood-watch-37mm",
     :sizing => "Standard Size (37.5mm)" 
   },
 
@@ -191,12 +191,12 @@ products = [
     :title => "The Drift Blonde Black SolidCore Wood Watch | Men's Watches",
     :description => "The Drift Wooden Watch, Blonde SolidCore Wood, Black Steel Dial, 3 Hand Japan Movement, Black Stainless Steel Clasp, 37.5mm, $155 USD Buy Now", 
     :category => "Watches", 
-    :shoplink => "https://mica.infusionsoft.com/app/manageCart/addProduct?productId=129", 
+    :shoplink => "https://mica.infusionsoft.com/app/manageCart/addProduct?productId=175", 
     :price => "155", 
     :image1 => "/assets/products/watches/maple/drift-black/drift-maple-black-wooden-watch-crown.jpg", 
     :image2 => "/assets/products/watches/maple/drift-black/drift-maple-black-profile.jpg", 
     :image3 => "/assets/products/watches/maple/drift-black/drift-maple-black-belly.jpg",
-    :url => "the-drift-blonde-black-wood-watch",
+    :url => "the-drift-blonde-black-wood-watch-37mm",
     :sizing => "Standard Size (37.5mm)" 
   },
 
@@ -211,7 +211,7 @@ products = [
     :image1 => "/assets/products/watches/maple/drift-silver/drift-maple-silver-wooden-watch-crown.jpg", 
     :image2 => "/assets/products/watches/maple/drift-silver/drift-maple-silver-profile.jpg", 
     :image3 => "/assets/products/watches/maple/drift-silver/drift-maple-silver-belly.jpg",
-    :url => "the-drift-blonde-silver-wood-watch",
+    :url => "the-drift-blonde-silver-wood-watch-37mm",
     :sizing => "Standard Size (37.5mm)" 
   },
 
@@ -301,7 +301,7 @@ products = [
     :image1 => "/assets/products/watches/maple/baron-rosegold/baron-blonde-rose-gold-mica-wood-watch.jpg", 
     :image2 => "/assets/products/watches/maple/baron-rosegold/baron-maple-rosegold-profile.jpg", 
     :image3 => "/assets/products/watches/maple/baron-rosegold/baron-maple-rosegold-belly.jpg",
-    :url => "the-baron-blonde-rosegold-wood-watch-38mm",
+    :url => "the-baron-blonde-rose-gold-wood-watch-38mm",
     :sizing => "Standard Size (38mm)" 
   },
 
@@ -323,8 +323,8 @@ products = [
   { :name => "The Tree", 
     :collection => "Tees",
     :color => "White", 
-    :title => "",
-    :description => "", 
+    :title => "The Tree Tee by Mica",
+    :description => "The Tree Tee by Mica", 
     :category => "Clothing", 
     :shoplink => "", 
     :price => "25", 
@@ -337,8 +337,8 @@ products = [
   { :name => "The Official", 
     :collection => "Tees",
     :color => "Navy", 
-    :title => "",
-    :description => "", 
+    :title => "The Official Tee by Mica",
+    :description => "The Official Tee by Mica", 
     :category => "Clothing", 
     :shoplink => "", 
     :price => "25", 
@@ -351,8 +351,8 @@ products = [
   { :name => "The Blitzen", 
     :collection => "Tees",
     :color => "Gray", 
-    :title => "",
-    :description => "", 
+    :title => "The Blitzen Tee by Mica",
+    :description => "The Blitzen Tee by Mica", 
     :category => "Clothing", 
     :shoplink => "", 
     :price => "25", 
@@ -365,8 +365,8 @@ products = [
   { :name => "The Albuquerque", 
     :collection => "Tees",
     :color => "Black", 
-    :title => "",
-    :description => "", 
+    :title => "The Albuquerque Tee by Mica",
+    :description => "The Albuquerque Tee by Mica", 
     :category => "Clothing", 
     :shoplink => "", 
     :price => "25", 

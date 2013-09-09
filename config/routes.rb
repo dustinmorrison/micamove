@@ -10,6 +10,7 @@ MicamoveRails::Application.routes.draw do
   get "/watches" => "products#watches" 
   get "/clothing" => "products#clothing"
   get "/sable-collection" => "products#sable"
+  get "/blonde-collection" => "products#blonde"
 
 
   get "/team" => "pages#team"

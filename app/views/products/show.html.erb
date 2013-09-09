@@ -1,5 +1,5 @@
-<% content_for :title, "#{@product.name} #{@product.color} SolidCore™ Wood Watch | Men's Watches" %>
-<% meta_description " #{@product.name} Wooden Watch, SolidCore™, #{@product.color} Dial, 3 Hand Japan Movement, Stainless Steel Clasp, #{@product.sizing}, $#{@product.price} USD Buy Now" %>
+<% content_for :title, "#{@product.title}" %>
+<% meta_description " #{@product.description}" %>
 
 
 <div id="content-container">
@@ -28,7 +28,7 @@
 
       <div class="span6 product-info">
         <div class="detail-heading">
-          <h3><%= @product.name %><span><%= @product.color %></span></h3>
+          <h3><%= @product.name %><span><%= @product.collection %> / <%= @product.color %></span></h3>
         </div>
 
         <% if @product.category == "Watches" %>

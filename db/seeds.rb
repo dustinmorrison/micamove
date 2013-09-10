@@ -134,7 +134,7 @@ products = [
     :price => "165", 
     :image1 => "/assets/products/watches/maple/deck-silver/deck-blonde-silver-wooden-watch-crown.jpg", 
     :image2 => "/assets/products/watches/maple/deck-silver/deck-blonde-silver-wooden-watch-crown-profile.jpg", 
-    :image3 => "/assets/products/watches/maple/deck-silver/deck-blonde-silver-wooden-watch-buckle-backplate.jpg",
+    :image3 => "/assets/products/watches/maple/deck-silver/deck-blonde-silver-wood-watch-buckle-backplate.jpg",
     :url => "the-deck-blonde-silver-wood-watch-40mm",
     :sizing => "Large Size (40.5mm)" 
   },
@@ -242,7 +242,7 @@ products = [
     :image2 => "/assets/products/watches/sable/baron-black-silver/baron-sable-black-silver-profile.jpg", 
     :image3 => "/assets/products/watches/sable/baron-black-silver/baron-sable-black-silver-belly.jpg",
     :url => "the-baron-sable-black-silver-wood-watch-38mm",
-    :sizing => "Standard Size (37.5mm)" 
+    :sizing => "Standard Size (38mm)" 
   },
 
   { :name => "The Baron", 
@@ -257,7 +257,7 @@ products = [
     :image2 => "/assets/products/watches/sable/baron-black-gold/baron-sable-black-gold-profile.jpg", 
     :image3 => "/assets/products/watches/sable/baron-black-gold/baron-sable-black-gold-belly.jpg",
     :url => "the-baron-sable-black-gold-wood-watch-38mm",
-    :sizing => "Standard Size (37.5mm)" 
+    :sizing => "Standard Size (38mm)" 
   },
 
   # { :name => "The Baron", 
@@ -308,7 +308,7 @@ products = [
   { :name => "The Baron", 
     :collection => "Blonde",
     :color => "Black", 
-    :title => "The Baron Black SolidCore Wood Watch| Men's Watches",
+    :title => "The Baron Blonde Black SolidCore Wood Watch| Men's Watches",
     :description => "The Baron Wooden Watch, Blonde SolidCore Wood, Black Steel Dial, 3 Hand Japan Movement,  Rose Gold Stainless Steel Clasp, 38mm, $145 USD Buy Now", 
     :category => "Watches", 
     :shoplink => "https://mica.infusionsoft.com/app/manageCart/addProduct?productId=167", 

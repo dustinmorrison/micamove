@@ -29,9 +29,12 @@ group :assets do
 end
 
 gem 'jquery-rails'
-
+gem 'devise'
 gem 'friendly_id'
+
 gem 'hirb'
+gem 'geocoder'
+gem 'rack-canonical-host'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= yield(:title) %></title>
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+  <script type="text/javascript" src="//use.typekit.net/mdj3cmj.js"></script>
+  <script type="text/javascript">stLight.options({publisher: "b1546e77-7fd3-4a0b-a627-d04a25d4abf4", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+  <meta name="viewport" content="width = device-width, initial-scale = 1, maximum-scale = 1">
+  <%= stylesheet_link_tag "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div>
+  <%= notice %>
+</div>
+<div>
+  <%= alert %>
+</div>
+<%= yield %>
+</body>
+</html>

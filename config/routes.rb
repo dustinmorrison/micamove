@@ -1,13 +1,9 @@
 MicamoveRails::Application.routes.draw do
   resources :visuals
-
-
   resources :team_members, :path => "co-op"
-
-
   resources :products
 
-  get "/watches" => "products#watches" 
+  get "/watches" => "products#watches"
   get "/clothing" => "products#clothing"
   get "/sable-collection" => "products#sable"
   get "/blonde-collection" => "products#blonde"
@@ -39,4 +35,6 @@ MicamoveRails::Application.routes.draw do
   get "/return-policy" => "pages#returnPolicy"
   get "/warranty" => "pages#warranty"
   get "/dealer-locator" => "pages#dealerLocator"
+
+  devise_for :admins, :controllers => { :sessions => "admin_session" }
 end

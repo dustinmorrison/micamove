@@ -2,10 +2,6 @@
 
 require ::File.expand_path('../config/environment',  __FILE__)
 
-use Rack::CanonicalHost do |env|
-  case Rails.env.to_sym
-    when :production then 'www.micamove.com'
-  end
-end
+use Rack::CanonicalHost, ENV['CANONICAL_HOST'] if ENV['CANONICAL_HOST']
 
 run MicamoveRails::Application

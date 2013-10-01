@@ -1,4 +1,7 @@
 MicamoveRails::Application.routes.draw do
+  resources :store_locations
+
+
   resources :visuals
   resources :team_members, :path => "co-op"
   resources :products

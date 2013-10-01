@@ -25,6 +25,24 @@
         <a class="brand">Micamove Admin
           <!--<sup style="font-size: 11px; top: -0.8em;">alpha</sup> -->
         </a>
+
+        <% if admin_signed_in? %>
+            <ul class="nav">
+              <li class="<%= 'active' if (controller_name=='store_locations') %>"><%= link_to (content_tag :i, '', :class => '') + ' Stores', store_locations_path %></li>
+            </ul>
+            <ul class="nav pull-right">
+              <li><%= link_to (content_tag :i, '', :class => 'icon-off icon-black') + ' Sign out', destroy_admin_session_path %></li>
+            </ul>
+        <% else %>
+            <div class="nav-collapse">
+              <ul class="nav pull-right">
+                <% if (controller_name != 'admin_session') %>
+                    <li class="divider-vertical"></li>
+                    <li><%= link_to 'Login', new_admin_session_path %></li>
+                <% end %>
+              </ul>
+            </div>
+        <% end %>
       </div>
     </div>
   </div>

@@ -1,0 +1,61 @@
+<style type="text/css">
+    #map_wrapper {
+        height: 400px;
+    }
+
+    #map_canvas {
+        width: 100%;
+        height: 100%;
+    }
+</style>
+
+<h1>Store locations</h1>
+
+<%= form_tag store_locations_path, :method => :get, :class => 'form-inline' do %>
+    <%= text_field_tag :search, params[:search], :class => 'input', :placeholder => 'Search by zip' %>
+    <%= submit_tag 'Search', :name => nil, :class => 'btn btn-info' %>
+<% end %>
+
+<%= link_to 'Add Store', new_store_location_path %>
+<table class="table">
+  <thead>
+  <tr>
+    <th>Address</th>
+    <th>Latitude</th>
+    <th>Longitude</th>
+    <th></th>
+    <th></th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @store_locations.each do |store_location| %>
+      <tr>
+        <td><%= store_location.address %></td>
+        <td><%= store_location.latitude %></td>
+        <td><%= store_location.longitude %></td>
+        <td><%= link_to 'Edit', edit_store_location_path(store_location) %></td>
+        <td><%= link_to 'Delete', store_location, method: :delete, data: {confirm: 'Are you sure?'} %></td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<br/>
+<div id="map_wrapper">
+  <div id="map_canvas" class="mapping"></div>
+</div>
+<script type="text/javascript">
+    var markers = [
+        <% @store_locations.each do |store_location| %>
+        [ '<%=store_location.address%>', <%= store_location.latitude %> , <%= store_location.longitude %> ],
+        <% end %>
+    ];
+
+    var infoWindowContent = [
+        <% @store_locations.each do |store_location| %>
+        [ '<div class="info_content">' +
+                '<h3>Store</h3>' +
+                '<p><%= store_location.address %></p>' + '</div>'],
+        <% end %>
+    ];
+</script>

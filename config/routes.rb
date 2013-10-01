@@ -14,7 +14,7 @@ MicamoveRails::Application.routes.draw do
 
   get "/team" => "pages#team"
   get "/visuals" => "pages#visuals"
-  get "/support" => "pages#support"
+  get "/support" => "pages#support", as: 'support_page'
   get "/thank-you-sticker-pack" => "pages#stickerthanks"
   get "/email-thank-you" => "pages#emailthanks"
   get "/purchase-thank-you" => "pages#purchasethanks"

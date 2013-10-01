@@ -5,7 +5,7 @@ class StoreLocationsController < ApplicationController
   # GET /store_locations.json
   def index
     if params[:search].present?
-      location = params[:search].to_region
+      location = params[:search]
       @store_locations = StoreLocation.near(location, 50, :order => :distance)
     else
       @store_locations = StoreLocation.all

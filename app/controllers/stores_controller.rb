@@ -1,5 +1,6 @@
 class StoresController < ApplicationController
   layout 'admin'
+  before_filter :authenticate_admin!
 
   # GET /stores
   # GET /stores.json

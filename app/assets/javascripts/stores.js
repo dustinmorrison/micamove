@@ -9,12 +9,13 @@ function initialize() {
     var map;
     var bounds = new google.maps.LatLngBounds();
     var mapOptions = {
+        zoom: 4,
         mapTypeId: 'roadmap'
     };
 
     // Display a map on the page
     map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
-    map.setTilt(45);
+    map.setTilt(100);
 
     // Display multiple markers on a map
     var infoWindow = new google.maps.InfoWindow(), marker, i;

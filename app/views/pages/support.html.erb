@@ -90,12 +90,15 @@
     discretion. Normal wear and tear, band, batteries, crystal, watch case, loss or theft are not covered. Links and
     casing on all current models of watches sold are made of pure wood and treated with our proprietary SolidCore™
     wood science technology to improve durability, luster and resistance to the elements. Although this seals and
-    finishes your watch from the inside out, the case and movement are splash resistant. All warranty will be void
+    finishes your watch from the inside out, the case and movement are splash resistant.
+  </p>
+
+  <p class="span6">
+    All warranty will be void
     if you submerge your watch in water or open up the crown and expose it to moisture. All warranty will be void if
     you open the case for any reason. If you are unsure of the warranty explained herein or would like to schedule
     your watch for service or repair just visit micamove.com/warranty or email us at service@micamove.com.
   </p>
-  <br>
 
   <p class="span6">
     Do NOT return your watch to sender or retail location, you must receive a Return Authorization number & the
@@ -180,17 +183,17 @@
 
 <hr>
 
-<header class="row-fluid" id="returns">
+<header class="row-fluid" id="dealer">
   <div class="span12 support-header">
-    <h3>Dealer locator</h3>
+    <h3>FIND A DEALER</h3>
   </div>
 </header>
 
 <section class="row-fluid support-content">
   <div class="span12">
-    <%= form_tag support_page_path, :method => :get, :class => 'form-inline' do %>
+    <%= form_tag support_page_path + '#dealer', :method => :get, :class => 'form-inline' do %>
         <!--:onclick=>"if (this.defaultValue==this.value) this.value=''", :type=>"text", :name=>"inf_field_FirstName", :size=>"40", :value=>"SEARCH BY ZIP", :onblur=>"if (this.value=='') this.value=this.defaultValue"-->
-        <%= text_field_tag :zip, @zip, :class => 'input input-large txt-decorated', :style=>"width: 300px", :placeholder => 'SEARCH BY ZIP'  %>
+        <%= text_field_tag :zip, @zip, :class => 'input input-large txt-decorated', :style => "width: 300px", :placeholder => 'SEARCH BY ZIP' %>
         &nbsp;&nbsp;&nbsp;&nbsp;With
         in: <%= select_tag(:distance, options_for_select([['10 miles', 10], ['20 miles', 20], ['30 miles', 30], ['40 miles', 40], ['50 miles', 50], ['60 miles', 60], ['70 miles', 70], ['80 miles', 80], ['90 miles', 90], ['100 miles', 100]], selected: params[:distance]), :style => 'width:100px;') %>
         &nbsp;&nbsp;&nbsp;&nbsp;<%= submit_tag 'Search', :name => nil, :class => 'btn btn-decorated pull-right' %>
@@ -205,7 +208,10 @@
     <ul class="thumbnails">
       <% @stores.each do |store| %>
           <li class="span4">
-            <h4><nobr><%=store.store_name%><nobr></h4>
+            <h4>
+              <nobr><%= store.store_name %>
+                <nobr>
+            </h4>
             <div><%= store.address %></div>
             <div><%= store.city %></div>
             <div><%= "#{store.state}, #{store.zip}" %></div>
@@ -228,7 +234,8 @@
         width: 100%;
         height: 100%;
     }
-    .txt-decorated{
+
+    .txt-decorated {
         font-family: "brandonmed", sans-serif;
         font-style: normal;
         font-weight: 400;
@@ -243,7 +250,8 @@
         background-clip: padding-box;
         width: 50% !important;
     }
-    .btn-decorated{
+
+    .btn-decorated {
         background: #3c3c3c;
         border: none;
         height: 50px !important;

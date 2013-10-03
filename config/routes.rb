@@ -1,5 +1,5 @@
 MicamoveRails::Application.routes.draw do
-  resources :store_locations
+  resources :stores
 
 
   resources :visuals

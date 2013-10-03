@@ -4,13 +4,13 @@ class PagesController < ApplicationController
 	end
 
   def support
-    if params[:search].present?
+    if params[:zip].present?
       @zip = params[:zip]
       @distance = params[:distance]
-      @store_locations = StoreLocation.near(@zip, @distance, :order => :distance)
+      @stores = Store.near(@zip, @distance, :order => :distance)
       flash.now['message'] = 'No store found.'
     else
-      @store_locations = StoreLocation.all
+      @stores = Store.all
     end
   end
 

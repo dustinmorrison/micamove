@@ -9,7 +9,7 @@ function initialize() {
     var map;
     var bounds = new google.maps.LatLngBounds();
     var mapOptions = {
-        zoom: 4,
+        zoom: 1,
         mapTypeId: 'roadmap'
     };
 

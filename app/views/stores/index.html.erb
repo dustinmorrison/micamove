@@ -57,4 +57,10 @@
                 '</div>'],
         <% end %>
     ];
+
+    $(document).ready(function () {
+        var script = document.createElement('script');
+        script.src = "http://maps.googleapis.com/maps/api/js?sensor=false&callback=initialize_map";
+        document.body.appendChild(script);
+    });
 </script>

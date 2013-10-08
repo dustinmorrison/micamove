@@ -1,21 +1,13 @@
-jQuery(function($) {
-    // Asynchronously Load the map API
-    var script = document.createElement('script');
-    script.src = "http://maps.googleapis.com/maps/api/js?sensor=false&callback=initialize";
-    document.body.appendChild(script);
-});
-
-function initialize() {
+function initialize_map() {
     var map;
     var bounds = new google.maps.LatLngBounds();
     var mapOptions = {
-        zoom: 1,
         mapTypeId: 'roadmap'
     };
 
     // Display a map on the page
     map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
-    map.setTilt(100);
+    map.setTilt(45);
 
     // Display multiple markers on a map
     var infoWindow = new google.maps.InfoWindow(), marker, i;
@@ -38,13 +30,14 @@ function initialize() {
             }
         })(marker, i));
 
-        // Automatically center the map fitting all markers on the screen
-        map.fitBounds(bounds);
     }
+
+    // Automatically center the map fitting all markers on the screen
+    map.fitBounds(bounds);
 
     // Override our map zoom level once our fitBounds function runs (Make sure it only runs once)
     var boundsListener = google.maps.event.addListener((map), 'bounds_changed', function(event) {
-        this.setZoom(14);
+        //this.setZoom(14);
         google.maps.event.removeListener(boundsListener);
     });
 

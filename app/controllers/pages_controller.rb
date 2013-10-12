@@ -4,7 +4,14 @@ class PagesController < ApplicationController
 	end
 
   def support
-
+    if params[:zip].present?
+      @zip = params[:zip]
+      @distance = params[:distance]
+      @stores = Store.near(@zip, @distance, :order => :distance)
+      flash.now['message'] = 'No store found.'
+    else
+      @stores = Store.all
+    end
   end
 
   def stickerthanks

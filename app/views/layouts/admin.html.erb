@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= yield(:title) %></title>
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+  <script type="text/javascript" src="//use.typekit.net/mdj3cmj.js"></script>
+  <script type="text/javascript">stLight.options({publisher: "b1546e77-7fd3-4a0b-a627-d04a25d4abf4", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+  <meta name="viewport" content="width = device-width, initial-scale = 1, maximum-scale = 1">
+  <%= stylesheet_link_tag "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+
+<body data-spy="scroll" data-target=".subnav" data-offset="50" data-twttr-rendered="true">
+<div style="height: 40px;">
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container" xmlns="http://www.w3.org/1999/html">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+        <a class="brand">Micamove Admin
+          <!--<sup style="font-size: 11px; top: -0.8em;">alpha</sup> -->
+        </a>
+
+        <% if admin_signed_in? %>
+            <ul class="nav">
+              <li class="<%= 'active' if (controller_name=='stores') %>"><%= link_to (content_tag :i, '', :class => '') + ' Stores', stores_path %></li>
+            </ul>
+            <ul class="nav pull-right">
+              <li><%= link_to (content_tag :i, '', :class => 'icon-off icon-black') + ' Sign out', destroy_admin_session_path %></li>
+            </ul>
+        <% else %>
+            <div class="nav-collapse">
+              <ul class="nav pull-right">
+                <% if (controller_name != 'admin_session') %>
+                    <li class="divider-vertical"></li>
+                    <li><%= link_to 'Login', new_admin_session_path %></li>
+                <% end %>
+              </ul>
+            </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row" style="margin-top: 5px;">
+    <div class="span5">
+        <span style="vertical-align: middle;">
+        <strong><h4><%= yield :form_caption %></h4></strong>
+        </span>
+    </div>
+    <div class="span7">
+      <div class="pull-right"><%= yield :form_option %></div>
+    </div>
+  </div>
+  <% if !notice.nil? %>
+      <div class="row">
+        <div class="span12">
+          <div class="alert alert-success">
+            <button type="button" class="close" data-dismiss="alert">×</button>
+            <%= notice %>
+          </div>
+        </div>
+      </div>
+  <% end %>
+  <% if !alert.nil? %>
+      <div class="row">
+        <div class="span12">
+          <div class="alert alert-error">
+            <button type="button" class="close" data-dismiss="alert">×</button>
+            <%= alert %>
+          </div>
+        </div>
+      </div>
+  <% end %>
+  <%= yield %>
+
+  <div id="ajaxLoader" style="position: absolute;z-index: 999;display: block;left: 50%;top: 40%; display: none;;">
+    <img src="/assets/ajax-loader.gif" alt="">
+  </div>
+</div>
+<div class="container-fluid">
+  <section class="footer">
+    <div class="row-fluid">
+      <div class="span12">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      </div>
+    </div>
+  </section>
+</div>
+</body>
+</html>

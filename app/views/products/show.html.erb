@@ -3,297 +3,342 @@
 
 
 <div id="content-container">
-  <div class="container-fluid sub-nav-container">
-    <%= render(:partial => "product-nav") %>
+<div class="container-fluid sub-nav-container">
+  <%= render(:partial => "product-nav") %>
+</div>
+
+<div class="container-fluid product-details">
+
+<div class="row-fluid">
+<div class="span6">
+
+  <div class="main-image">
+    <%= image_tag @product.image1, :class => "main-1", :alt => @product.name %>
+    <%= image_tag @product.image2, :class => "main-2", :alt => @product.name %>
+    <%= image_tag @product.image3, :class => "main-3", :alt => @product.name %>
   </div>
 
-  <div class="container-fluid product-details">
+  <div class="sub-images">
+    <a href="#"><img src="<%= @product.image1 %>" class="sub-image pull-left sub-1"></img></a>
+    <a href="#"><img src="<%= @product.image2 %>" class="sub-image sub-2"></img></a>
+    <a href="#"><img src="<%= @product.image3 %>" class="sub-image pull-right sub-3"></img></a>
+  </div>
 
-    <div class="row-fluid">
-      <div class="span6">
+</div>
 
-        <div class="main-image">
-          <%= image_tag @product.image1, :class => "main-1", :alt => @product.name %>
-          <%= image_tag @product.image2, :class => "main-2", :alt => @product.name %>
-          <%= image_tag @product.image3, :class => "main-3", :alt => @product.name %>
+<div class="span6 product-info">
+  <div class="detail-heading">
+    <h3><%= @product.name %><span><%= @product.collection %> / <%= @product.color %></span></h3>
+  </div>
+
+  <% if @product.category == "Watches" %>
+
+      <div class="product-buy">
+        <h4 class="detail-price" style="width: 480px;">$<%= @product.price %>
+          <span class="usd">USD</span><span class="buy-button"><a href="<%= @product.shoplink %>" class="btn-large btn-primary">Buy
+          Now</a></span>
+          <div id="spnOffer" style="color:#46a546; width:65px; float: right; position: relative; right: 114px; top:-6px; z-index: 900;"><div>FREE</div><div style="font-size: 12px; border-bottom: #46a546 dotted 1px;">OCT 30-31</div>
+          </div>
+          <img id="imgOffer" src="/assets/hat.png" width="124" height="124" style="color:#46a546; float: right; position: relative; right: -62px; top:-14px; z-index: 800;">
+        </h4>
+      </div>
+
+      <div class="color-options">
+        <h6>Color Options</h6>
+
+        <div class="color-options-images">
+
+          <% if @product.name == "The Plank" %>
+              <% @plank_images.each do |image| %>
+                  <%= link_to image_tag(image.image1), image %>
+              <% end %>
+
+          <% elsif @product.name == "The Deck" %>
+              <% @deck_images.each do |image| %>
+                  <%= link_to image_tag(image.image1), image %>
+              <% end %>
+
+          <% elsif @product.name == "The Drift" %>
+              <% @drift_images.each do |image| %>
+                  <%= link_to image_tag(image.image1), image %>
+              <% end %>
+
+          <% elsif @product.name == "The Baron" %>
+              <% @baron_images.each do |image| %>
+                  <%= link_to image_tag(image.image1), image %>
+              <% end %>
+          <% end %>
         </div>
+      </div>
 
-        <div class="sub-images">
-          <a href="#"><img src="<%= @product.image1 %>" class="sub-image pull-left sub-1"></img></a>
-          <a href="#"><img src="<%= @product.image2 %>" class="sub-image sub-2"></img></a>
-          <a href="#"><img src="<%= @product.image3 %>" class="sub-image pull-right sub-3"></img></a>
-        </div>
+      <hr>
+
+      <div class="specs">
+        <h4>Product Details</h4>
+        <ul>
+          <ul>
+            <li><span class="spec-icon-solid pull-left"</span></li>
+            <li><p>100% Pine With
+              <a href="#" id="solidPop" data-trigger="click" data-toggle="popover" data-placement="top" data-content="MICA's proprietary wood science improves durability, luster and resistance to the elements. Seals and finishes your watch from the inside out." data-original-title="SolidCore™">SolidCore™</a>
+              Treatment</p></li>
+          </ul>
+          <ul>
+            <li><span class="spec-icon-size pull-left"</span></li>
+            <li><p><%= @product.sizing %></p></li>
+          </ul>
+          <ul>
+            <li><span class="spec-icon-movement pull-left"</span></li>
+            <li><p>3 Hand Japanese Quartz</p></li>
+          </ul>
+          <ul>
+            <li><span class="spec-icon-crystal pull-left"</span></li>
+            <li><p>Hardened Mineral Crystal Glass</p></li>
+          </ul>
+          <ul>
+            <li><span class="spec-icon-atm pull-left"</span></li>
+            <li><p>5 ATM (Splash Only)</p></li>
+          </ul>
+          <ul>
+            <li><span class="spec-icon-ss pull-left"</span></li>
+            <li><p>Stainless Steel Buckle & Crown</p></li>
+          </ul>
+        </ul>
 
       </div>
 
-      <div class="span6 product-info">
-        <div class="detail-heading">
-          <h3><%= @product.name %><span><%= @product.collection %> / <%= @product.color %></span></h3>
-        </div>
+      <hr>
 
-        <% if @product.category == "Watches" %>
-
-        <div class="product-buy">
-          <h4 class="detail-price">$<%= @product.price %> <span class="usd">USD</span><span class="buy-button"><a href="<%= @product.shoplink %>" class="btn-large btn-primary">Buy Now<a></span></h4>
-        </div>
-
-        <div class="color-options">
-          <h6>Color Options</h6>
-          <div class="color-options-images">
-
-          <% if @product.name == "The Plank" %>
-            <% @plank_images.each do |image| %>
-            <%= link_to image_tag(image.image1), image %>
-            <% end %>
-
-          <% elsif @product.name == "The Deck" %>
-            <% @deck_images.each do |image| %>
-            <%= link_to image_tag(image.image1), image %>
-            <% end %>
-
-          <% elsif @product.name == "The Drift" %>
-            <% @drift_images.each do |image| %>
-            <%= link_to image_tag(image.image1), image %>
-            <% end %>
-
-          <% elsif @product.name == "The Baron" %>
-            <% @baron_images.each do |image| %>
-            <%= link_to image_tag(image.image1), image %>
-            <% end %>
-          <% end %>
-          </div>
-        </div>
-
-        <hr>
-
-        <div class="specs">
-          <h4>Product Details</h4>
+      <div class="social">
+        <h4>Share</h4>
+        <ul>
           <ul>
-            <ul>
-              <li><span class="spec-icon-solid pull-left"</span></li>
-              <li><p>100% Pine With <a href="#" id="solidPop" data-trigger="click" data-toggle="popover" data-placement="top" data-content="MICA's proprietary wood science improves durability, luster and resistance to the elements. Seals and finishes your watch from the inside out." data-original-title="SolidCore™">SolidCore™</a> Treatment</p></li>
-            </ul>
-            <ul>
-              <li><span class="spec-icon-size pull-left"</span></li>
-              <li><p><%= @product.sizing %></p></li>
-            </ul>
-            <ul>
-              <li><span class="spec-icon-movement pull-left"</span></li>
-              <li><p>3 Hand Japanese Quartz</p></li>
-            </ul>
-            <ul>
-              <li><span class="spec-icon-crystal pull-left"</span></li>
-              <li><p>Hardened Mineral Crystal Glass</p></li>
-            </ul>
-            <ul>
-              <li><span class="spec-icon-atm pull-left"</span></li>
-              <li><p>5 ATM (Splash Only)</p></li>
-            </ul>
-            <ul>
-              <li><span class="spec-icon-ss pull-left"</span></li>
-              <li><p>Stainless Steel Buckle & Crown</p></li>
-            </ul>
+            <a target="_blank" href="http://www.facebook.com/sharer.php?u=http://mica-move.herokuapp.com/<%= @product.url %>">
+              <li><span class="social-icon-facebook pull-left"</span></li>
+              <li><p>Facebook</p></li>
+            </a>
           </ul>
-
-        </div>
-
-        <hr>
-
-        <div class="social">
-          <h4>Share</h4>
           <ul>
-            <ul>
-              <a target="_blank" href="http://www.facebook.com/sharer.php?u=http://mica-move.herokuapp.com/<%= @product.url %>">
-                <li><span class="social-icon-facebook pull-left"</span></li>
-                <li><p>Facebook</p></li>
-              </a>
-            </ul>
-            <ul>
-              <a target="_blank" href="http://twitter.com/share?text=<%= @product.name %>&url=http://mica-move.herokuapp.com/<%= @product.url %>">
-                <li><span class="social-icon-twitter pull-left"</span></li>
-                <li><p>Twitter</p></li>
-              </a>
-            </ul>
-            <ul>
-              <a target="_blank" href="http://pinterest.com/pin/create/button/?url=http://mica-move.herokuapp.com/<%= @product.url %>&media=http://mica-move.herokuapp.com/<%= @product.image1 %>&description=<%= @product.name %>">
-                <li><span class="social-icon-pinterest pull-left"</span></li>
-                <li><p>Pinterest</p></li>
-              </a>
-            </ul>
+            <a target="_blank" href="http://twitter.com/share?text=<%= @product.name %>&url=http://mica-move.herokuapp.com/<%= @product.url %>">
+              <li><span class="social-icon-twitter pull-left"</span></li>
+              <li><p>Twitter</p></li>
+            </a>
           </ul>
-        </div>
+          <ul>
+            <a target="_blank" href="http://pinterest.com/pin/create/button/?url=http://mica-move.herokuapp.com/<%= @product.url %>&media=http://mica-move.herokuapp.com/<%= @product.image1 %>&description=<%= @product.name %>">
+              <li><span class="social-icon-pinterest pull-left"</span></li>
+              <li><p>Pinterest</p></li>
+            </a>
+          </ul>
+        </ul>
+      </div>
 
-        <% else %>
+  <% else %>
 
-        <div class="product-buy">
-          <h4 class="detail-price">$<%= @product.price %> <span class="usd">USD</span>
+      <div class="product-buy">
+        <h4 class="detail-price" style="width:470px">$<%= @product.price %> <span class="usd">USD</span>
             <span>
               <% if @product.name == "The Official" %>
-              <a href="#" class="btn-large btn-primary buy-button no-link">Buy Now<a>
-              <a href="http://stackoverflow.com/questions/4565075/jquery-if-element-has-class-do-this-help-please" class="btn-large btn-primary small-link">Buy Now<a>
-              <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=155" class="btn-large btn-primary medium-link buy-button">Buy Now<a>
-              <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=157" class="buy-button btn-large btn-primary large-link">Buy Now<a>
-              <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=159" class="buy-button btn-large btn-primary xl-link">Buy Now<a>
+              <a href="#" class="btn-large btn-primary buy-button no-link">Buy Now</a>
+                <a href="http://stackoverflow.com/questions/4565075/jquery-if-element-has-class-do-this-help-please" class="btn-large btn-primary small-link">Buy
+                  Now</a>
+                <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=155" class="btn-large btn-primary medium-link buy-button">Buy
+                  Now</a>
+                <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=157" class="buy-button btn-large btn-primary large-link">Buy
+                  Now</a>
+                <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=159" class="buy-button btn-large btn-primary xl-link">Buy
+                  Now</a>
 
               <% elsif @product.name == "The Tree" %>
-              <a href="#" class="btn-large btn-primary no-link buy-button ">Buy Now<a>
-              <a href="http://stackoverflow.com/questions/4565075/jquery-if-element-has-class-do-this-help-please" class="buy-button btn-large btn-primary small-link">Buy Now<a>
-              <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=161" class="buy-button btn-large btn-primary medium-link">Buy Now<a>
-              <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=163" class="buy-button btn-large btn-primary large-link">Buy Now<a>
-              <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=165" class="buy-button btn-large btn-primary xl-link">Buy Now<a>
-
+              <a href="#" class="btn-large btn-primary no-link buy-button ">Buy Now</a>
+              <a href="http://stackoverflow.com/questions/4565075/jquery-if-element-has-class-do-this-help-please" class="buy-button btn-large btn-primary small-link">Buy
+                Now</a>
+              <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=161" class="buy-button btn-large btn-primary medium-link">Buy
+                Now</a>
+              <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=163" class="buy-button btn-large btn-primary large-link">Buy
+                Now</a>
+              <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=165" class="buy-button btn-large btn-primary xl-link">Buy
+                Now</a>
               <% elsif @product.name == "The Blitzen" %>
-              <a href="#" class="btn-large btn-primary no-link buy-button ">Buy Now<a>
-              <a href="http://stackoverflow.com/questions/4565075/jquery-if-element-has-class-do-this-help-please" class="buy-button btn-large btn-primary small-link">Buy Now<a>
-              <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=149" class="buy-button btn-large btn-primary medium-link">Buy Now<a>
-              <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=151" class="buy-button btn-large btn-primary large-link">Buy Now<a>
-              <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=153" class="buy-button btn-large btn-primary xl-link">Buy Now<a>
+              <a href="#" class="btn-large btn-primary no-link buy-button ">Buy Now</a>
+                <a href="http://stackoverflow.com/questions/4565075/jquery-if-element-has-class-do-this-help-please" class="buy-button btn-large btn-primary small-link">Buy
+                  Now</a>
+                <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=149" class="buy-button btn-large btn-primary medium-link">Buy
+                  Now</a>
+                <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=151" class="buy-button btn-large btn-primary large-link">Buy
+                  Now</a>
+                <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=153" class="buy-button btn-large btn-primary xl-link">Buy
+                  Now</a>
 
               <% elsif @product.name == "The Albuquerque" %>
               <a href="#" class="btn-large btn-primary no-link buy-button ">Buy Now<a>
-              <a href="http://stackoverflow.com/questions/4565075/jquery-if-element-has-class-do-this-help-please" class="buy-button btn-large btn-primary small-link">Buy Now<a>
-              <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=143" class="buy-button btn-large btn-primary medium-link">Buy Now<a>
-              <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=145" class="buy-button btn-large btn-primary large-link">Buy Now<a>
-              <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=147" class="buy-button btn-large btn-primary xl-link">Buy Now<a>
+                <a href="http://stackoverflow.com/questions/4565075/jquery-if-element-has-class-do-this-help-please" class="buy-button btn-large btn-primary small-link">Buy
+                  Now</a>
+                <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=143" class="buy-button btn-large btn-primary medium-link">Buy
+                  Now</a>
+                <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=145" class="buy-button btn-large btn-primary large-link">Buy
+                  Now</a>
+                <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=147" class="buy-button btn-large btn-primary xl-link">Buy
+                  Now</a>
               <% end %>
             </span>
-          </h4>
-        </div>
-
-        <div class="color-options">
-          <h6>Choose Size*</h6>           
-          <ul class="sizes">
-            <li class="size medium"><a href="#">M</a></li>
-            <li class="size large"><a href="#">L</a></li>
-            <li class="size xl"><a href="#">XL</a></li>
-          </ul>
-        </div>
-
-        <hr>
-
-        <div class="social">
-          <h4>Share</h4>
-          <ul>
-            <ul>
-              <a target="_blank" href="http://www.facebook.com/sharer.php?u=http://mica-move.herokuapp.com/<%= @product.url %>">
-                <li><span class="social-icon-facebook pull-left"</span></li>
-                <li><p>Facebook</p></li>
-              </a>
-            </ul>
-            <ul>
-              <a target="_blank" href="http://twitter.com/share?text=<%= @product.name %>&url=http://mica-move.herokuapp.com/<%= @product.url %>">
-                <li><span class="social-icon-twitter pull-left"</span></li>
-                <li><p>Twitter</p></li>
-              </a>
-            </ul>
-            <ul>
-              <a target="_blank" href="http://pinterest.com/pin/create/button/?url=http://mica-move.herokuapp.com/<%= @product.url %>&media=http://mica-move.herokuapp.com/<%= @product.image1 %>&description=<%= @product.name %>">
-                <li><span class="social-icon-pinterest pull-left"</span></li>
-                <li><p>Pinterest</p></li>
-              </a>
-            </ul>
-          </ul>
-        </div>
-        <% end %>
-
+          <div id="spnOffer" style="color:#46a546; width:65px; float: right; position: relative; right: 114px; top:-6px; z-index: 900;"><div>FREE</div><div style="font-size: 12px; border-bottom: #46a546 dotted 1px;">OCT 30-31</div>
+          </div>
+          <img id="imgOffer" src="/assets/hat.png" width="124" height="124" style="color:#46a546; float: right; position: relative; right: -62px; top:-14px; z-index: 800;">
+        </h4>
       </div>
 
-    </div>
+      <div class="color-options">
+        <h6>Choose Size*</h6>
+        <ul class="sizes">
+          <li class="size medium"><a href="#">M</a></li>
+          <li class="size large"><a href="#">L</a></li>
+          <li class="size xl"><a href="#">XL</a></li>
+        </ul>
+      </div>
 
-  </div>
+      <hr>
+
+      <div class="social">
+        <h4>Share</h4>
+        <ul>
+          <ul>
+            <a target="_blank" href="http://www.facebook.com/sharer.php?u=http://mica-move.herokuapp.com/<%= @product.url %>">
+              <li><span class="social-icon-facebook pull-left"</span></li>
+              <li><p>Facebook</p></li>
+            </a>
+          </ul>
+          <ul>
+            <a target="_blank" href="http://twitter.com/share?text=<%= @product.name %>&url=http://mica-move.herokuapp.com/<%= @product.url %>">
+              <li><span class="social-icon-twitter pull-left"</span></li>
+              <li><p>Twitter</p></li>
+            </a>
+          </ul>
+          <ul>
+            <a target="_blank" href="http://pinterest.com/pin/create/button/?url=http://mica-move.herokuapp.com/<%= @product.url %>&media=http://mica-move.herokuapp.com/<%= @product.image1 %>&description=<%= @product.name %>">
+              <li><span class="social-icon-pinterest pull-left"</span></li>
+              <li><p>Pinterest</p></li>
+            </a>
+          </ul>
+        </ul>
+      </div>
+  <% end %>
+
+</div>
+
+</div>
+
+</div>
 
 </div>
 
 <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
 <script type="text/javascript">
-$(document).ready(function(event) {
-  $('#solidPop').popover('hide')
+    $(document).ready(function (event) {
+        $('#solidPop').popover('hide')
 
-  $('#solidPop').click(function(event) {
-    event.preventDefault();
-  });
+        $('#solidPop').click(function (event) {
+            event.preventDefault();
+        });
 
-  $(".small").click(function(event) {
-    event.preventDefault();
-    $(".medium").removeClass("active-size")
-    $(".large").removeClass("active-size")
-    $(".xl").removeClass("active-size")
-    $(this).addClass("active-size")
-    $(".small-link").show()
-    $(".no-link").hide()
-    $(".medium-link").hide()
-    $(".large-link").hide()
-    $(".xl-link").hide()
-  });
+        $('#spnOffer').popover({
+            animated: true,
+            title: 'FREE HAT              OCT 30-31',
+            content: 'Get a FREE Ferguson 5 panel Camo hat with order placed between 30 & 31.',
+            trigger: 'hover',
+            placement: 'top',
+            container: 'body'
+        });
 
-  $(".medium").click(function(event) {
-    event.preventDefault();
-    $(".small").removeClass("active-size")
-    $(".large").removeClass("active-size")
-    $(".xl").removeClass("active-size")
-    $(this).addClass("active-size")
-    $(".medium-link").show()
-    $(".small-link").hide()
-    $(".large-link").hide()
-    $(".xl-link").hide()
-    $(".no-link").hide()
-  });
+        $('#imgOffer').popover({
+            animated: true,
+            title: 'FREE HAT              OCT 30-31',
+            content: 'Get a FREE Ferguson 5 panel Camo hat with order placed between 30 & 31.',
+            trigger: 'hover',
+            placement: 'top',
+            container: 'body'
+        });
 
-  $(".large").click(function(event) {
-    event.preventDefault();
-    $(".small").removeClass("active-size")
-    $(".medium").removeClass("active-size")
-    $(".xl").removeClass("active-size")
-    $(this).addClass("active-size")
-    $(".large-link").show()
-    $(".small-link").hide()
-    $(".medium-link").hide()
-    $(".xl-link").hide()
-    $(".no-link").hide()
-  });
+        $(".small").click(function (event) {
+            event.preventDefault();
+            $(".medium").removeClass("active-size")
+            $(".large").removeClass("active-size")
+            $(".xl").removeClass("active-size")
+            $(this).addClass("active-size")
+            $(".small-link").show()
+            $(".no-link").hide()
+            $(".medium-link").hide()
+            $(".large-link").hide()
+            $(".xl-link").hide()
+        });
 
-  $(".xl").click(function(event) {
-    event.preventDefault();
-    $(".small").removeClass("active-size")
-    $(".medium").removeClass("active-size")
-    $(".large").removeClass("active-size")
-    $(this).addClass("active-size")
-    $(".xl-link").show()
-    $(".small-link").hide()
-    $(".medium-link").hide()
-    $(".large-link").hide()
-    $(".no-link").hide()
-  });
+        $(".medium").click(function (event) {
+            event.preventDefault();
+            $(".small").removeClass("active-size")
+            $(".large").removeClass("active-size")
+            $(".xl").removeClass("active-size")
+            $(this).addClass("active-size")
+            $(".medium-link").show()
+            $(".small-link").hide()
+            $(".large-link").hide()
+            $(".xl-link").hide()
+            $(".no-link").hide()
+        });
 
-  $('.store-nav').addClass('active-nav-item');
+        $(".large").click(function (event) {
+            event.preventDefault();
+            $(".small").removeClass("active-size")
+            $(".medium").removeClass("active-size")
+            $(".xl").removeClass("active-size")
+            $(this).addClass("active-size")
+            $(".large-link").show()
+            $(".small-link").hide()
+            $(".medium-link").hide()
+            $(".xl-link").hide()
+            $(".no-link").hide()
+        });
 
-  $('.main-2').hide();
-  $('.main-3').hide();
+        $(".xl").click(function (event) {
+            event.preventDefault();
+            $(".small").removeClass("active-size")
+            $(".medium").removeClass("active-size")
+            $(".large").removeClass("active-size")
+            $(this).addClass("active-size")
+            $(".xl-link").show()
+            $(".small-link").hide()
+            $(".medium-link").hide()
+            $(".large-link").hide()
+            $(".no-link").hide()
+        });
 
-  $('.sub-1').click(function(event){
-    event.preventDefault();
-    $('.main-1').show();
-    $('.main-2').hide();
-    $('.main-3').hide();
-  });
+        $('.store-nav').addClass('active-nav-item');
 
-  $('.sub-2').click(function(event){
-    event.preventDefault();
-    $('.main-2').show();
-    $('.main-1').hide();
-    $('.main-3').hide();
-  });
+        $('.main-2').hide();
+        $('.main-3').hide();
 
-  $('.sub-3').click(function(event){
-    event.preventDefault();
-    $('.main-3').show();
-    $('.main-2').hide();
-    $('.main-1').hide();
-  });
+        $('.sub-1').click(function (event) {
+            event.preventDefault();
+            $('.main-1').show();
+            $('.main-2').hide();
+            $('.main-3').hide();
+        });
+
+        $('.sub-2').click(function (event) {
+            event.preventDefault();
+            $('.main-2').show();
+            $('.main-1').hide();
+            $('.main-3').hide();
+        });
+
+        $('.sub-3').click(function (event) {
+            event.preventDefault();
+            $('.main-3').show();
+            $('.main-2').hide();
+            $('.main-1').hide();
+        });
 
 
-});
+    });
 
 </script>
 

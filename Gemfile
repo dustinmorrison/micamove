@@ -32,8 +32,12 @@ gem 'jquery-rails'
 
 gem 'friendly_id'
 
-gem 'rack-canonical-host'
 gem 'devise'
+gem 'hirb'
+gem 'geocoder'
+gem 'rack-canonical-host'
+gem 'area'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

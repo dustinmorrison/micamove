@@ -33,7 +33,7 @@ gem 'jquery-rails'
 gem 'friendly_id'
 
 gem 'rack-canonical-host'
-
+gem 'devise'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

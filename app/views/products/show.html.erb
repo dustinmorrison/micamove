@@ -34,7 +34,7 @@
 <% if @product.category == "Watches" %>
 
     <div class="product-buy">
-      <h4 class="detail-price" style="width: 480px;">$<%= @product.price %>
+      <h4 class="detail-price" style="">$<%= @product.price %>
         <span class="usd">USD</span><span class="buy-button"><a href="<%= @product.shoplink %>" class="btn-large btn-primary">Buy
         Now</a></span>
 
@@ -42,7 +42,7 @@
           <div>FREE</div>
           <div style="font-size: 12px; border-bottom: #46a546 dotted 1px;">OCT 30-31</div>
         </div>
-        <img id="imgOffer" class="visible-desktop visible-tablet" src="/assets/hat.png" width="124" height="124" style="color:#46a546; float: right; position: relative; right: -62px; top:-14px; z-index: 800;">
+        <img id="imgOffer" class="visible-desktop visible-tablet" src="/assets/hat.png" width="124" height="124" style="color:#46a546; float: right; position: relative; right: -62px; top:-36px; z-index: 800;">
 
         <div class="visible-phone" style="clear: both; width: 280px;margin-top: 24px;">
           <div id="spnOffer1" style="color:#46a546; width:65px; z-index: 900;float: left;position: relative;top: 10px;">
@@ -146,7 +146,7 @@
 <% else %>
 
     <div class="product-buy">
-      <h4 class="detail-price" style="width:470px">$<%= @product.price %> <span class="usd">USD</span>
+      <h4 class="detail-price" style="">$<%= @product.price %> <span class="usd">USD</span>
             <span>
               <% if @product.name == "The Official" %>
               <a href="#" class="btn-large btn-primary buy-button no-link">Buy Now</a>
@@ -197,7 +197,7 @@
           <div>FREE</div>
           <div style="font-size: 12px; border-bottom: #46a546 dotted 1px;">OCT 30-31</div>
         </div>
-        <img id="imgOffer" src="/assets/hat.png" class="visible-desktop visible-tablet" width="124" height="124" style="color:#46a546; float: right; position: relative; right: -66px; top:-14px; z-index: 800;">
+        <img id="imgOffer" src="/assets/hat.png" class="visible-desktop visible-tablet" width="124" height="124" style="color:#46a546; float: right; position: relative; right: -66px; top:-36px; z-index: 800;">
 
         <div class="visible-phone" style="clear: both; width: 280px;margin-top: 24px;">
           <div id="spnOffer1" style="color:#46a546; width:65px; z-index: 900;float: left;position: relative;top: 10px;">

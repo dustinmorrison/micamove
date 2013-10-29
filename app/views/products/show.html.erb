@@ -38,11 +38,11 @@
         <span class="usd">USD</span><span class="buy-button"><a href="<%= @product.shoplink %>" class="btn-large btn-primary">Buy
         Now</a></span>
 
-        <div id="spnOffer" class="visible-desktop visible-tablet" style="color:#46a546; width:65px; float: right; position: relative; right: 114px; top:-6px; z-index: 900;">
+        <div id="spnOffer" class="visible-desktop visible-tablet" style="color:#46a546; width:65px; float: right; position: relative; right: 114px; top:-6px; z-index: 2;">
           <div>FREE</div>
           <div style="font-size: 12px; border-bottom: #46a546 dotted 1px;">OCT 30-31</div>
         </div>
-        <img id="imgOffer" class="visible-desktop visible-tablet" src="/assets/hat.png" width="124" height="124" style="color:#46a546; float: right; position: relative; right: -62px; top:-36px; z-index: 800;">
+        <img id="imgOffer" class="visible-desktop visible-tablet" src="/assets/hat.png" width="124" height="124" style="color:#46a546; float: right; position: relative; right: -62px; top:-36px; z-index: 1;">
 
         <div class="visible-phone" style="clear: both; width: 280px;margin-top: 24px;">
           <div id="spnOffer1" style="color:#46a546; width:65px; z-index: 900;float: left;position: relative;top: 10px;">
@@ -193,11 +193,11 @@
               <% end %>
             </span>
 
-        <div id="spnOffer" class="visible-desktop visible-tablet" style="color:#46a546; width:65px; float: right; position: relative; right: 114px; top:-6px; z-index: 900;">
+        <div id="spnOffer" class="visible-desktop visible-tablet" style="color:#46a546; width:65px; float: right; position: relative; right: 114px; top:-6px; z-index: 2;">
           <div>FREE</div>
           <div style="font-size: 12px; border-bottom: #46a546 dotted 1px;">OCT 30-31</div>
         </div>
-        <img id="imgOffer" src="/assets/hat.png" class="visible-desktop visible-tablet" width="124" height="124" style="color:#46a546; float: right; position: relative; right: -66px; top:-36px; z-index: 800;">
+        <img id="imgOffer" src="/assets/hat.png" class="visible-desktop visible-tablet" width="124" height="124" style="color:#46a546; float: right; position: relative; right: -66px; top:-36px; z-index: 1;">
 
         <div class="visible-phone" style="clear: both; width: 280px;margin-top: 24px;">
           <div id="spnOffer1" style="color:#46a546; width:65px; z-index: 900;float: left;position: relative;top: 10px;">
@@ -214,7 +214,9 @@
       <ul class="sizes">
         <li class="size medium"><a href="#">M</a></li>
         <li class="size large"><a href="#">L</a></li>
+        <% if @product.category != 'Clothing' %>
         <li class="size xl"><a href="#">XL</a></li>
+        <% end %>
       </ul>
     </div>
 

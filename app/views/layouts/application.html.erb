@@ -13,7 +13,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<div class="header-desktop hidden-phone">	
+	<div class="header-desktop hidden-phone">
 		<div class="container-fluid">
 			<div class="row-fluid" style="max-width: 940px; margin: 0 auto">
 				<div class="span3">
@@ -36,7 +36,7 @@
 		</div>
 	</div>
 
-	<div class="header-mobile hidden-desktop  hidden-tablet visable-phone">	
+	<div class="header-mobile hidden-desktop  hidden-tablet visable-phone">
 		<div class="container-fluid">
 			<div class="row-fluid mobile-nav-row">
 				<div class="span7">
@@ -96,7 +96,7 @@
 			    <input name="inf_form_xid" type="hidden" value="3d85728873512e54303473725bb9cec0">
 			    <input name="inf_form_name" type="hidden" value="Sign up for newsletter">
 			    <input name="infusionsoft_version" type="hidden" value="1.29.3.49">
-			    
+
 			    <div class="infusion-field">
 		        <label for="inf_field_Email"></label>
 		        <input class="newsletter-email inputarea" id="inf_field_Email" name="inf_field_Email" type="text" value="EMAIL UPDATES" onclick="if (this.defaultValue==this.value) this.value=''" onblur="if (this.value=='') this.value=this.defaultValue">
@@ -117,7 +117,6 @@
 	</div>
 </div>
 
-	
 
 	<script type="text/javascript" src="https://mica.infusionsoft.com/app/webTracking/getTrackingCode?trackingId=1787ed0cbc0de166c6048871f5127d21"></script>
 
@@ -144,6 +143,21 @@
 		    // Animation complete.
 		  });
 		});
+
+        <% if controller_name != 'pages' && action_name != 'home' %>
+        if($.cookie('display_offer') == undefined)
+        {
+            $.facybox({
+                image: 'http://localhost:3000/assets/products/clothing/blitzen/blitzen-front.jpg',
+                centerOnScroll: true,
+                onComplete: function(){
+                }
+            });
+            setTimeout(function(){$.facybox.centralize();}, 1000);
+            $.cookie('display_offer', '1', { path: window.location.pathname });
+            //$.fancybox.center(true);
+        }
+        <% end %>
 	});
 </script>
 </html>

@@ -153,8 +153,17 @@
                 onComplete: function(){
                 }
             });
-            setTimeout(function(){$.facybox.centralize();}, 1000);
-            $.cookie('display_offer', '1', { path: window.location.pathname });
+            setTimeout(function()
+            {
+                $.facybox.centralize();
+                $("#facybox .footer").click(function() {
+                    window.location.href = '/products';
+                });
+                $("#facybox .body .popup .image img").click(function() {
+                    window.location.href = '/products';
+                });
+            }, 1000);
+            $.cookie('display_offer', '1', {path: '/'}); //, { path: window.location.pathname });
             //$.fancybox.center(true);
         }
         <% end %>

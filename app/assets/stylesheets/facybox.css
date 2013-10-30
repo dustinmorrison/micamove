@@ -10,7 +10,7 @@
 	padding: 18px;
 	min-width: 40px;
 	min-height: 40px;
-    opacity: .85;
+    opacity: 1;
 }
 #facybox .w,  #facybox .e, #facybox  .nw,
 #facybox .ne, #facybox .sw, #facybox .se {
@@ -119,6 +119,7 @@
 	left: 23px;
 	padding: 0;
 	width: 90%;
+    cursor: pointer;
 }
 
 #facybox .footer img {

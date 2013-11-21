@@ -127,9 +127,9 @@ class AddNewProducts < ActiveRecord::Migration
           :category => "Clothing",
           :shoplink => "",
           :price => "25",
-          :image1 => "/assets/products/clothing/Tree-Navy-Front-Tee.jpg",
-          :image2 => "/assets/products/clothing/Tree-Navy-Back-Tee.jpg",
-          :image3 => "/assets/products/clothing/Tree-Navy-Back-Tee.jpg",
+          :image1 => "/assets/products/clothing/Tree-Natural-Front-Tee.jpg",
+          :image2 => "/assets/products/clothing/Tree-Natural-Back-Tee.jpg",
+          :image3 => "/assets/products/clothing/Tree-Natural-Back-Tee.jpg",
           :url => "the-tree-natural-tshirt"
         },
         { :name => "THE AZTEK",

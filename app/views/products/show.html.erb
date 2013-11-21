@@ -39,17 +39,17 @@
         Now</a></span>
 
         <!--<div id="spnOffer" class="visible-desktop visible-tablet" style="color:#514c43; width:65px; float: right; position: relative; right: 114px; top:-6px; z-index: 2;">-->
-          <!--<div>FREE</div>-->
-          <!--<div style="font-size: 12px; border-bottom: #514c43 dotted 1px;">OCT 30-31</div>-->
+        <!--<div>FREE</div>-->
+        <!--<div style="font-size: 12px; border-bottom: #514c43 dotted 1px;">OCT 30-31</div>-->
         <!--</div>-->
         <!--<img id="imgOffer" class="visible-desktop visible-tablet" src="/assets/hat-brown.png" width="124" height="124" style="color:#46a546; float: right; position: relative; right: -62px; top:-36px; z-index: 1;">-->
 
         <!--<div class="visible-phone" style="clear: both; width: 280px;margin-top: 24px;">-->
-          <!--<div id="spnOffer1" style="color:#514c43; width:65px; z-index: 900;float: left;position: relative;top: 10px;">-->
-            <!--<div>FREE</div>-->
-            <!--<div style="font-size: 12px; border-bottom: #514c43 dotted 1px;">OCT 30-31</div>-->
-          <!--</div>-->
-          <!--<img id="imgOffer1" src="/assets/hat-brown.png" width="124" height="124" style="color:#46a546; z-index: 800;float: left;width: 140px;left: -14px;position: relative;">-->
+        <!--<div id="spnOffer1" style="color:#514c43; width:65px; z-index: 900;float: left;position: relative;top: 10px;">-->
+        <!--<div>FREE</div>-->
+        <!--<div style="font-size: 12px; border-bottom: #514c43 dotted 1px;">OCT 30-31</div>-->
+        <!--</div>-->
+        <!--<img id="imgOffer1" src="/assets/hat-brown.png" width="124" height="124" style="color:#46a546; z-index: 800;float: left;width: 140px;left: -14px;position: relative;">-->
         <!--</div>-->
       </h4>
     </div>
@@ -148,18 +148,18 @@
     <div class="product-buy">
       <h4 class="detail-price" style="">$<%= @product.price %> <span class="usd">USD</span>
             <span>
-              <% if @product.name == "The Official" %>
+              <% if @product.name == "The Official"  and @product.color == 'Gray' %>
               <a href="#" class="btn-large btn-primary buy-button no-link">Buy Now</a>
                 <a href="http://stackoverflow.com/questions/4565075/jquery-if-element-has-class-do-this-help-please" class="btn-large btn-primary small-link">Buy
                   Now</a>
                 <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=155" class="btn-large btn-primary medium-link buy-button">Buy
                   Now</a>
                 <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=157" class="buy-button btn-large btn-primary large-link">Buy
-                  Now</a>
+                   Now</a>
                 <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=159" class="buy-button btn-large btn-primary xl-link">Buy
                   Now</a>
 
-              <% elsif @product.name == "The Tree" %>
+              <% elsif @product.name == "The Tree" and @product.color == 'White' %>
               <a href="#" class="btn-large btn-primary no-link buy-button ">Buy Now</a>
               <a href="http://stackoverflow.com/questions/4565075/jquery-if-element-has-class-do-this-help-please" class="buy-button btn-large btn-primary small-link">Buy
                 Now</a>
@@ -180,7 +180,7 @@
                 <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=153" class="buy-button btn-large btn-primary xl-link">Buy
                   Now</a>
 
-              <% elsif @product.name == "The Albuquerque" %>
+              <% elsif @product.name == "The Albuquerque" and @product.color == "Black" %>
               <a href="#" class="btn-large btn-primary no-link buy-button ">Buy Now<a>
                 <a href="http://stackoverflow.com/questions/4565075/jquery-if-element-has-class-do-this-help-please" class="buy-button btn-large btn-primary small-link">Buy
                   Now</a>
@@ -190,21 +190,144 @@
                   Now</a>
                 <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=147" class="buy-button btn-large btn-primary xl-link">Buy
                   Now</a>
+              <% elsif @product.name == "THE ALBUQUERQUE" and @product.color == "HEATHER GREY" %>
+              <a href="#" class="btn-large btn-primary no-link buy-button ">Buy Now<a>
+                <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=205" class="buy-button btn-large btn-primary small-link">Buy
+                  Now</a>
+                <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=207" class="buy-button btn-large btn-primary medium-link">Buy
+                  Now</a>
+                <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=209" class="buy-button btn-large btn-primary large-link">Buy
+                  Now</a>
+                <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=211" class="buy-button btn-large btn-primary xl-link">Buy
+                  Now</a>
+                <% elsif @product.name == "THE ALBUQUERQUE" and @product.color == "CARDINAL" %>
+              <a href="#" class="btn-large btn-primary no-link buy-button ">Buy Now<a>
+                <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=213" class="buy-button btn-large btn-primary small-link">Buy
+                  Now</a>
+                <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=215" class="buy-button btn-large btn-primary medium-link">Buy
+                  Now</a>
+                <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=217" class="buy-button btn-large btn-primary large-link">Buy
+                  Now</a>
+                <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=219" class="buy-button btn-large btn-primary xl-link">Buy
+                  Now</a>
+              <% elsif @product.name == "THE SNAKE CHARMER" and @product.color == "OLIVE" %>
+              <a href="#" class="btn-large btn-primary no-link buy-button ">Buy Now<a>
+                <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=229" class="buy-button btn-large btn-primary small-link">Buy
+                  Now</a>
+                <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=231" class="buy-button btn-large btn-primary medium-link">Buy
+                  Now</a>
+                <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=233" class="buy-button btn-large btn-primary large-link">Buy
+                  Now</a>
+                <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=235" class="buy-button btn-large btn-primary xl-link">Buy
+                  Now</a>
+              <% elsif @product.name == "THE BLITZEN" and @product.color == "CHARCOAL" %>
+                <a href="#" class="btn-large btn-primary no-link buy-button ">Buy Now<a>
+                <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=237" class="buy-button btn-large btn-primary small-link">Buy
+                  Now</a>
+                <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=239" class="buy-button btn-large btn-primary medium-link">Buy
+                  Now</a>
+                <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=241" class="buy-button btn-large btn-primary large-link">Buy
+                  Now</a>
+                <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=243" class="buy-button btn-large btn-primary xl-link">Buy
+                  Now</a>
+            <% elsif @product.name == "THE MOVEMENT" and @product.color == "BLACK" %>
+                <a href="#" class="btn-large btn-primary no-link buy-button ">Buy Now<a>
+                <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=253" class="buy-button btn-large btn-primary small-link">Buy
+                  Now</a>
+                <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=255" class="buy-button btn-large btn-primary medium-link">Buy
+                  Now</a>
+                <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=257" class="buy-button btn-large btn-primary large-link">Buy
+                  Now</a>
+                <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=259" class="buy-button btn-large btn-primary xl-link">Buy
+                  Now</a>
+            <% elsif @product.name == "THE MOVEMENT" and @product.color == "ASH" %>
+                <a href="#" class="btn-large btn-primary no-link buy-button ">Buy Now<a>
+                <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=261" class="buy-button btn-large btn-primary small-link">Buy
+                  Now</a>
+                <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=263" class="buy-button btn-large btn-primary medium-link">Buy
+                  Now</a>
+                <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=265" class="buy-button btn-large btn-primary large-link">Buy
+                  Now</a>
+                <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=267" class="buy-button btn-large btn-primary xl-link">Buy
+                  Now</a>
+            <% elsif @product.name == "THE TREE" and @product.color == "MIDNIGHT NAVY" %>
+                <a href="#" class="btn-large btn-primary no-link buy-button ">Buy Now<a>
+                <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=269" class="buy-button btn-large btn-primary small-link">Buy
+                  Now</a>
+                <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=271" class="buy-button btn-large btn-primary medium-link">Buy
+                  Now</a>
+                <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=273" class="buy-button btn-large btn-primary large-link">Buy
+                  Now</a>
+                <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=275" class="buy-button btn-large btn-primary xl-link">Buy
+                  Now</a>
+            <% elsif @product.name == "THE TREE" and @product.color == "NATURAL" %>
+                <a href="#" class="btn-large btn-primary no-link buy-button ">Buy Now<a>
+                <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=277" class="buy-button btn-large btn-primary small-link">Buy
+                  Now</a>
+                <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=279" class="buy-button btn-large btn-primary medium-link">Buy
+                  Now</a>
+                <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=281" class="buy-button btn-large btn-primary large-link">Buy
+                  Now</a>
+                <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=283" class="buy-button btn-large btn-primary xl-link">Buy
+                  Now</a>
+            <% elsif @product.name == "THE AZTEK" and @product.color == "CHARCOAL" %>
+                <a href="#" class="btn-large btn-primary no-link buy-button ">Buy Now<a>
+                <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=285" class="buy-button btn-large btn-primary small-link">Buy
+                  Now</a>
+                <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=287" class="buy-button btn-large btn-primary medium-link">Buy
+                  Now</a>
+                <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=289" class="buy-button btn-large btn-primary large-link">Buy
+                  Now</a>
+                <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=291" class="buy-button btn-large btn-primary xl-link">Buy
+                  Now</a>
+            <% elsif @product.name == "THE AZTEK" and @product.color == "WHITE" %>
+                <a href="#" class="btn-large btn-primary no-link buy-button ">Buy Now<a>
+                <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=293" class="buy-button btn-large btn-primary small-link">Buy
+                  Now</a>
+                <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=295" class="buy-button btn-large btn-primary medium-link">Buy
+                  Now</a>
+                <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=297" class="buy-button btn-large btn-primary large-link">Buy
+                  Now</a>
+                <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=299" class="buy-button btn-large btn-primary xl-link">Buy
+                  Now</a>
+
+            <% elsif @product.name == "THE AZTEK" and @product.color == "HEATHER GREY" %>
+                <a href="#" class="btn-large btn-primary no-link buy-button ">Buy Now<a>
+                <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=301" class="buy-button btn-large btn-primary small-link">Buy
+                  Now</a>
+                <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=303" class="buy-button btn-large btn-primary medium-link">Buy
+                  Now</a>
+                <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=305" class="buy-button btn-large btn-primary large-link">Buy
+                  Now</a>
+                <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=307" class="buy-button btn-large btn-primary xl-link">Buy
+                  Now</a>
+            <% elsif @product.name == "THE TREE" and @product.color == "CHARCOAL" %>
+                <a href="#" class="btn-large btn-primary no-link buy-button ">Buy Now<a>
+                <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=309" class="buy-button btn-large btn-primary small-link">Buy
+                  Now</a>
+                <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=311" class="buy-button btn-large btn-primary medium-link">Buy
+                  Now</a>
+                <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=313" class="buy-button btn-large btn-primary large-link">Buy
+                  Now</a>
+                <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=315" class="buy-button btn-large btn-primary xl-link">Buy
+                  Now</a>
+
               <% end %>
+
             </span>
 
         <!--<div id="spnOffer" class="visible-desktop visible-tablet" style="color:#514c43; width:65px; float: right; position: relative; right: 114px; top:-6px; z-index: 2;">-->
-          <!--<div>FREE</div>-->
-          <!--<div style="font-size: 12px; border-bottom: #514c43 dotted 1px;">OCT 30-31</div>-->
+        <!--<div>FREE</div>-->
+        <!--<div style="font-size: 12px; border-bottom: #514c43 dotted 1px;">OCT 30-31</div>-->
         <!--</div>-->
         <!--<img id="imgOffer" src="/assets/hat-brown.png" class="visible-desktop visible-tablet" width="124" height="124" style="color:#46a546; float: right; position: relative; right: -66px; top:-36px; z-index: 1;">-->
 
         <!--<div class="visible-phone" style="clear: both; width: 280px;margin-top: 24px;">-->
-          <!--<div id="spnOffer1" style="color:#514c43; width:65px; z-index: 900;float: left;position: relative;top: 10px;">-->
-            <!--<div>FREE</div>-->
-            <!--<div style="font-size: 12px; border-bottom: #514c43 dotted 1px;">OCT 30-31</div>-->
-          <!--</div>-->
-          <!--<img id="imgOffer1" src="/assets/hat-brown.png" width="124" height="124" style="color:#46a546; z-index: 800;float: left;width: 140px;left: -14px;position: relative;">-->
+        <!--<div id="spnOffer1" style="color:#514c43; width:65px; z-index: 900;float: left;position: relative;top: 10px;">-->
+        <!--<div>FREE</div>-->
+        <!--<div style="font-size: 12px; border-bottom: #514c43 dotted 1px;">OCT 30-31</div>-->
+        <!--</div>-->
+        <!--<img id="imgOffer1" src="/assets/hat-brown.png" width="124" height="124" style="color:#46a546; z-index: 800;float: left;width: 140px;left: -14px;position: relative;">-->
         <!--</div>-->
       </h4>
     </div>
@@ -212,10 +335,12 @@
     <div class="color-options">
       <h6>Choose Size*</h6>
       <ul class="sizes">
+        <li class="size small"><a href="#">S</a></li>
         <li class="size medium"><a href="#">M</a></li>
         <li class="size large"><a href="#">L</a></li>
-        <% if @product.category != 'Clothing' %>
         <li class="size xl"><a href="#">XL</a></li>
+        <% if @product.category != 'Clothing' %>
+
         <% end %>
       </ul>
     </div>

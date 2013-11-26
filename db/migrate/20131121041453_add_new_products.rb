@@ -161,7 +161,7 @@ class AddNewProducts < ActiveRecord::Migration
         { :name => "THE AZTEK",
           :collection => "CREW SWEATSHIRT",
           :color => "HEATHER GREY",
-          :title => "Aztek Crew Sweatshirt / Heather Grey",
+          :title => "Aztek Pullover",
           :description => "Crew Pullover Sweatshirt / 7.0 oz / 55% Cotton / 45% Polyester Blend Fleece",
           :category => "Clothing",
           :shoplink => "",
@@ -172,7 +172,7 @@ class AddNewProducts < ActiveRecord::Migration
           :url => "the-aztek-healther-grey-tshirt"
         },
         { :name => "THE TREE",
-          :collection => "HOODIE SWEATSHIRT",
+          :collection => "HOODIE",
           :color => "CHARCOAL",
           :title => "Tree Hoodie / Charcoal",
           :description => "Hooded Sweatshirt / 55% Cotton / 45% Polyester Blend Fleece",
@@ -180,8 +180,8 @@ class AddNewProducts < ActiveRecord::Migration
           :shoplink => "",
           :price => "50",
           :image1 => "/assets/products/clothing/Tree-Charcoal-Front-HoodieSS.jpg",
-          :image2 => "/assets/products/clothing/Tree-Charcoal-Front-HoodieSS.jpg",
-          :image3 => "/assets/products/clothing/Tree-Charcoal-Front-HoodieSS.jpg",
+          :image2 => "/assets/products/clothing/Tree-Hoodie-Sweatshirt-Back.jpg",
+          :image3 => "/assets/products/clothing/Tree-Hoodie-Sweatshirt-Front.jpg",
           :url => "the-tree-charcoal-tshirt"
         },
     ]

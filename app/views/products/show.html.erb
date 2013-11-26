@@ -346,7 +346,18 @@
     </div>
 
     <hr>
+    <% if @product.description.length !=0 %>
+    <div class="specs">
+      <h4>Product Details</h4>
+      <ul>
+        <ul>
+          <li><p><%= @product.description %></li>
+        </ul>
+      </ul>
 
+    </div>
+    <hr>
+   <% end %>
     <div class="social">
       <h4>Share</h4>
       <ul>

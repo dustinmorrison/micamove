@@ -159,9 +159,9 @@ class AddNewProducts < ActiveRecord::Migration
           :url => "the-aztek-white-tshirt"
         },
         { :name => "THE AZTEK",
-          :collection => "CREW SWEATSHIRT",
+          :collection => "PULLOVER",
           :color => "HEATHER GREY",
-          :title => "Aztek Pullover",
+          :title => "Aztek Crew Sweatshirt / Heather Grey",
           :description => "Crew Pullover Sweatshirt / 7.0 oz / 55% Cotton / 45% Polyester Blend Fleece",
           :category => "Clothing",
           :shoplink => "",

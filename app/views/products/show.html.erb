@@ -148,7 +148,7 @@
     <div class="product-buy">
       <h4 class="detail-price" style="">$<%= @product.price %> <span class="usd">USD</span>
             <span>
-              <% if @product.name == "The Official"  and @product.color == 'Gray' %>
+              <% if @product.name == "The Official"  and @product.color == 'Navy' %>
               <a href="#" class="btn-large btn-primary buy-button no-link">Buy Now</a>
                 <a href="http://stackoverflow.com/questions/4565075/jquery-if-element-has-class-do-this-help-please" class="btn-large btn-primary small-link">Buy
                   Now</a>
@@ -230,7 +230,7 @@
                   Now</a>
                 <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=235" class="buy-button btn-large btn-primary xl-link">Buy
                   Now</a>
-              <% elsif @product.name == "THE BLITZEN" and @product.color == "CREAM" %>
+              <% elsif @product.name == "THE BLITZEN" and @product.color == "CHARCOAL" %>
                 <a href="#" class="btn-large btn-primary no-link buy-button ">Buy Now<a>
                 <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=237" class="buy-button btn-large btn-primary small-link">Buy
                   Now</a>
@@ -239,6 +239,16 @@
                 <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=241" class="buy-button btn-large btn-primary large-link">Buy
                   Now</a>
                 <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=243" class="buy-button btn-large btn-primary xl-link">Buy
+                  Now</a>
+              <% elsif @product.name == "THE BLITZEN" and @product.color == "CREAM" %>
+                <a href="#" class="btn-large btn-primary no-link buy-button ">Buy Now<a>
+                <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=245" class="buy-button btn-large btn-primary small-link">Buy
+                  Now</a>
+                <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=247" class="buy-button btn-large btn-primary medium-link">Buy
+                  Now</a>
+                <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=249" class="buy-button btn-large btn-primary large-link">Buy
+                  Now</a>
+                <a href="https://mica.infusionsoft.com/app/manageCart/addProduct?productId=251" class="buy-button btn-large btn-primary xl-link">Buy
                   Now</a>
             <% elsif @product.name == "THE MOVEMENT" and @product.color == "BLACK" %>
                 <a href="#" class="btn-large btn-primary no-link buy-button ">Buy Now<a>

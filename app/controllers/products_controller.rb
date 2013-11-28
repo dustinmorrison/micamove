@@ -2,7 +2,7 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   def index
-    @products = Product.all
+    @products = Product.all(:conditions => ['id not in (12, 13, 14, 15)'])
 
 
     respond_to do |format|
@@ -98,7 +98,8 @@ class ProductsController < ApplicationController
   end
 
   def clothing
-    @clothing = Product.where :category => "Clothing"
+    @clothing = Product.all(:conditions =>  ['id > 15 and category = "Clothing"'])
+    #Product.where(:category => "Clothing")
 
     # respond_to do |format|
     #   format.html # index.html.erb

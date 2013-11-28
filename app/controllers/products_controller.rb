@@ -103,9 +103,9 @@ class ProductsController < ApplicationController
 
   def clothing
     if Rails.env == :production
-      @clothing = Product.all(:conditions =>  ['id > 355 and category = "Clothing"'])
+      @clothing = Product.all(:conditions =>  ["id > 355 and category = 'Clothing'"])
     else
-      @clothing = Product.all(:conditions =>  ['id > 15 and category = "Clothing"'])
+      @clothing = Product.all(:conditions =>  ["id > 15 and category = 'Clothing'"])
     end
 
 

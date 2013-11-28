@@ -2,7 +2,7 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   def index
-    if Rails.env == 'production'
+    if ENV['CANONICAL_HOST']
       @products = Product.all(:conditions => ['id not in (355, 356, 357, 358)'])
     else
       @products = Product.all(:conditions => ['id not in (12, 13, 14, 15)'])
@@ -102,7 +102,7 @@ class ProductsController < ApplicationController
   end
 
   def clothing
-    if Rails.env == 'production'
+    if ENV['CANONICAL_HOST']
       @clothing = Product.all(:conditions =>  ["id > 358 and category = 'Clothing'"])
     else
       @clothing = Product.all(:conditions =>  ["id > 15 and category = 'Clothing'"])

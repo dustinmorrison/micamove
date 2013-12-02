@@ -1,7 +1,11 @@
 <% content_for :title, "#{@product.title}" %>
 <% meta_description " #{@product.description}" %>
 
-
+<style type="text/css">
+    .popover-title{
+        font-size: 13px;;
+    }
+</style>
 <div id="content-container">
 <div class="container-fluid sub-nav-container">
   <%= render(:partial => "product-nav") %>

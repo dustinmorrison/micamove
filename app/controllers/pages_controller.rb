@@ -18,6 +18,10 @@ class PagesController < ApplicationController
   	
   end
 
+  def registration_thankyou
+
+  end
+
   def contactthanks
   	
   end

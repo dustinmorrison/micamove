@@ -357,12 +357,32 @@
     </div>
 
     <div class="color-options">
-      <h6>Choose Size*</h6>
+      <h6>Choose Size* </h6>
       <ul class="sizes">
-        <li class="size small"><a href="#">S</a></li>
+        <% if !@s_na %>
+            <li class="size small"><a href="#">S</a></li>
+        <% else %>
+            <li class="size out-of-stock" title="Out Of Stock"><p>OUT OF STOCK</p></li>
+        <% end %>
+
+        <% if !@m_na %>
         <li class="size medium"><a href="#">M</a></li>
+        <% else %>
+            <li class="size out-of-stock" title="Out Of Stock"><p>OUT OF STOCK</p></li>
+        <% end %>
+
+        <% if !@l_na %>
         <li class="size large"><a href="#">L</a></li>
+        <% else %>
+            <li class="size out-of-stock" title="Out Of Stock"><p>OUT OF STOCK</p></li>
+        <% end %>
+
+        <% if !@xl_na %>
         <li class="size xl"><a href="#">XL</a></li>
+        <% else %>
+            <li class="size out-of-stock" title="Out Of Stock"><p>OUT OF STOCK</p></li>
+        <% end %>
+
         <% if @product.category != 'Clothing' %>
 
         <% end %>
@@ -405,7 +425,7 @@
         </ul>
       </ul>
     </div>
-<% end %>
+<% end %>                                                        
 
 </div>
 

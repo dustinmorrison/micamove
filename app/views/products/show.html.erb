@@ -358,35 +358,35 @@
 
     <div class="color-options">
       <h6>Choose Size* </h6>
-      <ul class="sizes">
+      <div class="sizes">
         <% if !@s_na %>
-            <li class="size small"><a href="#">S</a></li>
+            <div class="size small pull-left"><a href="#">S</a></div>
         <% else %>
-            <li class="size out-of-stock" title="Out Of Stock"><p>OUT OF STOCK</p></li>
+            <div class="size out-of-stock pull-left" title="Out Of Stock"><p>OUT OF STOCK</p></div>
         <% end %>
 
         <% if !@m_na %>
-        <li class="size medium"><a href="#">M</a></li>
+            <div class="size medium pull-left"><a href="#">M</a></div>
         <% else %>
-            <li class="size out-of-stock" title="Out Of Stock"><p>OUT OF STOCK</p></li>
+            <div class="size out-of-stock pull-left" title="Out Of Stock"><p>OUT OF STOCK</p></div>
         <% end %>
 
         <% if !@l_na %>
-        <li class="size large"><a href="#">L</a></li>
+            <div class="size large pull-left"><a href="#">L</a></div>
         <% else %>
-            <li class="size out-of-stock" title="Out Of Stock"><p>OUT OF STOCK</p></li>
+            <div class="size out-of-stock pull-left" title="Out Of Stock"><p>OUT OF STOCK</p></div>
         <% end %>
 
         <% if !@xl_na %>
-        <li class="size xl"><a href="#">XL</a></li>
+            <div class="size xl pull-left"><a href="#">XL</a></div>
         <% else %>
-            <li class="size out-of-stock" title="Out Of Stock"><p>OUT OF STOCK</p></li>
+            <div class="size out-of-stock pull-left" title="Out Of Stock"><p>OUT OF STOCK</p></div>
         <% end %>
 
         <% if @product.category != 'Clothing' %>
 
         <% end %>
-      </ul>
+      </div>
     </div>
 
     <hr>

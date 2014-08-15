@@ -19,15 +19,13 @@ class ProductsController < ApplicationController
   # GET /products/1.json
   def show
 
-    #http://www.micamove.com/products/the-albuquerque-cardinal-tshirt Size XL
-    #http://www.micamove.com/products/the-snake-charmer-black-tshirt Size L
-    #http://www.micamove.com/products/the-movement-black-tshirt Size S and L
-    #http://www.micamove.com/products/the-movement-ash-tshirt Size S
-    #http://www.micamove.com/products/the-tree-midnight-navy-tshirt Size L
-    #http://www.micamove.com/products/the-tree-natural-tshirt Size L and XL
 
-    #http://www.micamove.com/products/the-aztek-charcoal-tshirt Size L
-    #http://www.micamove.com/products/the-aztek-white-tshirt Size M and L
+    # http://www.micamove.com/products/the-movement-black-tshirt
+    # http://www.micamove.com/products/the-movement-ash-tshirt
+    # http://www.micamove.com/products/the-blitzen-charcoal-tshirt
+    # http://www.micamove.com/products/the-blitzen-cream-tshirt
+    # http://www.micamove.com/products/the-aztek-white-tshirt
+    # http://www.micamove.com/products/the-albuquerque-cardinal-tshirt
 
     @xl_na = false
     @l_na = false
@@ -37,31 +35,53 @@ class ProductsController < ApplicationController
     @product = Product.find(params[:id])
 
     if @product.friendly_id == 'the-albuquerque-cardinal-tshirt'
-        @xl_na = true
+      @s_na = true
+      @m_na=true
+      @l_na = true
+      @xl_na=true
     end
     if @product.friendly_id == 'the-snake-charmer-black-tshirt'
-        @l_na = true
+      @l_na = true
     end
     if @product.friendly_id == 'the-movement-black-tshirt'
-        @s_na = true
-        @l_na = true
+      @s_na = true
+      @m_na=true
+      @l_na = true
+      @xl_na=true
     end
     if @product.friendly_id == 'the-movement-ash-tshirt'
-        @s_na = true
+      @s_na = true
+      @m_na=true
+      @l_na = true
+      @xl_na=true
+    end
+    if @product.friendly_id == 'the-blitzen-charcoal-tshirt'
+      @s_na = true
+      @m_na=true
+      @l_na = true
+      @xl_na=true
+    end
+    if @product.friendly_id == 'the-blitzen-cream-tshirt'
+      @s_na = true
+      @m_na=true
+      @l_na = true
+      @xl_na=true
     end
     if @product.friendly_id == 'the-tree-midnight-navy-tshirt'
-        @l_na = true
+      @l_na = true
     end
     if @product.friendly_id == 'the-tree-natural-tshirt'
-        @l_na = true
-        @xl_na = true
+      @l_na = true
+      @xl_na = true
     end
     if @product.friendly_id == 'the-aztek-charcoal-tshirt'
-        @l_na = true
+      @l_na = true
     end
     if @product.friendly_id == 'the-aztek-white-tshirt'
-        @m_na = true
-        @l_na = true
+      @s_na = true
+      @m_na=true
+      @l_na = true
+      @xl_na=true
     end
 
     @plank_images = Product.where :name => "The Plank"
